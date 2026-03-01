@@ -79,9 +79,6 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                       <div className="relative">
                         {domainCourseDropdownItems.map((dropdownItem, index) => (
                           <div key={dropdownItem.id}>
-                            {dropdownItem.isSeparated && index > 0 && (
-                              <div className="h-[1px] bg-[rgba(255,255,255,0.1)] my-[8px] mx-[16px]" />
-                            )}
                             <button
                               onClick={() => {
                                 onNavigate(dropdownItem.id);
@@ -128,9 +125,6 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                       <div className="relative">
                         {studentSectionDropdownItems.map((dropdownItem, index) => (
                           <div key={dropdownItem.id}>
-                            {dropdownItem.isSeparated && index > 0 && (
-                              <div className="h-[1px] bg-[rgba(255,255,255,0.1)] my-[8px] mx-[16px]" />
-                            )}
                             <button
                               onClick={() => {
                                 onNavigate(dropdownItem.id);

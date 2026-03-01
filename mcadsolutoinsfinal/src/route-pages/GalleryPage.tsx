@@ -106,9 +106,10 @@ export function GalleryPage({ onNavigate }: GalleryPageProps) {
     }
   ];
 
-  const filteredItems = selectedCategory === "all" 
-    ? galleryItems 
-    : galleryItems.filter(item => item.category === selectedCategory);
+  const filteredItems =
+    selectedCategory === "all"
+      ? galleryItems
+      : galleryItems.filter((item) => item.category === selectedCategory);
 
   return (
     <>
@@ -263,7 +264,7 @@ export function GalleryPage({ onNavigate }: GalleryPageProps) {
               </div>
             </div>
           )}
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* Image Modal */}

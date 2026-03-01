@@ -167,7 +167,7 @@ export function CADCoursesPage({ onNavigate }: CADCoursesPageProps) {
                   <div className="mb-[16px] rounded-[8px] overflow-hidden h-[180px]">
                     <img
                       src={
-                        courseImages[course.id?.toLowerCase()] ||
+                        (course.id && courseImages[course.id.toLowerCase() as keyof typeof courseImages]) ||
                         image_DefaultCourse
                       }
                       alt={course.title}
