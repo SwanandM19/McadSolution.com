@@ -1,7 +1,7 @@
 import { CheckCircle2, Clock, Users, Award, BookOpen, Download, ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { AnimatedSection } from '../components/AnimatedSection';
-const imgClampUnit = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
+import imgClampUnit from "../assets/d36bddc7d7069c564977ad381609e1fd625e2244.png";
 const imgSlideUnit = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
 const imgRiser = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
 
