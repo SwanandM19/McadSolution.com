@@ -270,7 +270,7 @@ export function PlacementsPage({ onNavigate }: PlacementsPageProps) {
           {/* Featured Image - Students Sharing Success Stories */}
           <div className="mb-[48px] md:mb-[64px] rounded-[16px] md:rounded-[24px] overflow-hidden">
             <img 
-              src={imgStudentsSharing} 
+              src={'/studentsection_success_stories.png'} 
               alt="Students sharing success stories at MCAD Solutions during Industry 4.0 training presentation" 
               className="w-full h-auto object-cover"
             />

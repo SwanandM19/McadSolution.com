@@ -11,6 +11,7 @@ import {
   TrendingUp,
   Settings,
 } from "lucide-react";
+import Image from 'next/image';
 const image_bd961c520307b372f3ca13fb2a5257dc52b6034b = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
 const image_211db4c801dab74dd07a4d9727776bf3016ce6ff = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
 const image_5c882ebf9399a01275c172d1e52457205906b300 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
@@ -34,30 +35,34 @@ export function HomePage({ onNavigate }: HomePageProps) {
   return (
     <>
       {/* Hero Section */}
-      <section className="min-h-[700px] md:h-[950px] overflow-clip relative shrink-0 w-full">
-        <div
-          className="absolute bg-repeat bg-size-[1920px_1076px] bg-top-left inset-0"
-          style={{ backgroundImage: `url('${imgImage1}')` }}
-        />
-        <div className="relative h-full py-4 md:py-[80px] px-4 md:px-8 lg:px-[141px]">
-          <div className="max-w-[1280px] mx-auto h-full flex items-center">
-            <div className="content-stretch flex flex-col-reverse lg:flex-row gap-8 md:gap-[64px] items-center justify-center w-full">
-              {/* Left Content */}
-              <AnimatedSection
-                delay={0.1}
-                className="content-stretch flex flex-col gap-4 md:gap-[16px] items-start relative shrink-0 w-full lg:w-[576px]"
-              >
-                <div className="h-[20px] shrink-0 w-full hidden md:block" />
-                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-                  <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center text-gray-100">
-                    <p className="text-[32px] md:text-[50px] lg:text-[60px] leading-[38px] md:leading-[56px] lg:leading-[60px] tracking-[-1px] md:tracking-[-1.3px] lg:tracking-[-1.5px] mb-0">
-                      From CAD Design to Industry 4.0
-                    </p>
-                    <p className="text-[32px] md:text-[50px] lg:text-[60px] leading-[38px] md:leading-[56px] lg:leading-[60px] tracking-[-1px] md:tracking-[-1.3px] lg:tracking-[-1.5px]">
-                      — Build the Future of Engineering
-                    </p>
-                  </div>
-                </div>
+<section className="min-h-[600px] md:min-h-[700px] lg:min-h-[800px] overflow-clip relative shrink-0 w-full">
+  <div
+    className="absolute bg-repeat bg-size-[1920px_1076px] bg-top-left inset-0"
+    style={{ backgroundImage: `url('/homepage_back.png')` }}
+  />
+  <div className="relative h-full py-2 md:py-[40px] lg:py-[60px] px-4 md:px-8 lg:px-[141px]">
+    <div className="max-w-[1280px] mx-auto h-full flex items-center">
+      <div className="content-stretch flex flex-col-reverse lg:flex-row gap-8 md:gap-[64px] items-center justify-center w-full">
+        {/* Left Content */}
+        <AnimatedSection
+          delay={0.1}
+          className="content-stretch flex flex-col gap-4 md:gap-[16px] items-start relative shrink-0 w-full lg:w-[576px]"
+        >
+          {/* REMOVED: This spacer div was creating extra gap */}
+          {/* <div className="h-[20px] shrink-0 w-full hidden md:block" /> */}
+          
+          <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
+            <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center text-gray-100">
+              <p className="text-[32px] md:text-[50px] lg:text-[60px] leading-[38px] md:leading-[56px] lg:leading-[60px] tracking-[-1px] md:tracking-[-1.3px] lg:tracking-[-1.5px] mb-0">
+                From CAD Design to Industry 4.0
+              </p>
+              <p className="text-[32px] md:text-[50px] lg:text-[60px] leading-[38px] md:leading-[56px] lg:leading-[60px] tracking-[-1px] md:tracking-[-1.3px] lg:tracking-[-1.5px]">
+                — Build the Future of Engineering
+              </p>
+            </div>
+          </div>
+
+          {/* Rest of your hero content remains the same... */}
 
                 {/* Mobile-only image below heading */}
                 <div className="lg:hidden bg-[rgba(17,24,39,0.4)] relative rounded-[16px] shrink-0 w-full mt-4">
@@ -67,7 +72,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                         <img
                           alt="Engineer in Smart Factory with Holographic Digital Twin"
                           className="absolute h-full left-0 w-full object-cover"
-                          src={imgNewHero}
+                          src={'C:\\Users\\SHRUTI KOKIL\\Downloads\\mcadsolutoinsfinal\\mcadsolutoinsfinal\\public\\homepageman.png'}
                         />
                       </div>
                     </div>
@@ -188,10 +193,11 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <div className="box-border content-stretch flex flex-col items-start overflow-clip p-px relative rounded-[inherit] w-full">
                   <div className="h-[300px] md:h-[400px] lg:h-[460px] max-w-full relative shrink-0 w-full">
                     <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                      <img
+                      <Image
                         alt="Engineer in Smart Factory with Holographic Digital Twin"
-                        className="absolute h-full left-0 w-full object-cover"
-                        src={imgNewHero}
+                        fill
+                        className="object-cover"
+                        src="/homepageman.png"
                       />
                     </div>
                   </div>
@@ -229,7 +235,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                           <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
                             <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[16px] md:text-[18px] text-nowrap text-white">
                               <p className="leading-[24px] md:leading-[28px] whitespace-pre">
-                                +95%
+                                100%
                               </p>
                             </div>
                           </div>
@@ -328,7 +334,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   style={{ color: "#F4F7F9" }}
                 >
                   <p className="leading-[28px] md:leading-[30px]">
-                    Advanced CAD Modeling & Product Design
+                    Industrial Domain Training
                   </p>
                 </div>
                 <div
@@ -336,10 +342,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   style={{ color: "rgba(244, 247, 249, 0.8)" }}
                 >
                   <p>
-                    Build complex parts, surfaces, and
-                    assemblies used in automotive, plastic, and
-                    tooling industries. Includes project-based
-                    learning and portfolio creation.
+                    Industrial Domain Training focuses on developing complex parts, surfaces, and assemblies used in automotive, plastics, and tooling industries, with an emphasis on project-based learning and portfolio creation.
                   </p>
                 </div>
               </div>
@@ -693,7 +696,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <img
                 alt="Engineer with Tablet in Automated Production Line"
                 className="absolute inset-0 w-full h-full object-cover"
-                src={imgSection}
+                src={'/homepage_betheengineer.png'}
               />
             </div>
           </div>
@@ -874,7 +877,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   alt="CAD Training Classroom"
                   className="absolute inset-0 w-full h-full object-cover"
                   src={
-                    image_750a232efb0b8b55b5ce5dc17388e9163f055f6c
+                    '/homepage_whyfutureengineers.png'
                   }
                 />
               </div>
@@ -1014,7 +1017,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   alt="Students Learning Technology"
                   className="absolute inset-0 w-full h-full object-cover"
                   src={
-                    image_e6dbf1f7680fe4f11dfbbd0f68eeae34c007c86a
+                    '/homepage_placeto_learn_and_grow.png'
                   }
                 />
               </div>
@@ -1074,7 +1077,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   alt="BIW Fixture Design Course"
                   className="absolute inset-0 w-full h-full object-cover"
                   src={
-                    image_5c882ebf9399a01275c172d1e52457205906b300
+                    '/homepage_catiav5.png'
                   }
                 />
               </div>
@@ -1195,7 +1198,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   alt="Automotive Plastic Trims Design Course"
                   className="absolute inset-0 w-full h-full object-cover"
                   src={
-                    image_211db4c801dab74dd07a4d9727776bf3016ce6ff
+                    '/home_automotive_plastic_trims_design.png'
                   }
                 />
               </div>
@@ -1316,7 +1319,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   alt="CATIA V5 Course"
                   className="absolute inset-0 w-full h-full object-cover"
                   src={
-                    image_bd961c520307b372f3ca13fb2a5257dc52b6034b
+                    '/cadcoursescatiav5.jpeg'
                   }
                 />
               </div>

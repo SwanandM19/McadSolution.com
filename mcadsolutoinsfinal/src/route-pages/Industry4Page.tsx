@@ -62,7 +62,7 @@ export function Industry4Page({ onNavigate }: Industry4PageProps) {
             {/* Journey Image */}
             <div className="w-full rounded-[16px] overflow-hidden">
               <img 
-                src={imgJourney} 
+                src={'/industry4.0_ros_digital_twin_robotics.png'} 
                 alt="MCAD Solutions ROS & Digital Twin Robotics Training" 
                 className="w-full h-auto object-cover"
               />

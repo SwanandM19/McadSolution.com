@@ -753,7 +753,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
           <div className="flex-1 relative max-w-[480px] w-full">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-[rgba(17,24,39,0.4)] border border-white/10">
               <img
-                src={imgTechnicalHero}
+                src={'/aboutustop.png'}
                 alt="Young Engineer in Modern Factory"
                 className="w-full h-auto sm:h-[300px] md:h-[350px] lg:h-[380px] object-cover"
               />
@@ -778,7 +778,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
               {/* Evolution Image */}
               <div className="w-full rounded-[8px] overflow-hidden">
                 <img 
-                  src={imgEvolution} 
+                  src={'/aboutus_fromcad_training_to_automation_leadership.png'} 
                   alt="The evolution of MCAD Solutions from CAD training to Industry 4.0 leadership" 
                   className="w-full h-auto object-cover"
                 />
@@ -809,7 +809,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                 
                 <div className="rounded-[8px] overflow-hidden w-24 h-24 sm:w-28 sm:h-28 md:w-[120px] md:h-[120px]">
                   <img 
-                    src={imgIndustry5Vision} 
+                    src={'/aboutus_shaping_the_engineers_of_industry5.png'} 
                     alt="Industry 5.0 Vision" 
                     className="w-full h-full object-cover"
                   />
@@ -946,7 +946,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                       <img 
                         alt="Manoj Potdar" 
                         className="absolute inset-0 w-full h-full object-contain" 
-                        src={imgManojPotdar} 
+                        src={'/aboutus_ourlecturers_manojpotdar.png'} 
                       />
                     </div>
                     
@@ -983,7 +983,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                       <img 
                         alt="Vaishnavi Gore" 
                         className="absolute inset-0 w-full h-full object-contain" 
-                        src={imgVaishnaviGore} 
+                        src={'/aboutus_ourlecturers_vaishnavigore.png'} 
                       />
                     </div>
                     
@@ -1049,7 +1049,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                         <img 
                           alt="2017 Foundation Milestone" 
                           className="absolute inset-0 w-full h-full object-cover" 
-                          src={image_4b78ba3a097d72e04d73789d6cf5de40c2ed840e} 
+                          src={'/aboutus_foundation_2017.png'} 
                         />
                       </div>
                     )}
@@ -1059,7 +1059,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                         <img 
                           alt="2018 First Batch Milestone" 
                           className="absolute inset-0 w-full h-full object-cover" 
-                          src={image_0143bfac427bcddce5033bde72c213f52a8a0c19} 
+                          src={'/aboutus_firstbatch_2018.png'} 
                         />
                       </div>
                     )}
@@ -1069,7 +1069,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                         <img 
                           alt="2019 Expansion Milestone" 
                           className="absolute inset-0 w-full h-full object-cover" 
-                          src={image_f2bb52ac5685e285d785d72f76d52726576b04d6} 
+                          src={'/bceaf5653f58461c3fbe5a0f38a3365061d2eef8.png'} 
                         />
                       </div>
                     )}
@@ -1079,7 +1079,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                         <img 
                           alt="2020 Industry Recognition Milestone" 
                           className="absolute inset-0 w-full h-full object-cover" 
-                          src={image_b35101142138a676df8e83286978e23b32e23140} 
+                          src={'/b35101142138a676df8e83286978e23b32e23140.png'} 
                         />
                       </div>
                     )}

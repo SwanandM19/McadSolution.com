@@ -48,9 +48,9 @@ export function CADCoursesPage({ onNavigate }: CADCoursesPageProps) {
 
   // ✅ Centralized image map (clean, readable, and safe)
   const courseImages = {
-    ugnx: image_59c8e432554a543c8b31dff8f38ee1e9604e22bf,
-    solidworks: image_34707c589f392221f300eb370ba3de1742d4e624,
-    catia: imgCatiaV5,
+    ugnx: '/cadcourses_ugnx.png',
+    solidworks: '/cadcourses_solidworks.png',
+    catia: '/cadcoursescatiav5.jpeg',
   };
 
   // Map course IDs to their respective pages
@@ -95,7 +95,7 @@ export function CADCoursesPage({ onNavigate }: CADCoursesPageProps) {
           <div className="flex-1 relative max-w-[480px] w-full">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-[rgba(17,24,39,0.4)] border border-white/10">
               <img
-                src={image_aac248afd71ab2885ad684c165c2f055e71aaad2}
+                src={'/cadcources_cadtraningprograms.png'}
                 alt="CAD Training Preview"
                 className="w-full h-[380px] object-cover"
               />

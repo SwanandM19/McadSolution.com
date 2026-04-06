@@ -482,7 +482,7 @@ export function RoboticsSimulationPage() {
       {/* ── Hero Section ─────────────────────────────────────────── */}
       <section
         className="bg-repeat bg-top-left relative shrink-0 w-full py-16 md:py-[120px]"
-        style={{ backgroundImage: `url('${imgSection}')`, backgroundColor: '#092B38' }}
+        style={{ backgroundImage: `url('/domaincouses_biw_automotive_robotics_backimage.png')`, backgroundColor: '#092B38' }}
       >
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 md:mb-[48px]">

@@ -478,7 +478,7 @@ export function ContactPage() {
           <div className="flex-1 relative max-w-[480px] w-full">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-[rgba(17,24,39,0.4)] border border-white/10">
               <img
-                src={image_eb8365b9c5ecfe2fca21e4f849236ebb7d107b90}
+                src={'/contactus_get_in_touch.png'}
                 alt="CAD Training Preview"
                 className="w-full h-[380px] object-cover"
               />
@@ -825,7 +825,7 @@ export function ContactPage() {
               className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px] z-10"
             />
             <img
-              src={imgMap}
+              src={'/contactus_location.png'}
               alt="MCAD Solutions Location - 1st floor, FMCIII BUILDING, Marathwada Mitra Mandal College of Engineering Rd, Pune"
               className="w-full h-auto object-cover"
             />

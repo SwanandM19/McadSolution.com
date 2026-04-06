@@ -1270,7 +1270,7 @@ export function BIWFeatureDesignPage() {
       {/* ── Hero Section ─────────────────────────────────────────── */}
       <section
         className="bg-repeat bg-top-left relative shrink-0 w-full py-16 md:py-[120px]"
-        style={{ backgroundImage: `url('/homepage_catiav5.png')`, backgroundColor: '#092B38' }}
+        style={{ backgroundImage: `url('/domaincouses_biw_automotive_robotics_backimage.png')`, backgroundColor: '#092B38' }}
       >
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 md:mb-[48px]">
@@ -1513,7 +1513,7 @@ export function BIWFeatureDesignPage() {
                     {/* Instructor Info */}
                     <div className="flex flex-col sm:flex-row items-start gap-4 mb-8 pb-8 border-b border-white/10">
                       <div className="w-[60px] h-[60px] rounded-full overflow-hidden shrink-0" style={{ backgroundColor: 'rgba(107,193,227,0.2)' }}>
-                        <img src={imgInstructor} alt="Manoj Potdar" className="w-full h-full object-cover" />
+                        <img src={'/aboutus_ourlecturers_manojpotdar.png'} alt="Manoj Potdar" className="w-full h-full object-cover" />
                       </div>
                       <div className="flex-1">
                         <p className="text-[20px] tracking-[-0.5px] leading-[28px] mb-2" style={{ color: '#F4F7F9' }}>Manoj Potdar</p>

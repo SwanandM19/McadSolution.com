@@ -20,7 +20,7 @@ export function BlogPage({ onNavigate }: BlogPageProps) {
       category: 'Tutorial',
       date: 'Oct 20, 2025',
       readTime: '8 min read',
-      image: imgClampUnit
+      image: '/clampunitblogsnew.jpeg'
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ export function BlogPage({ onNavigate }: BlogPageProps) {
       category: 'Tutorial',
       date: 'Oct 18, 2025',
       readTime: '6 min read',
-      image: imgSlideUnit
+      image: '/blogslideunit.jpeg'
     },
     {
       id: 3,
@@ -38,7 +38,7 @@ export function BlogPage({ onNavigate }: BlogPageProps) {
       category: 'Tutorial',
       date: 'Oct 15, 2025',
       readTime: '10 min read',
-      image: imgRiser
+      image: '/blogsriser.jpeg'
     },
     {
       id: 4,
@@ -102,7 +102,7 @@ export function BlogPage({ onNavigate }: BlogPageProps) {
     <div className="flex-1 relative max-w-[480px] w-full">
       <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-[rgba(17,24,39,0.4)] border border-white/10">
         <img
-          src={image_f79260a232700016ec789787727ae9b5539595db}
+          src={'/blogsinsightsandresources.png'}
           alt="CAD Training Preview"
           className="w-full h-[380px] object-cover"
         />
