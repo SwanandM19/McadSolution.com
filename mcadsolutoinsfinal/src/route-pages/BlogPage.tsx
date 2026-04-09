@@ -43,7 +43,7 @@ export function BlogPage({ onNavigate }: BlogPageProps) {
     {
       id: 4,
       title: 'How Our Students Landed Jobs at Top Automotive Companies',
-      excerpt: 'Success stories from MCAD Solutions alumni who are now working at leading automotive manufacturers.',
+      excerpt: 'Success stories from M CAD Solutions alumni who are now working at leading automotive manufacturers.',
       category: 'Success Story',
       date: 'Oct 12, 2025',
       readTime: '5 min read'

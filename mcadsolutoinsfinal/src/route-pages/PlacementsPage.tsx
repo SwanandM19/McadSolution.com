@@ -23,7 +23,7 @@ export function PlacementsPage({ onNavigate }: PlacementsPageProps) {
       company: "Tata Motors",
       batch: "2024",
       image: "https://images.unsplash.com/photo-1638452033979-14fba9e17fbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMHByb2Zlc3Npb25hbCUyMGVuZ2luZWVyfGVufDF8fHx8MTc2MTYwMzE2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      quote: "MCAD Solutions transformed my career. The hands-on training in CATIA V5 and real industry projects gave me the confidence to excel in my role."
+      quote: "M CAD Solutions transformed my career. The hands-on training in CATIA V5 and real industry projects gave me the confidence to excel in my role."
     },
     {
       name: "Priya Deshmukh",
@@ -39,7 +39,7 @@ export function PlacementsPage({ onNavigate }: PlacementsPageProps) {
       company: "Volkswagen India",
       batch: "2023",
       image: "https://images.unsplash.com/photo-1638452033979-14fba9e17fbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMHByb2Zlc3Npb25hbCUyMGVuZ2luZWVyfGVufDF8fHx8MTc2MTYwMzE2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      quote: "From zero CAD knowledge to landing my dream job in just 6 months. MCAD Solutions delivers on their promise."
+      quote: "From zero CAD knowledge to landing my dream job in just 6 months. M CAD Solutions delivers on their promise."
     },
     {
       name: "Sneha Kulkarni",
@@ -47,7 +47,7 @@ export function PlacementsPage({ onNavigate }: PlacementsPageProps) {
       company: "Bosch India",
       batch: "2023",
       image: "https://images.unsplash.com/photo-1638452033979-14fba9e17fbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMHByb2Zlc3Npb25hbCUyMGVuZ2luZWVyfGVufDF8fHx8MTc2MTYwMzE2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      quote: "The faculty's industry experience and personalized mentorship made all the difference. Highly recommend MCAD Solutions!"
+      quote: "The faculty's industry experience and personalized mentorship made all the difference. Highly recommend M CAD Solutions!"
     }
   ];
 

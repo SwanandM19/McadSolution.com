@@ -1,30 +1,30 @@
-// const image_b35101142138a676df8e83286978e23b32e23140 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const image_0e74e53b305e05e80116d128abd85a19559c807b = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const image_f2bb52ac5685e285d785d72f76d52726576b04d6 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const image_bceaf5653f58461c3fbe5a0f38a3365061d2eef8 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const image_0143bfac427bcddce5033bde72c213f52a8a0c19 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const image_d522dad8d28baf2be6363d15008aa0030c7e556b = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const image_4b78ba3a097d72e04d73789d6cf5de40c2ed840e = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const image_12f5757f8e88eb479419179a68b340411f62795a = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const image_8b5d23a6b60274c4c51cbe3a5a26297e94bd36f5 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const image_4e32cc44c25a7ea352da79300705f331e1afb446 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const image_01e0d13ce24618ae2ceb108fb84770640eae1075 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const image_1fa568b7fa3b445e95f1f443f4833c53a681d6a4 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const imgManojPotdar = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const imgVaishnaviGore = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const imgHistoryTimeline = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const img2017Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const img2018Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const img2019Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const img2020Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
+// const image_b35101142138a676df8e83286978e23b32e23140 = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const image_0e74e53b305e05e80116d128abd85a19559c807b = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const image_f2bb52ac5685e285d785d72f76d52726576b04d6 = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const image_bceaf5653f58461c3fbe5a0f38a3365061d2eef8 = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const image_0143bfac427bcddce5033bde72c213f52a8a0c19 = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const image_d522dad8d28baf2be6363d15008aa0030c7e556b = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const image_4b78ba3a097d72e04d73789d6cf5de40c2ed840e = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const image_12f5757f8e88eb479419179a68b340411f62795a = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const image_8b5d23a6b60274c4c51cbe3a5a26297e94bd36f5 = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const image_4e32cc44c25a7ea352da79300705f331e1afb446 = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const image_01e0d13ce24618ae2ceb108fb84770640eae1075 = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const image_1fa568b7fa3b445e95f1f443f4833c53a681d6a4 = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const imgManojPotdar = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const imgVaishnaviGore = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const imgHistoryTimeline = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const img2017Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const img2018Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const img2019Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const img2020Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
 // import svgPaths from "../imports/svg-9op1xbyva3";
-// const imgSection = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const imgTechnicalHero = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const imgGradient = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const imgTrainingEnvironment = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const imgGalleryCollage = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const imgEvolution = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-// const imgIndustry5Vision = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
+// const imgSection = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const imgTechnicalHero = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const imgGradient = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const imgTrainingEnvironment = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const imgGalleryCollage = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const imgEvolution = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+// const imgIndustry5Vision = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
 // import { Monitor, Users, Award, BookOpen, Linkedin, Twitter, Instagram, Target, Zap } from "lucide-react";
 // import { AnimatedSection } from '../components/AnimatedSection';
 
@@ -98,7 +98,7 @@
 //               <div className="w-full rounded-[8px] overflow-hidden">
 //                 <img 
 //                   src={imgEvolution} 
-//                   alt="The evolution of MCAD Solutions from CAD training to Industry 4.0 leadership" 
+//                   alt="The evolution of M CAD Solutions from CAD training to Industry 4.0 leadership" 
 //                   className="w-full h-auto object-cover"
 //                 />
 //               </div>
@@ -335,7 +335,7 @@
 //       </section>
 //       </AnimatedSection>
 
-//       {/* History of MCAD Solutions Section */}
+//       {/* History of M CAD Solutions Section */}
 //       <AnimatedSection>
 //       <section className="relative shrink-0 w-full py-[80px]" style={{ backgroundColor: '#0A1C26' }}>
 //         <div className="max-w-[1280px] mx-auto px-[32px]">
@@ -344,7 +344,7 @@
 //               <p className="leading-[20px]">Our Journey</p>
 //             </div>
 //             <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[36px] tracking-[-0.9px] mb-[24px]" style={{ color: '#F4F7F9' }}>
-//               <p className="leading-[40px]">History of MCAD Solutions</p>
+//               <p className="leading-[40px]">History of M CAD Solutions</p>
 //             </div>
 //             <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[28px] text-[18px] max-w-[800px] mx-auto" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
 //               <p>M CAD Solutions, founded in 2017 by Mr. Manoj Potdar, aims to provide job-oriented mechanical design education to empower young people for successful engineering careers.</p>
@@ -355,7 +355,7 @@
 //           <div className="relative">
 //             <div className="grid grid-cols-4 gap-[24px] relative z-10">
 //               {[
-//                 { year: '2017', title: 'Foundation', description: 'MCAD Solutions established with a vision to transform CAD education' },
+//                 { year: '2017', title: 'Foundation', description: 'M CAD Solutions established with a vision to transform CAD education' },
 //                 { year: '2018', title: 'First Batch', description: '100+ students trained with 95% placement success rate' },
 //                 { year: '2019', title: 'Expansion', description: 'New facility launched with state-of-the-art infrastructure' },
 //                 { year: '2020', title: 'Industry Recognition', description: 'Awarded Best CAD Training Institute in Pune' }
@@ -533,7 +533,7 @@
 //             <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px]" />
             
 //             <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[28px] text-[16px]" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
-//               <p className="mb-[16px]">At MCAD Solutions, we believe in practical, industry-oriented learning that goes beyond theoretical knowledge. Our training approach is designed to transform mechanical engineering graduates into job-ready CAD professionals through a carefully structured methodology:</p>
+//               <p className="mb-[16px]">At M CAD Solutions, we believe in practical, industry-oriented learning that goes beyond theoretical knowledge. Our training approach is designed to transform mechanical engineering graduates into job-ready CAD professionals through a carefully structured methodology:</p>
 //             </div>
 
 //             <div className="grid grid-cols-1 md:grid-cols-2 gap-[24px]">
@@ -686,33 +686,33 @@
 // }
 
 
-const image_b35101142138a676df8e83286978e23b32e23140 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const image_0e74e53b305e05e80116d128abd85a19559c807b = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const image_f2bb52ac5685e285d785d72f76d52726576b04d6 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const image_bceaf5653f58461c3fbe5a0f38a3365061d2eef8 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const image_0143bfac427bcddce5033bde72c213f52a8a0c19 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const image_d522dad8d28baf2be6363d15008aa0030c7e556b = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const image_4b78ba3a097d72e04d73789d6cf5de40c2ed840e = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const image_12f5757f8e88eb479419179a68b340411f62795a = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const image_8b5d23a6b60274c4c51cbe3a5a26297e94bd36f5 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const image_4e32cc44c25a7ea352da79300705f331e1afb446 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const image_01e0d13ce24618ae2ceb108fb84770640eae1075 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const image_1fa568b7fa3b445e95f1f443f4833c53a681d6a4 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const imgManojPotdar = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const imgVaishnaviGore = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const imgHistoryTimeline = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const img2017Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const img2018Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const img2019Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const img2020Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
+const image_b35101142138a676df8e83286978e23b32e23140 = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const image_0e74e53b305e05e80116d128abd85a19559c807b = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const image_f2bb52ac5685e285d785d72f76d52726576b04d6 = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const image_bceaf5653f58461c3fbe5a0f38a3365061d2eef8 = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const image_0143bfac427bcddce5033bde72c213f52a8a0c19 = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const image_d522dad8d28baf2be6363d15008aa0030c7e556b = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const image_4b78ba3a097d72e04d73789d6cf5de40c2ed840e = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const image_12f5757f8e88eb479419179a68b340411f62795a = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const image_8b5d23a6b60274c4c51cbe3a5a26297e94bd36f5 = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const image_4e32cc44c25a7ea352da79300705f331e1afb446 = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const image_01e0d13ce24618ae2ceb108fb84770640eae1075 = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const image_1fa568b7fa3b445e95f1f443f4833c53a681d6a4 = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const imgManojPotdar = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const imgVaishnaviGore = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const imgHistoryTimeline = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const img2017Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const img2018Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const img2019Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const img2020Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
 import svgPaths from "../imports/svg-9op1xbyva3";
-const imgSection = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const imgTechnicalHero = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const imgGradient = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const imgTrainingEnvironment = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const imgGalleryCollage = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const imgEvolution = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const imgIndustry5Vision = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
+const imgSection = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const imgTechnicalHero = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const imgGradient = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const imgTrainingEnvironment = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const imgGalleryCollage = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const imgEvolution = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
+const imgIndustry5Vision = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
 import { Monitor, Users, Award, BookOpen, Linkedin, Twitter, Instagram, Target, Zap } from "lucide-react";
 import { AnimatedSection } from '../components/AnimatedSection';
 
@@ -778,8 +778,8 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
               {/* Evolution Image */}
               <div className="w-full rounded-[8px] overflow-hidden">
                 <img 
-                  src={'/aboutus_fromcad_training_to_automation_leadership.png'} 
-                  alt="The evolution of MCAD Solutions from CAD training to Industry 4.0 leadership" 
+                  src={'/aboutus_froMCAD_training_to_automation_leadership.png'} 
+                  alt="The evolution of M CAD Solutions from CAD training to Industry 4.0 leadership" 
                   className="w-full h-auto object-cover"
                 />
               </div>
@@ -829,8 +829,12 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
               <div className="backdrop-blur-md backdrop-filter box-border content-stretch flex flex-col gap-4 md:gap-[20px] items-start p-6 sm:p-8 md:p-10 lg:p-[40px] relative rounded-[16px]">
                 <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px]" />
                 
-                <div className="bg-gradient-to-br from-[#10162F] to-[#1a2456] rounded-[12px] p-3 md:p-[16px]">
-                  <Target className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-[32px] lg:h-[32px]" style={{ color: '#6BC1E3' }} />
+                <div className="rounded-[8px] overflow-hidden w-24 h-24 sm:w-28 sm:h-28 md:w-[120px] md:h-[120px]">
+                  <img 
+                    src={'/Gemini_Generated_Image_3ctz443ctz443ctz.png'} 
+                    alt="Industry 5.0 Vision" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 <div>
@@ -1016,7 +1020,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
         </section>
       </AnimatedSection>
 
-      {/* History of MCAD Solutions Section */}
+      {/* History of M CAD Solutions Section */}
       <AnimatedSection>
         <section className="relative shrink-0 w-full py-12 sm:py-16 md:py-20 lg:py-[80px]" style={{ backgroundColor: '#0A1C26' }}>
           <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 lg:px-[32px]">
@@ -1025,7 +1029,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                 <p className="leading-tight md:leading-[20px]">Our Journey</p>
               </div>
               <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-2xl sm:text-3xl md:text-4xl lg:text-[36px] tracking-[-0.9px] mb-4 sm:mb-6 md:mb-[24px]" style={{ color: '#F4F7F9' }}>
-                <p className="leading-tight md:leading-[40px]">History of MCAD Solutions</p>
+                <p className="leading-tight md:leading-[40px]">History of M CAD Solutions</p>
               </div>
               <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-relaxed text-sm sm:text-base md:text-[18px] max-w-[800px] mx-auto px-4" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
                 <p>M CAD Solutions, founded in 2017 by Mr. Manoj Potdar, aims to provide job-oriented mechanical design education to empower young people for successful engineering careers.</p>
@@ -1036,7 +1040,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             <div className="relative">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-[24px] relative z-10">
                 {[
-                  { year: '2017', title: 'Foundation', description: 'MCAD Solutions established with a vision to transform CAD education' },
+                  { year: '2017', title: 'Foundation', description: 'M CAD Solutions established with a vision to transform CAD education' },
                   { year: '2018', title: 'First Batch', description: '100+ students trained with 95% placement success rate' },
                   { year: '2019', title: 'Expansion', description: 'New facility launched with state-of-the-art infrastructure' },
                   { year: '2020', title: 'Industry Recognition', description: 'Awarded Best CAD Training Institute in Pune' }
@@ -1212,7 +1216,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
               <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px]" />
               
               <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-relaxed text-sm sm:text-base md:text-[16px]" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
-                <p className="mb-4 md:mb-[16px]">At MCAD Solutions, we believe in practical, industry-oriented learning that goes beyond theoretical knowledge. Our training approach is designed to transform mechanical engineering graduates into job-ready CAD professionals through a carefully structured methodology:</p>
+                <p className="mb-4 md:mb-[16px]">At M CAD Solutions, we believe in practical, industry-oriented learning that goes beyond theoretical knowledge. Our training approach is designed to transform mechanical engineering graduates into job-ready CAD professionals through a carefully structured methodology:</p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-[24px]">
@@ -1278,7 +1282,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                   </div>
                   <div>
                     <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-base sm:text-lg md:text-[18px] tracking-[-0.45px] mb-1 md:mb-[8px]" style={{ color: '#F4F7F9' }}>
-                      <p className="leading-snug md:leading-[28px]">13+ Years Experienced Instructors</p>
+                      <p className="leading-snug md:leading-[28px]">15+ Years Experienced Instructors</p>
                     </div>
                     <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-relaxed text-xs sm:text-sm md:text-[14px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
                       <p>Learn from highly qualified professionals with extensive industry experience.</p>
@@ -1342,7 +1346,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                 { number: '5000+', label: 'Students Trained' },
                 { number: '98%', label: 'Placement Rate' },
                 { number: '150+', label: 'Partner Companies' },
-                { number: '10+', label: 'Years of Excellence' }
+                { number: '15+', label: 'Years of Excellence' }
               ].map((stat, index) => (
                 <div key={index} className="backdrop-blur-md backdrop-filter box-border content-stretch flex flex-col gap-2 md:gap-[8px] items-center p-4 sm:p-6 md:p-8 lg:p-[32px] relative rounded-[16px]">
                   <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px]" />

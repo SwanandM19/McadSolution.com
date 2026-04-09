@@ -388,7 +388,7 @@ export function SolidworksPage({ onNavigate }: SolidworksPageProps) {
                 <p className="leading-[36px] md:leading-[44px] lg:leading-[48px]\">Ready to Master SOLIDWORKS?</p>
               </div>
               <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[24px] md:leading-[28px] text-[15px] md:text-[16px] max-w-[640px] mx-auto" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
-                <p>Join thousands of successful designers who started their career with MCAD Solutions. Enroll today and get industry-ready in months.</p>
+                <p>Join thousands of successful designers who started their career with M CAD Solutions. Enroll today and get industry-ready in months.</p>
               </div>
             </div>
 

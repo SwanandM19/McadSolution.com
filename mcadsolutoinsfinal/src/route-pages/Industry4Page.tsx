@@ -25,7 +25,7 @@ export function Industry4Page({ onNavigate }: Industry4PageProps) {
             <div className="backdrop-blur-md backdrop-filter bg-[rgba(249,168,37,0.15)] box-border content-stretch flex items-center justify-center px-[16px] py-[8px] relative rounded-[9999px]">
               <div aria-hidden="true" className="absolute border border-[rgba(249,168,37,0.3)] border-solid inset-0 pointer-events-none rounded-[9999px]" />
               <span className="text-[13px] uppercase tracking-[0.8px] font-['Geist:Regular',sans-serif]" style={{ color: '#F9A825' }}>
-                Simulation-First | Industry-Oriented | India's First Digital Twin–Focused ROS Program
+                Simulation-First | Industry-Oriented | India's First Digital Twin–Focused ROS2 Program
               </span>
             </div>
           </div>
@@ -36,11 +36,11 @@ export function Industry4Page({ onNavigate }: Industry4PageProps) {
             {/* Text Content */}
             <div className="text-center lg:text-left">
               <h1 className="text-[40px] md:text-[52px] lg:text-[56px] leading-[48px] md:leading-[58px] lg:leading-[62px] font-['Geist:Regular',sans-serif] font-normal tracking-[-1.5px] mb-6" style={{ color: '#F4F7F9' }}>
-                ROS & Digital Twin Robotics Training
+                ROS2 & Digital Twin Robotics Training
               </h1>
 
               <p className="text-[18px] md:text-[20px] leading-[28px] md:leading-[32px] mb-8" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
-                Building Robotics Engineers, Not Just ROS Users. Modern robotics is no longer about only writing code or connecting hardware. Industries today design, test, and validate robots virtually first — using Digital Twins.
+                Building Robotics Engineers, Not Just ROS2 Users. Modern robotics is no longer about only writing code or connecting hardware. Industries today design, test, and validate robots virtually first — using Digital Twins.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-[12px] lg:justify-start justify-center">
@@ -63,7 +63,7 @@ export function Industry4Page({ onNavigate }: Industry4PageProps) {
             <div className="w-full rounded-[16px] overflow-hidden">
               <img 
                 src={'/industry4.0_ros_digital_twin_robotics.png'} 
-                alt="MCAD Solutions ROS & Digital Twin Robotics Training" 
+                alt="MCAD Solutions ROS2 & Digital Twin Robotics Training" 
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -81,7 +81,7 @@ export function Industry4Page({ onNavigate }: Industry4PageProps) {
                 <p className="leading-[42px] md:leading-[48px]">What Makes Our Training Different</p>
               </div>
               <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[28px] text-[16px] md:text-[17px] max-w-[820px] mx-auto" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
-                <p>Most training programs jump directly to hardware, focus on wiring and kits, and teach tool usage without system understanding. Our approach is different.</p>
+                <p>Most programs focus only on theory or basic kits. Our training emphasizes real hardware implementation using 3D printing, hands-on prototyping, and complete system understanding.</p>
               </div>
             </div>
           </AnimatedSection>
@@ -121,7 +121,7 @@ export function Industry4Page({ onNavigate }: Industry4PageProps) {
               
               <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[28px] text-[17px]" style={{ color: '#F4F7F9' }}>
                 <p className="mb-4">We don't teach shortcuts. We teach how robotics actually works in industry.</p>
-                <p className="text-[15px]" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>At MCAD Solution, we train learners exactly the same way industries operate — with simulation-first, risk-free, Digital Twin–based robotics development.</p>
+                <p className="text-[15px]" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>At M CAD Solution, we train learners exactly the same way industries operate — with simulation-first, risk-free, Digital Twin–based robotics development.</p>
               </div>
             </div>
           </div>
@@ -156,10 +156,10 @@ export function Industry4Page({ onNavigate }: Industry4PageProps) {
 
                 <div>
                   <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[22px] tracking-[-0.5px] mb-[12px]" style={{ color: '#F4F7F9' }}>
-                    <p className="leading-[30px]">Strong ROS Foundation</p>
+                    <p className="leading-[30px]">Strong ROS2 Foundation</p>
                   </div>
                   <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[24px] text-[15px]" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
-                    <p className="mb-3">Learners begin by understanding how ROS works internally:</p>
+                    <p className="mb-3">Learners begin by understanding how ROS2 works internally:</p>
                     <ul className="space-y-2 ml-4">
                       <li>• Robot communication & data flow</li>
                       <li>• Task execution logic</li>
@@ -365,7 +365,7 @@ export function Industry4Page({ onNavigate }: Industry4PageProps) {
               <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
               <Users2 className="w-[28px] h-[28px] shrink-0" style={{ color: '#F9A825' }} />
               <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[24px] text-[15px]" style={{ color: '#F4F7F9' }}>
-                <p>ROS beginners to advanced learners</p>
+                <p>ROS2 beginners to advanced learners</p>
               </div>
             </div>
 
@@ -414,7 +414,7 @@ export function Industry4Page({ onNavigate }: Industry4PageProps) {
                   <p className="leading-[40px]">Career & Industry Relevance</p>
                 </div>
                 <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[26px] text-[16px]" style={{ color: 'rgba(244, 247, 249, 0.9)' }}>
-                  <p className="mb-4">After this training, learners don't just know ROS commands. They understand:</p>
+                  <p className="mb-4">After this training, learners don't just know ROS2 commands. They understand:</p>
                 </div>
               </div>
 
@@ -461,7 +461,7 @@ export function Industry4Page({ onNavigate }: Industry4PageProps) {
         <div className="max-w-[1024px] mx-auto px-[32px]">
           <div className="text-center mb-[48px]">
             <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[36px] tracking-[-0.9px] mb-[16px]" style={{ color: '#F4F7F9' }}>
-              <p className="leading-[42px]">Why MCAD Solution</p>
+              <p className="leading-[42px]">Why M CAD Solution</p>
             </div>
           </div>
 
@@ -472,7 +472,7 @@ export function Industry4Page({ onNavigate }: Industry4PageProps) {
               <div className="flex gap-[12px] items-start">
                 <Award className="w-[24px] h-[24px] shrink-0 mt-[2px]" style={{ color: '#F9A825' }} />
                 <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[24px] text-[16px]" style={{ color: 'rgba(244, 247, 249, 0.9)' }}>
-                  <p>First in India to emphasize ROS-based Digital Twin training</p>
+                  <p>First in India to emphasize ROS2-based Digital Twin training</p>
                 </div>
               </div>
 
@@ -521,7 +521,7 @@ export function Industry4Page({ onNavigate }: Industry4PageProps) {
             <div className="w-[60px] h-[2px]" style={{ backgroundColor: '#F9A825' }}></div>
             
             <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[26px] text-[16px]" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
-              <p>Our Philosophy at MCAD Solution</p>
+              <p>Our Philosophy at M CAD Solution</p>
             </div>
           </div>
         </div>
@@ -546,7 +546,7 @@ export function Industry4Page({ onNavigate }: Industry4PageProps) {
               <button onClick={() => onNavigate?.('contact')} className="bg-black box-border content-stretch flex items-center justify-center overflow-clip px-[42px] py-[20px] relative rounded-[9999px] hover:opacity-90 transition-opacity mt-[8px]">
                 <div className="absolute inset-0 pointer-events-none shadow-[0px_0px_0px_1px_inset_#1a1818]" />
                 <div className="flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[17px] text-center text-nowrap text-white">
-                  <p className="leading-[22px] whitespace-pre">Enroll in ROS & Digital Twin Training</p>
+                  <p className="leading-[22px] whitespace-pre">Enroll in ROS2 & Digital Twin Training</p>
                 </div>
               </button>
             </div>

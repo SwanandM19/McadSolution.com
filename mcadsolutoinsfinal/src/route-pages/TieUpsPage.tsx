@@ -114,7 +114,7 @@ export function TieUpsPage({ onNavigate }: TieUpsPageProps) {
               </h1>
               
               <p className="text-[16px] md:text-[18px] leading-[24px] md:leading-[28px]" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
-                MCAD Solutions partners with 150+ leading companies and institutions to provide students with real-world exposure, industry projects, and direct career opportunities.
+                M CAD Solutions partners with 150+ leading companies and institutions to provide students with real-world exposure, industry projects, and direct career opportunities.
               </p>
 
               {/* Stats */}

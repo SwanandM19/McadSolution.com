@@ -826,7 +826,7 @@ export function ContactPage() {
             />
             <img
               src={'/contactus_location.png'}
-              alt="MCAD Solutions Location - 1st floor, FMCIII BUILDING, Marathwada Mitra Mandal College of Engineering Rd, Pune"
+              alt="M CAD Solutions Location - 1st floor, FMCIII BUILDING, Marathwada Mitra Mandal College of Engineering Rd, Pune"
               className="w-full h-auto object-cover"
             />
           </div>

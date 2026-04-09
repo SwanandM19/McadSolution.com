@@ -52,7 +52,7 @@ export function BlogDetailPage({ blogId = 1, onNavigate }: BlogDetailPageProps) 
       date: 'Oct 20, 2025',
       readTime: '8 min read',
       image: imgClampUnit,
-      author: 'MCAD Solutions Team'
+      author: 'M CAD Solutions Team'
     },
     {
       id: 2,
@@ -98,7 +98,7 @@ export function BlogDetailPage({ blogId = 1, onNavigate }: BlogDetailPageProps) 
       date: 'Oct 18, 2025',
       readTime: '6 min read',
       image: imgSlideUnit,
-      author: 'MCAD Solutions Team'
+      author: 'M CAD Solutions Team'
     },
     {
       id: 3,
@@ -153,7 +153,7 @@ export function BlogDetailPage({ blogId = 1, onNavigate }: BlogDetailPageProps) 
       date: 'Oct 15, 2025',
       readTime: '10 min read',
       image: imgRiser,
-      author: 'MCAD Solutions Team'
+      author: 'M CAD Solutions Team'
     }
   ];
 
@@ -293,7 +293,7 @@ export function BlogDetailPage({ blogId = 1, onNavigate }: BlogDetailPageProps) 
             </div>
             
             <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[24px] text-[15px] max-w-[600px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
-              <p>Join MCAD Solutions and transform your career with industry-leading training programs.</p>
+              <p>Join M CAD Solutions and transform your career with industry-leading training programs.</p>
             </div>
 
             <button 

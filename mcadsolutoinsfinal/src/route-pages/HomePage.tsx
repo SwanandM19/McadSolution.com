@@ -11,20 +11,31 @@ import {
   TrendingUp,
   Settings,
 } from "lucide-react";
-import Image from 'next/image';
-const image_bd961c520307b372f3ca13fb2a5257dc52b6034b = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const image_211db4c801dab74dd07a4d9727776bf3016ce6ff = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const image_5c882ebf9399a01275c172d1e52457205906b300 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const image_e6dbf1f7680fe4f11dfbbd0f68eeae34c007c86a = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const image_750a232efb0b8b55b5ce5dc17388e9163f055f6c = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const image_7e09ad9630948493e73b0ddf60335c2b364b2d14 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const image_7b81a9de88e0b915c7aa237dd10807c24f37c2fe = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
+import Image from "next/image";
+const image_bd961c520307b372f3ca13fb2a5257dc52b6034b =
+  "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
+const image_211db4c801dab74dd07a4d9727776bf3016ce6ff =
+  "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
+const image_5c882ebf9399a01275c172d1e52457205906b300 =
+  "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
+const image_e6dbf1f7680fe4f11dfbbd0f68eeae34c007c86a =
+  "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
+const image_750a232efb0b8b55b5ce5dc17388e9163f055f6c =
+  "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
+const image_7e09ad9630948493e73b0ddf60335c2b364b2d14 =
+  "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
+const image_7b81a9de88e0b915c7aa237dd10807c24f37c2fe =
+  "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
 import svgPaths from "../imports/svg-9op1xbyva3";
-const imgImage1 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const imgSection = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
+const imgImage1 =
+  "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
+const imgSection =
+  "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
 import { imgGradient } from "../imports/svg-3z2bt";
-const imgHeroBackground = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const imgNewHero = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
+const imgHeroBackground =
+  "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
+const imgNewHero =
+  "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
 import { AnimatedSection } from "../components/AnimatedSection";
 
 interface HomePageProps {
@@ -35,34 +46,35 @@ export function HomePage({ onNavigate }: HomePageProps) {
   return (
     <>
       {/* Hero Section */}
-<section className="min-h-[600px] md:min-h-[700px] lg:min-h-[800px] overflow-clip relative shrink-0 w-full">
-  <div
-    className="absolute bg-repeat bg-size-[1920px_1076px] bg-top-left inset-0"
-    style={{ backgroundImage: `url('/homepage_back.png')` }}
-  />
-  <div className="relative h-full py-2 md:py-[40px] lg:py-[60px] px-4 md:px-8 lg:px-[141px]">
-    <div className="max-w-[1280px] mx-auto h-full flex items-center">
-      <div className="content-stretch flex flex-col-reverse lg:flex-row gap-8 md:gap-[64px] items-center justify-center w-full">
-        {/* Left Content */}
-        <AnimatedSection
-          delay={0.1}
-          className="content-stretch flex flex-col gap-4 md:gap-[16px] items-start relative shrink-0 w-full lg:w-[576px]"
-        >
-          {/* REMOVED: This spacer div was creating extra gap */}
-          {/* <div className="h-[20px] shrink-0 w-full hidden md:block" /> */}
-          
-          <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-            <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center text-gray-100">
-              <p className="text-[32px] md:text-[50px] lg:text-[60px] leading-[38px] md:leading-[56px] lg:leading-[60px] tracking-[-1px] md:tracking-[-1.3px] lg:tracking-[-1.5px] mb-0">
-                From CAD Design to Industry 4.0
-              </p>
-              <p className="text-[32px] md:text-[50px] lg:text-[60px] leading-[38px] md:leading-[56px] lg:leading-[60px] tracking-[-1px] md:tracking-[-1.3px] lg:tracking-[-1.5px]">
-                — Build the Future of Engineering
-              </p>
-            </div>
-          </div>
+      <section className="min-h-[500px] md:min-h-[600px] lg:min-h-[650px] flex items-center justify-center overflow-clip relative w-full">
+        <div
+          className="absolute bg-repeat bg-size-[1920px_1076px] bg-top-left inset-0"
+          style={{ backgroundImage: `url('/homepage_back.png')` }}
+        />
+        <div className="relative h-full py-2 md:py-[20px] lg:py-[130px] px-4 md:px-8 lg:px-[141px]">
+          <div className="max-w-[1280px] mx-auto w-full flex items-center justify-center">
+            <div className="content-stretch flex flex-col-reverse lg:flex-row gap-8 md:gap-[40px] items-center justify-center w-full">
+              {/* Left Content */}
+              <AnimatedSection
+                delay={0.1}
+                className="content-stretch flex flex-col gap-4 md:gap-[16px] items-start relative shrink-0 w-full lg:w-[576px]"
+              >
+                {/* REMOVED: This spacer div was creating extra gap */}
+                {/* <div className="h-[20px] shrink-0 w-full hidden md:block" /> */}
 
-          {/* Rest of your hero content remains the same... */}
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
+                  <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-bold justify-center text-gray-100">
+                    <p className="text-[40px] md:text-[60px] lg:text-[72px] leading-[44px] md:leading-[64px] lg:leading-[76px] tracking-[-1px] md:tracking-[-1.3px] lg:tracking-[-1.5px] mb-0">
+                      From CAD Design to Industry 4.0
+                    </p>
+
+                    <p className="text-[40px] md:text-[60px] lg:text-[72px] leading-[44px] md:leading-[64px] lg:leading-[76px] tracking-[-1px] md:tracking-[-1.3px] lg:tracking-[-1.5px]">
+                      — Build the Future of Engineering
+                    </p>
+                  </div>
+                </div>
+
+                {/* Rest of your hero content remains the same... */}
 
                 {/* Mobile-only image below heading */}
                 <div className="lg:hidden bg-[rgba(17,24,39,0.4)] relative rounded-[16px] shrink-0 w-full mt-4">
@@ -72,7 +84,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
                         <img
                           alt="Engineer in Smart Factory with Holographic Digital Twin"
                           className="absolute h-full left-0 w-full object-cover"
-                          src={'C:\\Users\\SHRUTI KOKIL\\Downloads\\mcadsolutoinsfinal\\mcadsolutoinsfinal\\public\\homepageman.png'}
+                          src={
+                            "C:\\Users\\SHRUTI KOKIL\\Downloads\\mcadsolutoinsfinal\\mcadsolutoinsfinal\\public\\homepageman.png"
+                          }
                         />
                       </div>
                     </div>
@@ -128,9 +142,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <div className="box-border content-stretch flex flex-col items-start max-w-full lg:max-w-[576px] pb-0 pt-[8px] px-0 relative shrink-0 w-full">
                   <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center text-gray-300">
                     <p className="text-[16px] md:text-[20px] lg:text-[24px] leading-[24px] md:leading-[28px] lg:leading-[32px]">
-                      Master CAD to Digital Twin automation at
-                      MCAD Solutions—India’s first Industry 5.0
-                      institute.
+                      Master CAD to Digital Twin automation at M CAD
+                      Solutions—India’s first Industry 5.0 institute.
                     </p>
                   </div>
 
@@ -270,8 +283,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
               style={{ color: "#F4F7F9" }}
             >
               <p className="leading-[34px] md:leading-[40px]">
-                Curated Learning Paths for Every Stage of
-                Engineering
+                Structured Mechanical Engineering Training Paths from CAD to
+                Industry 4.0
               </p>
             </div>
             <div
@@ -279,9 +292,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
               style={{ color: "rgba(244, 247, 249, 0.7)" }}
             >
               <p>
-                From 3D modeling to robotic system design —
-                choose the course that matches your engineering
-                goals.
+                From 3D modeling to robotic system design — choose the course
+                that matches your engineering goals.
               </p>
             </div>
           </AnimatedSection>
@@ -310,10 +322,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   style={{ color: "rgba(244, 247, 249, 0.8)" }}
                 >
                   <p>
-                    Master 2D drafting and 3D modeling using
-                    SolidWorks, CATIA, and NX. Learn product
-                    design, detailing, and assembly creation for
-                    manufacturing.
+                    Master 2D drafting and 3D modeling using SolidWorks, CATIA,
+                    and NX. Learn product design, detailing, and assembly
+                    creation for manufacturing.
                   </p>
                 </div>
               </div>
@@ -334,7 +345,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   style={{ color: "#F4F7F9" }}
                 >
                   <p className="leading-[28px] md:leading-[30px]">
-                    Industrial Domain Training
+                    Advanced CAD Modeling
                   </p>
                 </div>
                 <div
@@ -342,7 +353,10 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   style={{ color: "rgba(244, 247, 249, 0.8)" }}
                 >
                   <p>
-                    Industrial Domain Training focuses on developing complex parts, surfaces, and assemblies used in automotive, plastics, and tooling industries, with an emphasis on project-based learning and portfolio creation.
+                    Advanced CAD Modeling focuses on developing complex parts,
+                    surfaces, and assemblies used in automotive, plastics, and
+                    tooling industries, with an emphasis on project-based
+                    learning and portfolio creation.
                   </p>
                 </div>
               </div>
@@ -371,9 +385,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   style={{ color: "rgba(244, 247, 249, 0.8)" }}
                 >
                   <p>
-                    Learn robotic cell layout, path planning,
-                    and simulation. Validate motion, sequence,
-                    and production timing before implementation.
+                    Learn robotic cell layout, path planning, and simulation.
+                    Validate motion, sequence, and production timing before
+                    implementation.
                   </p>
                 </div>
               </div>
@@ -409,8 +423,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   style={{ color: "#F4F7F9" }}
                 >
                   <p className="leading-[28px] md:leading-[30px]">
-                    Digital Twin & Automation Design (Industry
-                    4.0 / 5.0)
+                    Digital Twin & Automation Design (Industry 4.0 / 5.0)
                   </p>
                 </div>
                 <div
@@ -418,10 +431,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   style={{ color: "rgba(244, 247, 249, 0.8)" }}
                 >
                   <p>
-                    India's first course to teach mechanical
-                    design, simulation, and implementation of
-                    three different automation systems using
-                    Digital Twin technology.
+                    India's first course to teach mechanical design, simulation,
+                    and implementation of three different automation systems
+                    using Digital Twin technology.
                   </p>
                 </div>
                 <button
@@ -436,9 +448,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                     className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[14px] text-center text-nowrap"
                     style={{ color: "#F9A825" }}
                   >
-                    <p className="leading-[20px] whitespace-pre">
-                      Learn More
-                    </p>
+                    <p className="leading-[20px] whitespace-pre">Learn More</p>
                   </div>
                 </button>
               </div>
@@ -488,9 +498,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   className="text-[14px] leading-[20px]"
                   style={{ color: "rgba(244, 247, 249, 0.7)" }}
                 >
-                  Backed by 15+ years of experience in
-                  automotive BIW Fixture Design and CAD
-                  training.
+                  Backed by 15+ years of experience in automotive BIW Fixture
+                  Design and CAD training.
                 </p>
               </div>
             </div>
@@ -515,8 +524,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   className="text-[14px] leading-[20px]"
                   style={{ color: "rgba(244, 247, 249, 0.7)" }}
                 >
-                  Domain training courses designed as per latest
-                  industry standards with placement support.
+                  Domain training courses designed as per latest industry
+                  standards with placement support.
                 </p>
               </div>
             </div>
@@ -541,8 +550,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   className="text-[14px] leading-[20px]"
                   style={{ color: "rgba(244, 247, 249, 0.7)" }}
                 >
-                  Focus on real-time projects and practical
-                  applications along with theory.
+                  Focus on real-time projects and practical applications along
+                  with theory.
                 </p>
               </div>
             </div>
@@ -567,8 +576,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   className="text-[14px] leading-[20px]"
                   style={{ color: "rgba(244, 247, 249, 0.7)" }}
                 >
-                  Successful alumni working in reputed
-                  automotive and engineering companies.
+                  Successful alumni working in reputed automotive and
+                  engineering companies.
                 </p>
               </div>
             </div>
@@ -593,8 +602,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   className="text-[14px] leading-[20px]"
                   style={{ color: "rgba(244, 247, 249, 0.7)" }}
                 >
-                  Gain in-demand skills in BIW Fixture Design,
-                  Automotive Plastic Trims, and CATIA V5.
+                  Gain in-demand skills in BIW Fixture Design, Automotive
+                  Plastic Trims, and CATIA V5.
                 </p>
               </div>
             </div>
@@ -619,9 +628,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   className="text-[14px] leading-[20px]"
                   style={{ color: "rgba(244, 247, 249, 0.7)" }}
                 >
-                  Benefit from small classes, mock interviews,
-                  resume support, and both online and classroom
-                  options.
+                  Benefit from small classes, mock interviews, resume support,
+                  and both online and classroom options.
                 </p>
               </div>
             </div>
@@ -647,8 +655,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 style={{ color: "#F4F7F9" }}
               >
                 <p className="leading-[34px] md:leading-[42px] lg:leading-[48px]">
-                  Be the Engineer Who Designs the Factory of the
-                  Future
+                  Be the Engineer Who Designs the Factory of the Future
                 </p>
               </div>
               <div
@@ -656,8 +663,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 style={{ color: "rgba(244, 247, 249, 0.7)" }}
               >
                 <p>
-                  Join India's first Industry 4.0 training hub —
-                  from CAD to Automation.
+                  Join India's first Industry 4.0 training hub — from CAD to
+                  Automation.
                 </p>
               </div>
               <div className="box-border content-stretch flex flex-col sm:flex-row gap-[12px] items-start pt-[16px] relative w-full">
@@ -696,7 +703,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <img
                 alt="Engineer with Tablet in Automated Production Line"
                 className="absolute inset-0 w-full h-full object-cover"
-                src={'/homepage_betheengineer.png'}
+                src={"/homepage_betheengineer.png"}
               />
             </div>
           </div>
@@ -725,15 +732,15 @@ export function HomePage({ onNavigate }: HomePageProps) {
                     fontSize: "clamp(48px, 8vw, 60px)",
                   }}
                 >
-                  <p className="leading-[1.2]">98%</p>
+                  <p className="leading-[1.2]">100%</p>
                 </div>
                 <div
                   className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[22px] md:leading-[24px] text-[14px] md:text-[15px] w-full"
                   style={{ color: "rgba(244, 247, 249, 0.9)" }}
                 >
                   <p>
-                    Almost every student secures a role in
-                    design or CAD after training
+                    Almost every student secures a role in design or CAD after
+                    training
                   </p>
                 </div>
               </div>
@@ -758,8 +765,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   style={{ color: "rgba(244, 247, 249, 0.9)" }}
                 >
                   <p>
-                    Focus on projects-based training and
-                    real-world design applications.
+                    Focus on projects-based training and real-world design
+                    applications.
                   </p>
                 </div>
               </div>
@@ -784,8 +791,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   style={{ color: "rgba(244, 247, 249, 0.9)" }}
                 >
                   <p>
-                    Alumni – Working across leading OEMs,
-                    suppliers, and design firms.
+                    Alumni – Working across leading OEMs, suppliers, and design
+                    firms.
                   </p>
                 </div>
               </div>
@@ -810,8 +817,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   style={{ color: "rgba(244, 247, 249, 0.9)" }}
                 >
                   <p>
-                    Skill Development – Covering technical, CAD
-                    tools & soft skills for career growth
+                    Skill Development – Covering technical, CAD tools & soft
+                    skills for career growth
                   </p>
                 </div>
               </div>
@@ -836,8 +843,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   style={{ color: "#F4F7F9" }}
                 >
                   <p className="leading-[30px] md:leading-[36px]">
-                    Where Learning Meets Industry | Building
-                    Careers in Automotive Design
+                    Where Learning Meets Industry | Building Careers in
+                    Automotive Design
                   </p>
                 </div>
               </div>
@@ -847,13 +854,11 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 style={{ color: "rgba(244, 247, 249, 0.8)" }}
               >
                 <p>
-                  At M CAD Solutions, we don't just train
-                  students—we shape future engineers and
-                  designers for the automotive and manufacturing
-                  industry. With award-winning expertise,
-                  real-world project exposure, and proven
-                  placement records, we provide a complete
-                  learning ecosystem that bridges the gap
+                  At M CAD Solutions, we don't just train students—we shape
+                  future engineers and designers for the automotive and
+                  manufacturing industry. With award-winning expertise,
+                  real-world project exposure, and proven placement records, we
+                  provide a complete learning ecosystem that bridges the gap
                   between academics and industry.
                 </p>
               </div>
@@ -876,9 +881,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <img
                   alt="CAD Training Classroom"
                   className="absolute inset-0 w-full h-full object-cover"
-                  src={
-                    '/homepage_whyfutureengineers.png'
-                  }
+                  src={"/homepage_whyfutureengineers.png"}
                 />
               </div>
 
@@ -895,8 +898,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                     <div
                       className="flex items-center justify-center shrink-0 rounded-[8px] p-[8px]"
                       style={{
-                        backgroundColor:
-                          "rgba(249, 168, 37, 0.15)",
+                        backgroundColor: "rgba(249, 168, 37, 0.15)",
                       }}
                     >
                       <Award
@@ -921,9 +923,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
                     }}
                   >
                     <p>
-                      Honored with the Maharashtra Udyog Bhushan
-                      Award 2022 – Recognized twice for
-                      excellence and outstanding contribution.
+                      Honored with the Maharashtra Udyog Bhushan Award 2022 –
+                      Recognized twice for excellence and outstanding
+                      contribution.
                     </p>
                   </div>
                 </div>
@@ -939,8 +941,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                     <div
                       className="flex items-center justify-center shrink-0 rounded-[8px] p-[8px]"
                       style={{
-                        backgroundColor:
-                          "rgba(107, 193, 227, 0.15)",
+                        backgroundColor: "rgba(107, 193, 227, 0.15)",
                       }}
                     >
                       <GraduationCap
@@ -965,9 +966,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
                     }}
                   >
                     <p>
-                      Online & classroom modes designed to
-                      create a supportive environment where
-                      everyone learns, collaborates, and grows
+                      Online & classroom modes designed to create a supportive
+                      environment where everyone learns, collaborates, and grows
                       together.
                     </p>
                   </div>
@@ -990,7 +990,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                     style={{ color: "#F4F7F9" }}
                   >
                     <p className="leading-[30px] md:leading-[36px]">
-                      Why Future Engineers Choose MCAD Solutions
+                      Why Future Engineers Choose M CAD Solutions
                     </p>
                   </div>
                 </div>
@@ -1000,25 +1000,21 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   style={{ color: "rgba(244, 247, 249, 0.8)" }}
                 >
                   <p>
-                    At M CAD Solutions, students learn from
-                    industry experts through hands-on projects
-                    and real-world applications. Our
-                    personalized training, strong placement
-                    support, and award-winning excellence make
-                    us the trusted choice for building careers
-                    in automotive design and CAD.
+                    At M CAD Solutions, students learn from industry experts
+                    through hands-on projects and real-world applications. Our
+                    personalized training, strong placement support, and
+                    award-winning excellence make us the trusted choice for
+                    building careers in automotive design and CAD.
                   </p>
                 </div>
               </div>
 
               {/* Bottom Image */}
-              <div className="relative w-full h-[240px] md:h-[260px] rounded-[16px] overflow-hidden">
+              <div className="relative w-full h-[320px] md:h-[260px] rounded-[16px] overflow-hidden bg-gray-900 flex items-center justify-center">
                 <img
-                  alt="Students Learning Technology"
-                  className="absolute inset-0 w-full h-full object-cover"
-                  src={
-                    '/homepage_placeto_learn_and_grow.png'
-                  }
+                  alt="Award"
+                  className="max-h-full max-w-full object-contain scale-110"
+                  src={"/homepageaward2.png"}
                 />
               </div>
             </div>
@@ -1053,11 +1049,10 @@ export function HomePage({ onNavigate }: HomePageProps) {
               style={{ color: "rgba(244, 247, 249, 0.8)" }}
             >
               <p className="mb-[16px]">
-                Master Automotive Design & CAD with India’s top
-                mechanical engineering courses. Learn from
-                industry experts at MCAD Solutions to gain the
-                practical skills and insights needed to excel in
-                the real world.
+                Master Automotive Design & CAD with India’s top mechanical
+                engineering courses. Learn from industry experts at M CAD
+                Solutions to gain the practical skills and insights needed to
+                excel in the real world.
               </p>
             </div>
           </div>
@@ -1076,9 +1071,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <img
                   alt="BIW Fixture Design Course"
                   className="absolute inset-0 w-full h-full object-cover"
-                  src={
-                    '/homepage_catiav5.png'
-                  }
+                  src={"image_21852257.png"}
                 />
               </div>
 
@@ -1089,8 +1082,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   <span
                     className="px-[12px] py-[4px] rounded-[6px] backdrop-blur-sm"
                     style={{
-                      backgroundColor:
-                        "rgba(249, 168, 37, 0.15)",
+                      backgroundColor: "rgba(249, 168, 37, 0.15)",
                       color: "#F9A825",
                       fontSize: "12px",
                     }}
@@ -1151,10 +1143,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
                 {/* Students Enrolled */}
                 <div className="flex gap-[8px] items-center">
-                  <Users
-                    className="size-[16px]"
-                    style={{ color: "#6BC1E3" }}
-                  />
+                  <Users className="size-[16px]" style={{ color: "#6BC1E3" }} />
                   <span
                     style={{
                       color: "rgba(244, 247, 249, 0.7)",
@@ -1197,9 +1186,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <img
                   alt="Automotive Plastic Trims Design Course"
                   className="absolute inset-0 w-full h-full object-cover"
-                  src={
-                    '/home_automotive_plastic_trims_design.png'
-                  }
+                  src={"/home_automotive_plastic_trims_design.png"}
                 />
               </div>
 
@@ -1210,8 +1197,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   <span
                     className="px-[12px] py-[4px] rounded-[6px] backdrop-blur-sm"
                     style={{
-                      backgroundColor:
-                        "rgba(107, 193, 227, 0.15)",
+                      backgroundColor: "rgba(107, 193, 227, 0.15)",
                       color: "#6BC1E3",
                       fontSize: "12px",
                     }}
@@ -1272,10 +1258,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
                 {/* Students Enrolled */}
                 <div className="flex gap-[8px] items-center">
-                  <Users
-                    className="size-[16px]"
-                    style={{ color: "#6BC1E3" }}
-                  />
+                  <Users className="size-[16px]" style={{ color: "#6BC1E3" }} />
                   <span
                     style={{
                       color: "rgba(244, 247, 249, 0.7)",
@@ -1318,9 +1301,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <img
                   alt="CATIA V5 Course"
                   className="absolute inset-0 w-full h-full object-cover"
-                  src={
-                    '/cadcoursescatiav5.jpeg'
-                  }
+                  src={"/cadcoursescatiav5.jpeg"}
                 />
               </div>
 
@@ -1331,8 +1312,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   <span
                     className="px-[12px] py-[4px] rounded-[6px] backdrop-blur-sm"
                     style={{
-                      backgroundColor:
-                        "rgba(249, 168, 37, 0.15)",
+                      backgroundColor: "rgba(249, 168, 37, 0.15)",
                       color: "#F9A825",
                       fontSize: "12px",
                     }}
@@ -1346,9 +1326,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center text-[18px] md:text-[20px] tracking-[-0.5px]"
                   style={{ color: "#F4F7F9" }}
                 >
-                  <p className="leading-[26px] md:leading-[28px]">
-                    CATIA V5
-                  </p>
+                  <p className="leading-[26px] md:leading-[28px]">CATIA V5</p>
                 </div>
 
                 {/* Rating */}
@@ -1393,10 +1371,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
                 {/* Students Enrolled */}
                 <div className="flex gap-[8px] items-center">
-                  <Users
-                    className="size-[16px]"
-                    style={{ color: "#6BC1E3" }}
-                  />
+                  <Users className="size-[16px]" style={{ color: "#6BC1E3" }} />
                   <span
                     style={{
                       color: "rgba(244, 247, 249, 0.7)",
@@ -1454,10 +1429,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
               style={{ color: "rgba(244, 247, 249, 0.8)" }}
             >
               <p>
-                Discover the unique strengths that set us
-                apart—quality teaching, affordable learning, and
-                total flexibility. Everything is designed to
-                help you achieve your goals faster and more
+                Discover the unique strengths that set us apart—quality
+                teaching, affordable learning, and total flexibility. Everything
+                is designed to help you achieve your goals faster and more
                 confidently.
               </p>
             </div>
@@ -1480,10 +1454,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                       "linear-gradient(135deg, #10162F 0%, #FBBF24 100%)",
                   }}
                 >
-                  <span
-                    className="text-[24px]"
-                    style={{ color: "#F4F7F9" }}
-                  >
+                  <span className="text-[24px]" style={{ color: "#F4F7F9" }}>
                     1
                   </span>
                 </div>
@@ -1491,8 +1462,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <div
                   className="flex items-center justify-center rounded-[16px] p-[28px] md:p-[32px]"
                   style={{
-                    backgroundColor:
-                      "rgba(107, 193, 227, 0.15)",
+                    backgroundColor: "rgba(107, 193, 227, 0.15)",
                   }}
                 >
                   <UserCheck
@@ -1513,8 +1483,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 className="text-center text-[14px] md:text-[15px]"
                 style={{ color: "rgba(244, 247, 249, 0.8)" }}
               >
-                Expert instructors bring real-world experience
-                and hands-on guidance to every class.
+                Expert instructors bring real-world experience and hands-on
+                guidance to every class.
               </div>
             </div>
 
@@ -1533,10 +1503,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                       "linear-gradient(135deg, #10162F 0%, #FBBF24 100%)",
                   }}
                 >
-                  <span
-                    className="text-[24px]"
-                    style={{ color: "#F4F7F9" }}
-                  >
+                  <span className="text-[24px]" style={{ color: "#F4F7F9" }}>
                     2
                   </span>
                 </div>
@@ -1565,8 +1532,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 className="text-center text-[14px] md:text-[15px]"
                 style={{ color: "rgba(244, 247, 249, 0.8)" }}
               >
-                High-quality programs at budget-friendly prices
-                to fit every learner's needs.
+                High-quality programs at budget-friendly prices to fit every
+                learner's needs.
               </div>
             </div>
 
@@ -1585,10 +1552,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                       "linear-gradient(135deg, #10162F 0%, #FBBF24 100%)",
                   }}
                 >
-                  <span
-                    className="text-[24px]"
-                    style={{ color: "#F4F7F9" }}
-                  >
+                  <span className="text-[24px]" style={{ color: "#F4F7F9" }}>
                     3
                   </span>
                 </div>
@@ -1596,8 +1560,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <div
                   className="flex items-center justify-center rounded-[16px] p-[28px] md:p-[32px]"
                   style={{
-                    backgroundColor:
-                      "rgba(107, 193, 227, 0.15)",
+                    backgroundColor: "rgba(107, 193, 227, 0.15)",
                   }}
                 >
                   <Zap
@@ -1618,8 +1581,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 className="text-center text-[14px] md:text-[15px]"
                 style={{ color: "rgba(244, 247, 249, 0.8)" }}
               >
-                Learn at your own pace with streamlined content
-                and convenient scheduling.
+                Learn at your own pace with streamlined content and convenient
+                scheduling.
               </div>
             </div>
 
@@ -1638,10 +1601,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                       "linear-gradient(135deg, #10162F 0%, #FBBF24 100%)",
                   }}
                 >
-                  <span
-                    className="text-[24px]"
-                    style={{ color: "#F4F7F9" }}
-                  >
+                  <span className="text-[24px]" style={{ color: "#F4F7F9" }}>
                     4
                   </span>
                 </div>
@@ -1670,7 +1630,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 className="text-center text-[14px] md:text-[15px]"
                 style={{ color: "rgba(244, 247, 249, 0.8)" }}
               >
-                Structured placement support with resume building, interview preparation, and regular job updates to help students secure core roles.
+                Structured placement support with resume building, interview
+                preparation, and regular job updates to help students secure
+                core roles.
               </div>
             </div>
           </div>
@@ -1704,21 +1666,18 @@ export function HomePage({ onNavigate }: HomePageProps) {
               style={{ color: "rgba(244, 247, 249, 0.8)" }}
             >
               <p>
-                Looking to enhance your expertise in mechanical
-                design courses in Pune? M CAD SOLUTIONS has got
-                you covered. Our platform provides
-                state-of-the-art technology and an intuitive
-                learning experience that helps you overcome any
-                challenges on your path to success. We provide
-                job oriented courses for mechanical engineers.
-                We prioritize the benefits of our courses over
-                the features, ensuring an endless journey of
-                creativity with placement support. Our design
-                courses are specifically tailored for mechanical
-                engineers with a focus on BIW fixture design. we
-                using CATIA V5 as a design software for
-                mechanical engineering. Join us today and turn
-                your aspirations into tangible achievements.
+                Looking to enhance your expertise in mechanical design courses
+                in Pune? M CAD SOLUTIONS has got you covered. Our platform
+                provides state-of-the-art technology and an intuitive learning
+                experience that helps you overcome any challenges on your path
+                to success. We provide job oriented courses for mechanical
+                engineers. We prioritize the benefits of our courses over the
+                features, ensuring an endless journey of creativity with
+                placement support. Our design courses are specifically tailored
+                for mechanical engineers with a focus on BIW fixture design. we
+                using CATIA V5 as a design software for mechanical engineering.
+                Join us today and turn your aspirations into tangible
+                achievements.
               </p>
             </div>
           </div>
@@ -1753,20 +1712,17 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 style={{ color: "rgba(244, 247, 249, 0.85)" }}
               >
                 <p>
-                  I'm Shubham Indurkar I recently passout from
-                  Tulsiramji Gaikwad Patil College of
-                  engineering and technology. Mcad Solutions
-                  played a crucial role in my career transition.
-                  Their BIW Simulation training program was
-                  top-notch, combining theoretical knowledge
-                  with hands-on projects that mirrored
-                  real-world challenges. The instructors were
-                  highly knowledgeable and supportive, and the
-                  placement team's assistance was invaluable.
-                  Thanks to their guidance, I secured a position
-                  at a leading company. I'm incredibly grateful
-                  for the experience and would wholeheartedly
-                  recommend M CAD Solutions to others.
+                  I'm Shubham Indurkar I recently passout from Tulsiramji
+                  Gaikwad Patil College of engineering and technology. M CAD
+                  Solutions played a crucial role in my career transition. Their
+                  BIW Simulation training program was top-notch, combining
+                  theoretical knowledge with hands-on projects that mirrored
+                  real-world challenges. The instructors were highly
+                  knowledgeable and supportive, and the placement team's
+                  assistance was invaluable. Thanks to their guidance, I secured
+                  a position at a leading company. I'm incredibly grateful for
+                  the experience and would wholeheartedly recommend M CAD
+                  Solutions to others.
                 </p>
               </div>
 
@@ -1827,8 +1783,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <div
                   className="flex items-center justify-center shrink-0 rounded-[12px] p-[12px]"
                   style={{
-                    backgroundColor:
-                      "rgba(107, 193, 227, 0.15)",
+                    backgroundColor: "rgba(107, 193, 227, 0.15)",
                   }}
                 >
                   <Quote
@@ -1844,15 +1799,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 style={{ color: "rgba(244, 247, 249, 0.85)" }}
               >
                 <p>
-                  Thrilled to have landed a Design Engineer role
-                  right after graduating! The institute's
-                  curriculum was spot-on, especially the
-                  practical projects and CAD training, which
-                  directly prepared me for industry demands. The
-                  placement cell was incredibly supportive,
-                  guiding us through interviews and connecting
-                  us with top companies. Feeling well-equipped
-                  and excited to start my career!
+                  Thrilled to have landed a Design Engineer role right after
+                  graduating! The institute's curriculum was spot-on, especially
+                  the practical projects and CAD training, which directly
+                  prepared me for industry demands. The placement cell was
+                  incredibly supportive, guiding us through interviews and
+                  connecting us with top companies. Feeling well-equipped and
+                  excited to start my career!
                 </p>
               </div>
 

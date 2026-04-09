@@ -108,7 +108,7 @@ export function CareersPage({ onNavigate }: CareersPageProps) {
               </h1>
               
               <p className="text-[16px] md:text-[18px] leading-[24px] md:leading-[28px]" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
-                Discover exciting career opportunities in automotive design, manufacturing engineering, and Industry 4.0 automation with comprehensive training from MCAD Solutions.
+                Discover exciting career opportunities in automotive design, manufacturing engineering, and Industry 4.0 automation with comprehensive training from M CAD Solutions.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-[12px] mt-[16px]">
