@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
     title: "MCAD Solution",
     description: "MCAD Solution - CAD Training & Engineering Solutions",
+    icons: {
+        icon: "/favicon.ico",
+    },
 };
 
 export default function RootLayout({
