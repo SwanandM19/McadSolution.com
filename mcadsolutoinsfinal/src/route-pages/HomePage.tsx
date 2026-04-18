@@ -47,230 +47,159 @@ export function HomePage({ onNavigate }: HomePageProps) {
     <>
       {/* Hero Section */}
       <section className="min-h-[500px] md:min-h-[600px] lg:min-h-[650px] flex items-center justify-center overflow-clip relative w-full">
-        <div
-          className="absolute bg-repeat bg-size-[1920px_1076px] bg-top-left inset-0"
-          style={{ backgroundImage: `url('/homepage_back.png')` }}
-        />
-        <div className="relative h-full py-2 md:py-[20px] lg:py-[130px] px-4 md:px-8 lg:px-[141px]">
-          <div className="max-w-[1280px] mx-auto w-full flex items-center justify-center">
-            <div className="content-stretch flex flex-col-reverse lg:flex-row gap-8 md:gap-[40px] items-center justify-center w-full">
-              {/* Left Content */}
-              <AnimatedSection
-                delay={0.1}
-                className="content-stretch flex flex-col gap-4 md:gap-[16px] items-start relative shrink-0 w-full lg:w-[576px]"
-              >
-                {/* REMOVED: This spacer div was creating extra gap */}
-                {/* <div className="h-[20px] shrink-0 w-full hidden md:block" /> */}
+  <div
+    className="absolute bg-repeat bg-size-[1920px_1076px] bg-top-left inset-0"
+    style={{ backgroundImage: `url('/homepage_back.png')` }}
+  />
 
-                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-                  <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-bold justify-center text-gray-100">
-                    <p className="text-[40px] md:text-[60px] lg:text-[72px] leading-[44px] md:leading-[64px] lg:leading-[76px] tracking-[-1px] md:tracking-[-1.3px] lg:tracking-[-1.5px] mb-0">
-                      From CAD Design to Industry 4.0
-                    </p>
+  <div className="relative h-full py-2 md:py-[20px] lg:py-[130px] px-4 md:px-8 lg:px-[141px]">
+    <div className="max-w-[1280px] mx-auto w-full flex items-center justify-center">
 
-                    <p className="text-[40px] md:text-[60px] lg:text-[72px] leading-[44px] md:leading-[64px] lg:leading-[76px] tracking-[-1px] md:tracking-[-1.3px] lg:tracking-[-1.5px]">
-                      — Build the Future of Engineering
-                    </p>
-                  </div>
-                </div>
+      <div className="content-stretch flex flex-col-reverse lg:flex-row gap-8 md:gap-[40px] items-center justify-center w-full">
 
-                {/* Rest of your hero content remains the same... */}
+        {/* LEFT CONTENT */}
+        <AnimatedSection
+          delay={0.1}
+          className="flex flex-col gap-4 md:gap-[16px] items-start relative shrink-0 w-full lg:w-[576px]"
+        >
 
-                {/* Mobile-only image below heading */}
-                <div className="lg:hidden bg-[rgba(17,24,39,0.4)] relative rounded-[16px] shrink-0 w-full mt-4">
-                  <div className="box-border content-stretch flex flex-col items-start overflow-clip p-px relative rounded-[inherit] w-full">
-                    <div className="h-[300px] max-w-full relative shrink-0 w-full">
-                      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                        <img
-                          alt="Engineer in Smart Factory with Holographic Digital Twin"
-                          className="absolute h-full left-0 w-full object-cover"
-                          src={
-                            "C:\\Users\\SHRUTI KOKIL\\Downloads\\mcadsolutoinsfinal\\mcadsolutoinsfinal\\public\\homepageman.png"
-                          }
-                        />
-                      </div>
-                    </div>
-                    <div className="absolute backdrop-blur-[2px] backdrop-filter bg-[rgba(0,0,0,0.8)] right-[8px] rounded-[12px] top-[8px]">
-                      <div className="box-border content-stretch flex flex-col items-start overflow-clip p-[10px] relative rounded-[inherit]">
-                        <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
-                          <div className="bg-gray-800 content-stretch flex items-center justify-center relative rounded-[9999px] shrink-0 size-[30px]">
-                            <div className="relative shrink-0 size-[16px]">
-                              <svg
-                                className="block size-full"
-                                fill="none"
-                                preserveAspectRatio="none"
-                                viewBox="0 0 20 20"
-                              >
-                                <g>
-                                  <path
-                                    d={svgPaths.p3a2fa580}
-                                    stroke="var(--stroke-0, #E5E7EB)"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="1.25"
-                                  />
-                                </g>
-                              </svg>
-                            </div>
-                          </div>
-                          <div className="content-stretch flex flex-col items-start relative shrink-0">
-                            <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-                              <div className="flex flex-col font-['Geist:Regular',_'Noto_Sans:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[12px] text-gray-300 text-nowrap">
-                                <p className="leading-[18px] whitespace-pre">
-                                  Job‑ready skills
-                                </p>
-                              </div>
-                            </div>
-                            <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-                              <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-nowrap text-white">
-                                <p className="leading-[24px] whitespace-pre">
-                                  +95%
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        aria-hidden="true"
-                        className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)]"
-                      />
-                    </div>
-                  </div>
-                </div>
+          {/* HEADING */}
+          <div className="flex flex-col font-bold text-gray-100">
 
-                <div className="box-border content-stretch flex flex-col items-start max-w-full lg:max-w-[576px] pb-0 pt-[8px] px-0 relative shrink-0 w-full">
-                  <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center text-gray-300">
-                    <p className="text-[16px] md:text-[20px] lg:text-[24px] leading-[24px] md:leading-[28px] lg:leading-[32px]">
-                      Master CAD to Digital Twin automation at M CAD
-                      Solutions—India’s first Industry 5.0 institute.
-                    </p>
-                  </div>
+            <p className="text-[28px] md:text-[44px] lg:text-[56px]
+                          leading-[34px] md:leading-[52px] lg:leading-[64px]
+                          tracking-[-0.5px]">
+              From CAD Design to Industry 4.0
+            </p>
 
-                  {/* Mobile-only blinking CTA button */}
-                  <button
-                    onClick={() => onNavigate("contact")}
-                    className="md:hidden mt-[20px] w-full box-border content-stretch flex items-center justify-center px-[24px] py-[16px] relative rounded-[9999px] animate-blink-glow"
-                    style={{
-                      background:
-                        "linear-gradient(90deg, #10162F 0%, #FBBF24 100%)",
-                    }}
-                  >
-                    <div
-                      className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-nowrap"
-                      style={{ color: "#F4F7F9" }}
-                    >
-                      <p className="leading-[22px] whitespace-pre">
-                        Book Free Demo
-                      </p>
-                    </div>
-                  </button>
-                </div>
-                <div className="box-border content-stretch flex flex-col sm:flex-row gap-[12px] items-start pb-0 pt-[16px] px-0 relative shrink-0 w-full">
-                  <button
-                    onClick={() => onNavigate("industry4")}
-                    className="bg-black box-border content-stretch flex items-center justify-center overflow-clip px-[32px] md:px-[42px] py-[18px] md:py-[22px] relative rounded-[9999px] shrink-0 w-full sm:w-auto"
-                  >
-                    <div
-                      className="absolute inset-[7.58%_2.78%_6.57%_2.72%] opacity-40 rounded-[9999px]"
-                      style={{
-                        backgroundImage:
-                          "url('data:image/svg+xml;utf8,<svg viewBox=\\'0 0 173.89 56.665\\' xmlns=\\'http://www.w3.org/2000/svg\\' preserveAspectRatio=\\'none\\'><rect x=\\'0\\' y=\\'0\\' height=\\'100%\\' width=\\'100%\\' fill=\\'url(%23grad)\\' opacity=\\'1\\'/><defs><radialGradient id=\\'grad\\' gradientUnits=\\'userSpaceOnUse\\' cx=\\'0\\' cy=\\'0\\' r=\\'10\\' gradientTransform=\\'matrix(12.296 0 0 4.0068 86.943 28.332)\\'><stop stop-color=\\'rgba(255,255,255,1)\\' offset=\\'0.088388\\'/><stop stop-color=\\'rgba(255,255,255,0)\\' offset=\\'0.088388\\'/></radialGradient></defs></svg>')",
-                      }}
-                    />
-                    <div className="absolute inset-[-85.11%_1.11%_-86.19%_1.09%]">
-                      <div
-                        className="absolute inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px] mask-size-[179.955px_179.052px] opacity-60"
-                        style={{
-                          maskImage: `url('${imgGradient}')`,
-                        }}
-                      />
-                    </div>
-                    <div className="content-stretch flex items-start justify-center relative shrink-0">
-                      <div className="flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[16px] md:text-[18px] text-center text-nowrap text-white">
-                        <p className="leading-[21.6px] whitespace-pre">
-                          Explore Industry 4.0 Program
-                        </p>
-                      </div>
-                    </div>
-                    <div className="absolute inset-0 pointer-events-none shadow-[0px_0px_0px_1px_inset_#1a1818]" />
-                  </button>
-                </div>
-              </AnimatedSection>
+            <p className="text-[28px] md:text-[44px] lg:text-[56px]
+                          leading-[34px] md:leading-[52px] lg:leading-[64px]
+                          tracking-[-0.5px]">
+               Build the Future of Engineering
+            </p>
 
-              {/* Right Image/Preview - Desktop only */}
-              <AnimatedSection
-                delay={0.3}
-                className="hidden lg:block bg-[rgba(17,24,39,0.4)] relative rounded-[16px] shrink-0 w-full lg:w-[576px]"
-              >
-                <div className="box-border content-stretch flex flex-col items-start overflow-clip p-px relative rounded-[inherit] w-full">
-                  <div className="h-[300px] md:h-[400px] lg:h-[460px] max-w-full relative shrink-0 w-full">
-                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                      <Image
-                        alt="Engineer in Smart Factory with Holographic Digital Twin"
-                        fill
-                        className="object-cover"
-                        src="/homepageman.png"
-                      />
-                    </div>
-                  </div>
-                  <div className="absolute backdrop-blur-[2px] backdrop-filter bg-[rgba(0,0,0,0.8)] right-[8px] md:right-[16.36px] rounded-[12px] top-[8px] md:top-[17px]">
-                    <div className="box-border content-stretch flex flex-col items-start overflow-clip p-[10px] md:p-[17px] relative rounded-[inherit]">
-                      <div className="content-stretch flex gap-[8px] md:gap-[12px] items-center relative shrink-0">
-                        <div className="bg-gray-800 content-stretch flex items-center justify-center relative rounded-[9999px] shrink-0 size-[30px] md:size-[40px]">
-                          <div className="relative shrink-0 size-[16px] md:size-[20px]">
-                            <svg
-                              className="block size-full"
-                              fill="none"
-                              preserveAspectRatio="none"
-                              viewBox="0 0 20 20"
-                            >
-                              <g>
-                                <path
-                                  d={svgPaths.p3a2fa580}
-                                  stroke="var(--stroke-0, #E5E7EB)"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth="1.25"
-                                />
-                              </g>
-                            </svg>
-                          </div>
-                        </div>
-                        <div className="content-stretch flex flex-col items-start relative shrink-0">
-                          <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-                            <div className="flex flex-col font-['Geist:Regular',_'Noto_Sans:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[12px] md:text-[14px] text-gray-300 text-nowrap">
-                              <p className="leading-[18px] md:leading-[20px] whitespace-pre">
-                                Job‑ready skills
-                              </p>
-                            </div>
-                          </div>
-                          <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-                            <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[16px] md:text-[18px] text-nowrap text-white">
-                              <p className="leading-[24px] md:leading-[28px] whitespace-pre">
-                                100%
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      aria-hidden="true"
-                      className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)]"
-                    />
-                  </div>
-                </div>
-                <div
-                  aria-hidden="true"
-                  className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px] shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)]"
+          </div>
+
+
+          {/* MOBILE IMAGE */}
+          <div className="lg:hidden bg-[rgba(17,24,39,0.4)] relative rounded-[16px] w-full mt-4">
+            <div className="overflow-hidden rounded-[inherit] w-full">
+
+              <div className="h-[300px] w-full relative">
+                <img
+                  alt="Engineer in Smart Factory with Digital Twin"
+                  className="absolute h-full w-full object-cover"
+                  src="/homepageman.png"
                 />
-              </AnimatedSection>
+              </div>
+
+              {/* JOB READY CARD */}
+              <div className="absolute backdrop-blur-[2px] bg-[rgba(0,0,0,0.8)] right-[8px] rounded-[12px] top-[8px] p-[10px]">
+
+                <div className="flex gap-[8px] items-center">
+
+                  <div className="bg-gray-800 flex items-center justify-center rounded-full size-[30px]">
+                    <svg
+                      className="size-[16px]"
+                      fill="none"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d={svgPaths.p3a2fa580}
+                        stroke="#E5E7EB"
+                        strokeWidth="1.25"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </div>
+
+                  <div>
+                    <p className="text-[12px] text-gray-300">
+                      Job-ready skills
+                    </p>
+                    <p className="text-[16px] text-white">
+                      +95%
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+
             </div>
           </div>
-        </div>
-      </section>
 
+
+          {/* DESCRIPTION */}
+          <div className="max-w-full lg:max-w-[576px] pt-[8px]">
+
+            <p className="text-gray-300
+                          text-[16px] md:text-[20px] lg:text-[24px]
+                          leading-[24px] md:leading-[28px] lg:leading-[32px]">
+              Master CAD to Digital Twin automation at M CAD Solutions—
+              India’s first Industry 5.0 institute.
+            </p>
+
+          </div>
+
+
+          {/* MOBILE CTA */}
+          <button
+            onClick={() => onNavigate("contact")}
+            className="md:hidden mt-[20px] w-full flex items-center justify-center px-[24px] py-[16px] rounded-full animate-blink-glow"
+            style={{
+              background:
+                "linear-gradient(90deg, #10162F 0%, #FBBF24 100%)"
+            }}
+          >
+            <span className="text-[16px] text-[#F4F7F9]">
+              Book Free Demo
+            </span>
+          </button>
+
+
+          {/* DESKTOP CTA */}
+          <div className="flex flex-col sm:flex-row gap-[12px] pt-[16px] w-full">
+
+            <button
+              onClick={() => onNavigate("industry4")}
+              className="bg-black flex items-center justify-center px-[32px] md:px-[42px] py-[18px] md:py-[22px] rounded-full text-white text-[16px] md:text-[18px]"
+            >
+              Explore Industry 4.0 Program
+            </button>
+
+          </div>
+
+        </AnimatedSection>
+
+
+        {/* RIGHT IMAGE (DESKTOP) */}
+        <AnimatedSection
+          delay={0.3}
+          className="hidden lg:block bg-[rgba(17,24,39,0.4)] rounded-[16px] w-full lg:w-[576px]"
+        >
+
+          <div className="overflow-hidden rounded-[inherit] w-full">
+
+            <div className="h-[300px] md:h-[400px] lg:h-[460px] relative">
+
+              <Image
+                alt="Engineer in Smart Factory with Digital Twin"
+                fill
+                className="object-cover"
+                src="/homepageman.png"
+              />
+
+            </div>
+
+          </div>
+
+        </AnimatedSection>
+
+      </div>
+    </div>
+  </div>
+</section>
       {/* Our Courses Section */}
       <section
         className="relative shrink-0 w-full py-[48px] md:py-[60px] lg:py-[80px]"
