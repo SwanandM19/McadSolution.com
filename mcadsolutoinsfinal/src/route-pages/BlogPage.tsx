@@ -102,7 +102,7 @@ export function BlogPage({ onNavigate }: BlogPageProps) {
     <div className="flex-1 relative max-w-[480px] w-full">
       <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-[rgba(17,24,39,0.4)] border border-white/10">
         <img
-          src={'/blogsinsightsandresources.png'}
+          src={'/8837d54a5734507cd03b2d619ba0ea3318be5307.png'}
           alt="CAD Training Preview"
           className="w-full h-[380px] object-cover"
         />

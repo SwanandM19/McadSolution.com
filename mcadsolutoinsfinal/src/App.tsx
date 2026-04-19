@@ -42,11 +42,11 @@ export default function App() {
       case 'domain-courses':
         return <DomainCoursesPage />;
       case 'biw-fixture-design':
-        return <BIWFeatureDesignPage />;
+        return <BIWFeatureDesignPage onNavigate={handleNavigate} />;
       case 'interior-plastic':
-        return <InteriorPlasticPage />;
+        return <InteriorPlasticPage onNavigate={handleNavigate} />;
       case 'robotics':
-        return <RoboticsSimulationPage />;
+        return <RoboticsSimulationPage onNavigate={handleNavigate} />;
       case 'industry4':
         return <Industry4Page onNavigate={handleNavigate} />;
       case 'placements':

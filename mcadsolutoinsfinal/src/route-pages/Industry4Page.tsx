@@ -141,93 +141,105 @@ export function Industry4Page({ onNavigate }: Industry4PageProps) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
-            {/* Stage 1 */}
-            <div className="backdrop-blur-md backdrop-filter box-border content-stretch flex flex-col gap-[20px] items-start overflow-hidden relative rounded-[16px]">
-              <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px] z-10" />
-              
-              <div className="w-full h-[200px] overflow-hidden bg-gradient-to-br from-[#092B38] to-[#0A1C26] flex items-center justify-center">
-                <Brain className="w-[64px] h-[64px] opacity-30" style={{ color: '#6BC1E3' }} />
-              </div>
+  {/* Stage 1 */}
+  <div className="backdrop-blur-md backdrop-filter box-border content-stretch flex flex-col gap-[20px] items-start overflow-hidden relative rounded-[16px]">
+    <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px] z-10" />
+    
+    <div className="w-full h-[200px] overflow-hidden bg-gradient-to-br from-[#092B38] to-[#0A1C26] flex items-center justify-center relative">
+      <img 
+        src="/ros2.png" 
+        alt="ROS2 Foundation" 
+        className="w-full h-full object-cover opacity-80"
+      />
+    </div>
 
-              <div className="p-[32px] pt-0">
-                <div className="bg-gradient-to-br from-[#10162F] to-[#1a2456] rounded-[12px] p-[16px] mb-[16px] inline-block">
-                  <span className="text-[24px] font-medium" style={{ color: '#F9A825' }}>1</span>
-                </div>
+    <div className="p-[32px] pt-0">
+      <div className="bg-gradient-to-br from-[#10162F] to-[#1a2456] rounded-[12px] p-[16px] mb-[16px] inline-block">
+        <span className="text-[24px] font-medium" style={{ color: '#F9A825' }}>1</span>
+      </div>
 
-                <div>
-                  <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[22px] tracking-[-0.5px] mb-[12px]" style={{ color: '#F4F7F9' }}>
-                    <p className="leading-[30px]">Strong ROS2 Foundation</p>
-                  </div>
-                  <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[24px] text-[15px]" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
-                    <p className="mb-3">Learners begin by understanding how ROS2 works internally:</p>
-                    <ul className="space-y-2 ml-4">
-                      <li>• Robot communication & data flow</li>
-                      <li>• Task execution logic</li>
-                      <li>• Real-time control concepts</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div>
+        <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[22px] tracking-[-0.5px] mb-[12px]" style={{ color: '#F4F7F9' }}>
+          <p className="leading-[30px]">Strong ROS2 Foundation</p>
+        </div>
+        <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[24px] text-[15px]" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
+          <p className="mb-3">Learners begin by understanding how ROS2 works internally:</p>
+          <ul className="space-y-2 ml-4">
+            <li>• Robot communication & data flow</li>
+            <li>• Task execution logic</li>
+            <li>• Real-time control concepts</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
-            {/* Stage 2 */}
-            <div className="backdrop-blur-md backdrop-filter box-border content-stretch flex flex-col gap-[20px] items-start overflow-hidden relative rounded-[16px]">
-              <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px] z-10" />
-              
-              <div className="w-full h-[200px] overflow-hidden bg-gradient-to-br from-[#092B38] to-[#0A1C26] flex items-center justify-center">
-                <Cpu className="w-[64px] h-[64px] opacity-30" style={{ color: '#6BC1E3' }} />
-              </div>
+  {/* Stage 2 */}
+  <div className="backdrop-blur-md backdrop-filter box-border content-stretch flex flex-col gap-[20px] items-start overflow-hidden relative rounded-[16px]">
+    <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px] z-10" />
+    
+    <div className="w-full h-[200px] overflow-hidden bg-gradient-to-br from-[#092B38] to-[#0A1C26] flex items-center justify-center relative">
+      <img 
+        src="/roboticmotion.png" 
+        alt="Real-World Robot Motion" 
+        className="w-full h-full object-cover opacity-80"
+      />
+    </div>
 
-              <div className="p-[32px] pt-0">
-                <div className="bg-gradient-to-br from-[#10162F] to-[#1a2456] rounded-[12px] p-[16px] mb-[16px] inline-block">
-                  <span className="text-[24px] font-medium" style={{ color: '#F9A825' }}>2</span>
-                </div>
+    <div className="p-[32px] pt-0">
+      <div className="bg-gradient-to-br from-[#10162F] to-[#1a2456] rounded-[12px] p-[16px] mb-[16px] inline-block">
+        <span className="text-[24px] font-medium" style={{ color: '#F9A825' }}>2</span>
+      </div>
 
-                <div>
-                  <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[22px] tracking-[-0.5px] mb-[12px]" style={{ color: '#F4F7F9' }}>
-                    <p className="leading-[30px]">Real-World Robot Motion</p>
-                  </div>
-                  <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[24px] text-[15px]" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
-                    <p className="mb-3">Mobile robot simulations where learners experience:</p>
-                    <ul className="space-y-2 ml-4">
-                      <li>• Movement in real environments</li>
-                      <li>• Wheels, velocity, and direction</li>
-                      <li>• Safe simulation testing</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div>
+        <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[22px] tracking-[-0.5px] mb-[12px]" style={{ color: '#F4F7F9' }}>
+          <p className="leading-[30px]">Real-World Robot Motion</p>
+        </div>
+        <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[24px] text-[15px]" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
+          <p className="mb-3">Mobile robot simulations where learners experience:</p>
+          <ul className="space-y-2 ml-4">
+            <li>• Movement in real environments</li>
+            <li>• Wheels, velocity, and direction</li>
+            <li>• Safe simulation testing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
-            {/* Stage 3 */}
-            <div className="backdrop-blur-md backdrop-filter box-border content-stretch flex flex-col gap-[20px] items-start overflow-hidden relative rounded-[16px]">
-              <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px] z-10" />
-              
-              <div className="w-full h-[200px] overflow-hidden bg-gradient-to-br from-[#092B38] to-[#0A1C26] flex items-center justify-center">
-                <Factory className="w-[64px] h-[64px] opacity-30" style={{ color: '#6BC1E3' }} />
-              </div>
+  {/* Stage 3 */}
+  <div className="backdrop-blur-md backdrop-filter box-border content-stretch flex flex-col gap-[20px] items-start overflow-hidden relative rounded-[16px]">
+    <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px] z-10" />
+    
+    <div className="w-full h-[200px] overflow-hidden bg-gradient-to-br from-[#092B38] to-[#0A1C26] flex items-center justify-center relative">
+      <img 
+        src="/Gemini_Generated_Image_3ctz443ctz443ctz.png" 
+        alt="Industrial Digital Twin" 
+        className="w-full h-full object-cover opacity-80"
+      />
+    </div>
 
-              <div className="p-[32px] pt-0">
-                <div className="bg-gradient-to-br from-[#10162F] to-[#1a2456] rounded-[12px] p-[16px] mb-[16px] inline-block">
-                  <span className="text-[24px] font-medium" style={{ color: '#F9A825' }}>3</span>
-                </div>
+    <div className="p-[32px] pt-0">
+      <div className="bg-gradient-to-br from-[#10162F] to-[#1a2456] rounded-[12px] p-[16px] mb-[16px] inline-block">
+        <span className="text-[24px] font-medium" style={{ color: '#F9A825' }}>3</span>
+      </div>
 
-                <div>
-                  <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[22px] tracking-[-0.5px] mb-[12px]" style={{ color: '#F4F7F9' }}>
-                    <p className="leading-[30px]">Industrial Digital Twin (6-DOF)</p>
-                  </div>
-                  <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[24px] text-[15px]" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
-                    <p className="mb-3">6 Degrees of Freedom robotic arm training:</p>
-                    <ul className="space-y-2 ml-4">
-                      <li>• Robotic arm structure</li>
-                      <li>• Joint and motion planning</li>
-                      <li>• Virtual task validation</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div>
+        <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[22px] tracking-[-0.5px] mb-[12px]" style={{ color: '#F4F7F9' }}>
+          <p className="leading-[30px]">Industrial Digital Twin (6-DOF)</p>
+        </div>
+        <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[24px] text-[15px]" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
+          <p className="mb-3">6 Degrees of Freedom robotic arm training:</p>
+          <ul className="space-y-2 ml-4">
+            <li>• Robotic arm structure</li>
+            <li>• Joint and motion planning</li>
+            <li>• Virtual task validation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
       </section>
 
@@ -284,9 +296,13 @@ export function Industry4Page({ onNavigate }: Industry4PageProps) {
             </div>
 
             {/* Right: Image */}
-            <div className="rounded-[24px] overflow-hidden border border-[rgba(255,255,255,0.1)] shadow-xl bg-gradient-to-br from-[#092B38] to-[#0A1C26] flex items-center justify-center h-[500px]">
-              <Monitor className="w-[80px] h-[80px] opacity-30" style={{ color: '#F9A825' }} />
-            </div>
+           <div className="rounded-[24px] overflow-hidden border border-[rgba(255,255,255,0.1)] shadow-xl bg-gradient-to-br from-[#092B38] to-[#0A1C26] flex items-center justify-center h-[500px] relative">
+  <img 
+    src="/8837d54a5734507cd03b2d619ba0ea3318be5307.png" 
+    alt="Digital Twin Visualization" 
+    className="w-full h-full object-cover"
+  />
+</div> 
           </div>
         </div>
       </section>
@@ -397,64 +413,7 @@ export function Industry4Page({ onNavigate }: Industry4PageProps) {
       </section>
 
       {/* Career & Industry Relevance */}
-      <section className="relative shrink-0 w-full py-[80px]" style={{ backgroundColor: '#0A1C26' }}>
-        <div className="max-w-[1280px] mx-auto px-[32px]">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-[32px] items-center">
-            {/* Left: Image */}
-            <div className="rounded-[24px] overflow-hidden border border-[rgba(255,255,255,0.1)] shadow-xl bg-gradient-to-br from-[#092B38] to-[#0A1C26] flex items-center justify-center h-[400px]">
-              <Rocket className="w-[80px] h-[80px] opacity-30" style={{ color: '#F9A825' }} />
-            </div>
-
-            {/* Right: Content */}
-            <div className="backdrop-blur-md backdrop-filter box-border content-stretch flex flex-col gap-[24px] items-start p-[40px] md:p-[48px] relative rounded-[24px]">
-              <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[24px]" />
-              
-              <div>
-                <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[32px] tracking-[-0.8px] mb-[16px]" style={{ color: '#F4F7F9' }}>
-                  <p className="leading-[40px]">Career & Industry Relevance</p>
-                </div>
-                <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[26px] text-[16px]" style={{ color: 'rgba(244, 247, 249, 0.9)' }}>
-                  <p className="mb-4">After this training, learners don't just know ROS2 commands. They understand:</p>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 gap-[16px] w-full">
-                <div className="flex gap-[12px] items-start">
-                  <CheckCircle2 className="w-[20px] h-[20px] shrink-0 mt-[2px]" style={{ color: '#6BC1E3' }} />
-                  <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[24px] text-[15px]" style={{ color: 'rgba(244, 247, 249, 0.9)' }}>
-                    <p>How robots are designed and architected</p>
-                  </div>
-                </div>
-
-                <div className="flex gap-[12px] items-start">
-                  <CheckCircle2 className="w-[20px] h-[20px] shrink-0 mt-[2px]" style={{ color: '#6BC1E3' }} />
-                  <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[24px] text-[15px]" style={{ color: 'rgba(244, 247, 249, 0.9)' }}>
-                    <p>How systems are planned and tested</p>
-                  </div>
-                </div>
-
-                <div className="flex gap-[12px] items-start">
-                  <CheckCircle2 className="w-[20px] h-[20px] shrink-0 mt-[2px]" style={{ color: '#6BC1E3' }} />
-                  <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[24px] text-[15px]" style={{ color: 'rgba(244, 247, 249, 0.9)' }}>
-                    <p>How industrial robots are planned and validated</p>
-                  </div>
-                </div>
-
-                <div className="flex gap-[12px] items-start">
-                  <CheckCircle2 className="w-[20px] h-[20px] shrink-0 mt-[2px]" style={{ color: '#6BC1E3' }} />
-                  <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[24px] text-[15px]" style={{ color: 'rgba(244, 247, 249, 0.9)' }}>
-                    <p>How Digital Twins reduce risk and cost</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[26px] text-[15px] bg-[rgba(249,168,37,0.1)] p-4 rounded-lg" style={{ color: 'rgba(244, 247, 249, 0.9)' }}>
-                <p className="font-medium">This makes them industry-ready, not kit-dependent.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       {/* Why MCAD Solution */}
       <section className="relative shrink-0 w-full py-[80px]" style={{ backgroundColor: '#092B38' }}>
@@ -528,31 +487,16 @@ export function Industry4Page({ onNavigate }: Industry4PageProps) {
       </section>
 
       {/* Final CTA Banner */}
-      <section className="relative shrink-0 w-full py-[80px]" style={{ backgroundColor: '#092B38' }}>
-        <div className="max-w-[1280px] mx-auto px-[32px]">
-          {/* Background with Overlay */}
-          <div className="relative rounded-[24px] overflow-hidden border border-[rgba(255,255,255,0.1)]">
-            <div className="absolute inset-0 z-0 bg-gradient-to-br from-[#092B38] to-[#0A1C26]">
-              <div className="absolute inset-0 bg-gradient-to-t from-[rgba(9,43,56,0.95)] via-[rgba(9,43,56,0.85)] to-[rgba(9,43,56,0.7)]" />
-            </div>
-
-            {/* Content */}
-            <div className="relative z-10 backdrop-blur-sm backdrop-filter box-border content-stretch flex flex-col gap-[28px] items-center p-[48px] md:p-[64px] text-center">
-              <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center text-[36px] md:text-[44px] tracking-[-1.1px]" style={{ color: '#F4F7F9' }}>
-                <p className="leading-[42px] md:leading-[52px]">Master Digital Twin Robotics</p>
-                <p className="leading-[42px] md:leading-[52px]">— Your Robotics Journey Starts Here</p>
-              </div>
-
-              <button onClick={() => onNavigate?.('contact')} className="bg-black box-border content-stretch flex items-center justify-center overflow-clip px-[42px] py-[20px] relative rounded-[9999px] hover:opacity-90 transition-opacity mt-[8px]">
-                <div className="absolute inset-0 pointer-events-none shadow-[0px_0px_0px_1px_inset_#1a1818]" />
-                <div className="flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[17px] text-center text-nowrap text-white">
-                  <p className="leading-[22px] whitespace-pre">Enroll in ROS2 & Digital Twin Training</p>
-                </div>
-              </button>
-            </div>
+       {/* SEPARATOR - Visual divider between content and footer - ADD THIS HERE */}
+      <div className="relative w-full">
+        <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#F9A825] to-transparent" />
+        <div className="absolute left-1/2 transform -translate-x-1/2 -top-[20px]">
+          <div className="bg-[#092B38] p-[8px] rounded-full">
+            <div className="w-[8px] h-[8px] rounded-full bg-[#F9A825]" />
           </div>
         </div>
-      </section>
+      </div>
+      <div className="h-[2px] bg-[rgba(249,168,37,0.2)] w-full" />
     </>
   );
 }

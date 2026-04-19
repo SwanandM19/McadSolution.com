@@ -1,10 +1,9 @@
-import { CheckCircle2, Clock, Users, Award, BookOpen, Download, ArrowRight } from "lucide-react";
+import { CheckCircle2, Clock, Users, Award, BookOpen, Download, ArrowRight,ArrowLeft } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { AnimatedSection } from '../components/AnimatedSection';
-import imgClampUnitImport from "../assets/d36bddc7d7069c564977ad381609e1fd625e2244.png";
-const imgClampUnit = typeof imgClampUnitImport === 'string' ? imgClampUnitImport : imgClampUnitImport.src;
-const imgSlideUnit = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
-const imgRiser = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
+const imgClampUnit = "/blogclampunit.png";
+const imgSlideUnit = "/blogslideunit.jpeg";
+const imgRiser = "/blogsriser.jpeg";
 
 interface CatiaV5PageProps {
   onNavigate?: (page: string, blogId?: number) => void;
@@ -80,121 +79,132 @@ export function CatiaV5Page({ onNavigate }: CatiaV5PageProps) {
   return (
     <>
       {/* Hero Section */}
-      <section 
-        className="relative w-full min-h-[600px] md:min-h-[700px] overflow-hidden"
-        style={{
-          background: 'linear-gradient(135deg, #000000 0%, #071E28 35%, #092B38 70%, #0C3C4D 100%)'
-        }}
-      >
-        <div className="relative z-10 max-w-[1280px] mx-auto px-[16px] md:px-[32px] py-[60px] md:py-[100px]">
-          <div className="flex flex-col lg:flex-row items-center gap-[32px] md:gap-[48px]">
-            {/* Left Content */}
-            <div className="flex-1 flex flex-col gap-[20px] md:gap-[24px] text-white">
-              <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[14px] tracking-[0.7px] uppercase" style={{ color: '#6BC1E3' }}>
-                <p className="leading-[20px]">CAD Training Course</p>
+     {/* Hero Section */}
+<section 
+  className="relative w-full min-h-[600px] md:min-h-[700px] overflow-hidden"
+  style={{
+    background: 'linear-gradient(135deg, #000000 0%, #071E28 35%, #092B38 70%, #0C3C4D 100%)'
+  }}
+>
+  {/* BACK BUTTON */}
+  <button 
+    onClick={() => onNavigate?.('cad-courses')}
+    className="absolute top-[20px] left-[20px] md:top-[30px] md:left-[30px] z-20 backdrop-blur-md backdrop-filter bg-[rgba(0,0,0,0.5)] hover:bg-[rgba(0,0,0,0.7)] rounded-full p-[10px] md:p-[12px] transition-all duration-300 group"
+    aria-label="Go back"
+  >
+    <ArrowLeft className="w-[20px] h-[20px] md:w-[24px] md:h-[24px]" style={{ color: '#F4F7F9' }} />
+    <span className="sr-only">Back</span>
+  </button>
+
+  <div className="relative z-10 max-w-[1280px] mx-auto px-[16px] md:px-[32px] py-[60px] md:py-[100px]">
+    <div className="flex flex-col lg:flex-row items-center gap-[32px] md:gap-[48px]">
+      {/* Left Content */}
+      <div className="flex-1 flex flex-col gap-[20px] md:gap-[24px] text-white">
+        <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[14px] tracking-[0.7px] uppercase" style={{ color: '#6BC1E3' }}>
+          <p className="leading-[20px]">CAD Training Course</p>
+        </div>
+        
+        <h1 className="text-[36px] md:text-[48px] lg:text-[56px] leading-[44px] md:leading-[56px] lg:leading-[64px] tracking-[-1.2px] md:tracking-[-1.5px]" style={{ color: '#F4F7F9' }}>
+          CATIA V5 Professional Training
+        </h1>
+        
+        <p className="text-[16px] md:text-[18px] leading-[24px] md:leading-[28px]" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
+          Master the industry-leading CAD software used by top automotive, aerospace, and manufacturing companies worldwide. Learn from experts and work on real industry projects.
+        </p>
+
+        {/* Course Stats */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-[16px] mt-[16px]">
+          <div className="backdrop-blur-md backdrop-filter box-border p-[16px] md:p-[20px] relative rounded-[12px]">
+            <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
+            <div className="flex flex-col gap-[4px]">
+              <Clock className="w-[20px] h-[20px] mb-[4px]" style={{ color: '#F9A825' }} />
+              <div className="text-[13px] leading-[18px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
+                Duration
               </div>
-              
-              <h1 className="text-[36px] md:text-[48px] lg:text-[56px] leading-[44px] md:leading-[56px] lg:leading-[64px] tracking-[-1.2px] md:tracking-[-1.5px]" style={{ color: '#F4F7F9' }}>
-                CATIA V5 Professional Training
-              </h1>
-              
-              <p className="text-[16px] md:text-[18px] leading-[24px] md:leading-[28px]" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
-                Master the industry-leading CAD software used by top automotive, aerospace, and manufacturing companies worldwide. Learn from experts and work on real industry projects.
-              </p>
-
-              {/* Course Stats */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-[16px] mt-[16px]">
-                <div className="backdrop-blur-md backdrop-filter box-border p-[16px] md:p-[20px] relative rounded-[12px]">
-                  <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
-                  <div className="flex flex-col gap-[4px]">
-                    <Clock className="w-[20px] h-[20px] mb-[4px]" style={{ color: '#F9A825' }} />
-                    <div className="text-[13px] leading-[18px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
-                      Duration
-                    </div>
-                    <div className="text-[18px] leading-[1.2] tracking-[-0.5px]" style={{ color: '#F4F7F9' }}>
-                      3-6 Months
-                    </div>
-                  </div>
-                </div>
-
-                <div className="backdrop-blur-md backdrop-filter box-border p-[16px] md:p-[20px] relative rounded-[12px]">
-                  <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
-                  <div className="flex flex-col gap-[4px]">
-                    <Users className="w-[20px] h-[20px] mb-[4px]" style={{ color: '#F9A825' }} />
-                    <div className="text-[13px] leading-[18px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
-                      Batch Size
-                    </div>
-                    <div className="text-[18px] leading-[1.2] tracking-[-0.5px]" style={{ color: '#F4F7F9' }}>
-                      10-15
-                    </div>
-                  </div>
-                </div>
-
-                <div className="backdrop-blur-md backdrop-filter box-border p-[16px] md:p-[20px] relative rounded-[12px]">
-                  <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
-                  <div className="flex flex-col gap-[4px]">
-                    <BookOpen className="w-[20px] h-[20px] mb-[4px]" style={{ color: '#F9A825' }} />
-                    <div className="text-[13px] leading-[18px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
-                      Level
-                    </div>
-                    <div className="text-[18px] leading-[1.2] tracking-[-0.5px]" style={{ color: '#F4F7F9' }}>
-                      All Levels
-                    </div>
-                  </div>
-                </div>
-
-                <div className="backdrop-blur-md backdrop-filter box-border p-[16px] md:p-[20px] relative rounded-[12px]">
-                  <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
-                  <div className="flex flex-col gap-[4px]">
-                    <Award className="w-[20px] h-[20px] mb-[4px]" style={{ color: '#F9A825' }} />
-                    <div className="text-[13px] leading-[18px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
-                      Certification
-                    </div>
-                    <div className="text-[18px] leading-[1.2] tracking-[-0.5px]" style={{ color: '#F4F7F9' }}>
-                      Yes
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-[12px] mt-[16px]">
-                <button 
-                  onClick={() => onNavigate?.('contact')}
-                  className="bg-black box-border content-stretch flex items-center justify-center overflow-clip px-[32px] py-[18px] relative rounded-[9999px] hover:opacity-90 transition-opacity"
-                  style={{
-                    background: 'linear-gradient(90deg, #10162F 0%, #FBBF24 100%)'
-                  }}
-                >
-                  <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] text-center text-nowrap text-white">
-                    <p className="leading-[24px] whitespace-pre">Enroll Now</p>
-                  </div>
-                </button>
-                
-                <button 
-                  className="backdrop-blur backdrop-filter bg-[rgba(255,255,255,0.1)] box-border content-stretch flex items-center gap-[8px] justify-center px-[32px] py-[18px] relative rounded-[9999px] hover:bg-[rgba(107,193,227,0.15)] transition-colors"
-                >
-                  <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[9999px]" />
-                  <Download className="w-[16px] h-[16px]" style={{ color: '#F4F7F9' }} />
-                  <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] text-center text-nowrap" style={{ color: '#F4F7F9' }}>
-                    <p className="leading-[24px] whitespace-pre">Download Brochure</p>
-                  </div>
-                </button>
+              <div className="text-[18px] leading-[1.2] tracking-[-0.5px]" style={{ color: '#F4F7F9' }}>
+                3-6 Months
               </div>
             </div>
+          </div>
 
-            {/* Right Image */}
-            <div className="flex-1 relative max-w-[540px] w-full">
-              <div className="relative rounded-[16px] md:rounded-[24px] overflow-hidden shadow-2xl bg-[rgba(17,24,39,0.4)] border border-white/10">
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYWQlMjBzb2Z0d2FyZSUyMGRlc2lnbnxlbnwwfHx8fDE3NDA3NTI0MDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="CATIA V5 Training"
-                  className="w-full h-[300px] md:h-[400px] lg:h-[480px] object-cover"
-                />
+          <div className="backdrop-blur-md backdrop-filter box-border p-[16px] md:p-[20px] relative rounded-[12px]">
+            <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
+            <div className="flex flex-col gap-[4px]">
+              <Users className="w-[20px] h-[20px] mb-[4px]" style={{ color: '#F9A825' }} />
+              <div className="text-[13px] leading-[18px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
+                Batch Size
+              </div>
+              <div className="text-[18px] leading-[1.2] tracking-[-0.5px]" style={{ color: '#F4F7F9' }}>
+                10-15
+              </div>
+            </div>
+          </div>
+
+          <div className="backdrop-blur-md backdrop-filter box-border p-[16px] md:p-[20px] relative rounded-[12px]">
+            <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
+            <div className="flex flex-col gap-[4px]">
+              <BookOpen className="w-[20px] h-[20px] mb-[4px]" style={{ color: '#F9A825' }} />
+              <div className="text-[13px] leading-[18px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
+                Level
+              </div>
+              <div className="text-[18px] leading-[1.2] tracking-[-0.5px]" style={{ color: '#F4F7F9' }}>
+                All Levels
+              </div>
+            </div>
+          </div>
+
+          <div className="backdrop-blur-md backdrop-filter box-border p-[16px] md:p-[20px] relative rounded-[12px]">
+            <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
+            <div className="flex flex-col gap-[4px]">
+              <Award className="w-[20px] h-[20px] mb-[4px]" style={{ color: '#F9A825' }} />
+              <div className="text-[13px] leading-[18px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
+                Certification
+              </div>
+              <div className="text-[18px] leading-[1.2] tracking-[-0.5px]" style={{ color: '#F4F7F9' }}>
+                Yes
               </div>
             </div>
           </div>
         </div>
-      </section>
+
+        <div className="flex flex-col sm:flex-row gap-[12px] mt-[16px]">
+          <button 
+            onClick={() => onNavigate?.('contact')}
+            className="bg-black box-border content-stretch flex items-center justify-center overflow-clip px-[32px] py-[18px] relative rounded-[9999px] hover:opacity-90 transition-opacity"
+            style={{
+              background: 'linear-gradient(90deg, #10162F 0%, #FBBF24 100%)'
+            }}
+          >
+            <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] text-center text-nowrap text-white">
+              <p className="leading-[24px] whitespace-pre">Enroll Now</p>
+            </div>
+          </button>
+          
+          <button 
+            className="backdrop-blur backdrop-filter bg-[rgba(255,255,255,0.1)] box-border content-stretch flex items-center gap-[8px] justify-center px-[32px] py-[18px] relative rounded-[9999px] hover:bg-[rgba(107,193,227,0.15)] transition-colors"
+          >
+            <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[9999px]" />
+            <Download className="w-[16px] h-[16px]" style={{ color: '#F4F7F9' }} />
+            <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] text-center text-nowrap" style={{ color: '#F4F7F9' }}>
+              <p className="leading-[24px] whitespace-pre">Download Brochure</p>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      {/* Right Image */}
+      <div className="flex-1 relative max-w-[540px] w-full">
+        <div className="relative rounded-[16px] md:rounded-[24px] overflow-hidden shadow-2xl bg-[rgba(17,24,39,0.4)] border border-white/10">
+          <ImageWithFallback
+            src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYWQlMjBzb2Z0d2FyZSUyMGRlc2lnbnxlbnwwfHx8fDE3NDA3NTI0MDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+            alt="CATIA V5 Training"
+            className="w-full h-[300px] md:h-[400px] lg:h-[480px] object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Course Highlights */}
       <section className="relative shrink-0 w-full py-[60px] md:py-[80px]" style={{ backgroundColor: '#0A1C26' }}>
@@ -419,6 +429,16 @@ export function CatiaV5Page({ onNavigate }: CatiaV5PageProps) {
           </div>
         </div>
       </section>
+       {/* SEPARATOR - Visual divider between content and footer - ADD THIS HERE */}
+      <div className="relative w-full">
+        <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#F9A825] to-transparent" />
+        <div className="absolute left-1/2 transform -translate-x-1/2 -top-[20px]">
+          <div className="bg-[#092B38] p-[8px] rounded-full">
+            <div className="w-[8px] h-[8px] rounded-full bg-[#F9A825]" />
+          </div>
+        </div>
+      </div>
+      <div className="h-[2px] bg-[rgba(249,168,37,0.2)] w-full" />
     </>
   );
 }

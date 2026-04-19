@@ -41,10 +41,14 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
         <div className="basis-0 content-stretch flex grow items-center justify-between min-h-px min-w-px relative shrink-0 w-full">
           <button 
             onClick={() => onNavigate('home')}
-            className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-nowrap cursor-pointer hover:opacity-80 transition-opacity"
+            className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-nowrap cursor-pointer hover:opacity-80 transition-opacity mr-[48px]"
             style={{ color: '#F4F7F9' }}
           >
-            <p className="leading-[24px] whitespace-pre">MCAD Solutions</p>
+            <img 
+              src="/d-removebg-preview.png" 
+              alt="MCAD Solutions" 
+              className="h-[40px] w-auto"
+            />
           </button>
           
           {/* Desktop Navigation */}
