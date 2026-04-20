@@ -1,83 +1,84 @@
+'use client'
 
 import { useState } from 'react';
+import Link from 'next/link';
+// import svgPaths from "../imports/svg-9op1xbyva3";
+const imgSection = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
+const imgVideo1 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
+const imgInstructor = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../components/ui/accordion";
-import { AnimatedSection } from "../components/AnimatedSection";
-
-interface InteriorPlasticPageProps {
-  onNavigate?: (page: string) => void;
-}
-
-export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
+} from "../../components/ui/accordion";
+import { AnimatedSection } from "../../components/AnimatedSection";
+export default function BIWFeatureDesignPage() {
   const [activeTab, setActiveTab] = useState<'overview' | 'instructor'>('overview');
 
   const courseDetails = {
-    title: 'AUTOMOTIVE INTERIOR PLASTIC TRIMS',
-    subtitle: 'Master Plastic Component Design & Engineering',
-    description: 'Master the art of automotive interior plastic trim design with comprehensive training in material selection, injection molding processes, and advanced CAD techniques.',
+    title: 'BIW FIXTURE DESIGN',
+    subtitle: 'Advanced Automotive Body in White Engineering',
+    description: 'Master the art of BIW fixture design with comprehensive training in automotive body engineering, fixture development, and advanced CAD techniques.',
     duration: '3 Months',
-    lectures: '90 Lectures',
+    lectures: '100 Lectures',
     tools: 'CATIA V5, NX CAD',
   };
 
   const courseModules = [
     {
-      title: 'Introduction to Automotive Interiors',
+      title: 'Body in White (BIW) Fundamentals',
       topics: [
-        'Overview of automotive interior systems',
-        'Types of interior trim components',
-        'Industry standards and regulations',
-        'Quality requirements and specifications'
+        'Introduction to BIW structures',
+        'Material selection and properties',
+        'Manufacturing processes overview',
+        'Quality standards and specifications'
       ]
     },
     {
-      title: 'Plastic Materials & Properties',
+      title: 'Chassis Design',
       topics: [
-        'Common automotive plastic materials',
-        'Material selection criteria',
-        'Mechanical properties of plastics',
-        'Weathering and UV resistance'
+        'Frame and chassis architecture',
+        'Structural analysis and optimization',
+        'Load path determination',
+        'Crash safety considerations'
       ]
     },
     {
-      title: 'Dashboard & Console Design',
+      title: 'Interior/Exterior Trim',
       topics: [
-        'Instrument panel architecture',
-        'Center console design',
-        'Air vent integration',
-        'Storage compartment design'
+        'Trim component design',
+        'Assembly and integration',
+        'Surface quality requirements',
+        'Cost optimization techniques'
       ]
     },
     {
-      title: 'Door Trim Panel Design',
+      title: 'Powertrain Components',
       topics: [
-        'Door trim architecture',
-        'Armrest and handle design',
-        'Speaker grille integration',
-        'Window switch panel design'
+        'Engine mount design',
+        'Transmission integration',
+        'Exhaust system routing',
+        'Vibration and NVH analysis'
       ]
     }
   ];
 
   const learningOutcomes = [
-    'Design complex interior plastic components using industry-standard CAD tools',
-    'Understand injection molding processes and DFM principles',
-    'Apply material selection criteria for different applications',
+    'Design complex BIW fixtures using industry-standard CAD tools',
+    'Understand automotive manufacturing processes and constraints',
+    'Apply structural analysis techniques for validation',
     'Develop production-ready engineering drawings',
     'Work with cross-functional teams in automotive projects',
-    'Implement cost optimization techniques for plastic parts'
+    'Implement design for manufacturing (DFM) principles'
   ];
 
   const careerOpportunities = [
-    'Interior Trim Design Engineer',
-    'Plastic Component Designer',
+    'BIW Design Engineer',
+    'Fixture Design Specialist',
     'Automotive CAD Engineer',
+    'Manufacturing Engineer',
     'Product Development Engineer',
-    'Tooling Design Engineer',
     'Quality Assurance Engineer'
   ];
 
@@ -104,7 +105,7 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
             </p>
 
             <p className="text-base md:text-[18px] max-w-[768px] mx-auto mb-6 leading-[28px]" style={{ color: '#F4F7F9' }}>
-              AUTOMOTIVE INTERIOR PLASTIC TRIMS is Job-Oriented industrial Domain training on Live / Dummy Projects.
+              BIW FIXTURE DESIGN is Job-Oriented industrial Domain training on Live / Dummy Projects.
             </p>
 
             <div className="flex items-center justify-center gap-4 md:gap-[24px] flex-wrap">
@@ -154,6 +155,7 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
 
           {/* Header row */}
           <div className="flex flex-wrap items-center justify-between gap-4 mb-8 md:mb-[32px]">
+          
             <button
               className="relative rounded-[8px] px-5 py-3 flex items-center gap-2"
               style={{ background: 'linear-gradient(90deg, #10162F 0%, #FBBF24 100%)' }}
@@ -166,20 +168,19 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
               <span className="text-[16px]" style={{ color: '#F4F7F9' }}>Download Syllabus</span>
             </button>
           </div>
-
           <div className="backdrop-blur-md backdrop-filter relative rounded-[16px] p-6 sm:p-8 md:p-[48px]" style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
             <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px]" />
             <div className="relative">
               <h2 className="text-2xl md:text-[36px] tracking-[-0.9px] leading-[44px] mb-6" style={{ color: '#F4F7F9' }}>About This Course</h2>
               <p className="text-[16px] leading-[28px] mb-5" style={{ color: 'rgba(244,247,249,0.8)' }}>{courseDetails.description}</p>
               <p className="text-[16px] leading-[28px]" style={{ color: 'rgba(244,247,249,0.8)' }}>
-                By taking this course, you'll gain advanced skills in Automotive Interior Plastic Trim Design, which will significantly enhance your job prospects. Upon successful completion, excellent employment opportunities in the automotive field as well as product design will be assured.
+                By taking this course, you'll gain advanced skills in BIW Fixture Design, which will significantly enhance your job prospects. Upon successful completion, excellent employment opportunities in the automotive field as well as mechanical design will be assured.
               </p>
             </div>
           </div>
           <br />
           {/* Course Overview Card */}
-          <div
+            <div
             className="backdrop-blur-md backdrop-filter relative rounded-[16px] p-6 md:p-8"
             style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}
           >
@@ -188,10 +189,10 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
               <h3 className="text-[22px] tracking-[-0.55px] leading-[30px] mb-6" style={{ color: '#F4F7F9' }}>Course Overview</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
                 {[
-                  'Complete interior trim design workflow',
-                  'Advanced 3D modeling and surface techniques',
-                  'Injection molding design principles',
-                  'DFM and cost optimization strategies',
+                  'Complete BIW fixture design workflow',
+                  'Advanced 3D modeling and assembly techniques',
+                  'Simulation and validation processes',
+                  'Welding gun integration and clearance analysis',
                   'Manufacturing drawing creation with GD&T',
                   'Industry-standard design methodologies',
                   'Project management and documentation',
@@ -223,7 +224,7 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
               Expert Training
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-[40px] leading-tight md:leading-[52px] tracking-[-1px]" style={{ color: '#F4F7F9' }}>
-              LEARN INTERIOR PLASTIC DESIGN FROM THE{' '}
+              LEARN BIW FIXTURE DESIGN FROM THE{' '}
               <span style={{ color: '#F9A825' }}>Industry-Expert</span>
             </h2>
           </div>
@@ -234,6 +235,15 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
             {/* Left Sidebar */}
             <div className="space-y-6">
 
+              {/* Video Preview */}
+              <div
+                className="backdrop-blur-md backdrop-filter relative rounded-[16px] overflow-hidden"
+                style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}
+              >
+                <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px] z-10" />
+
+              </div>
+
               {/* Course Details Card */}
               <div
                 className="backdrop-blur-md backdrop-filter relative rounded-[16px] p-6"
@@ -243,7 +253,7 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                 <div className="relative space-y-4">
                   {[
                     { label: 'Duration', value: '3 Months' },
-                    { label: 'Lectures', value: '90 Lectures' },
+                    { label: 'Lectures', value: '100 Lectures' },
                     { label: 'Skill Level', value: 'Beginner' },
                     { label: 'Students/Batch', value: '5 Students' },
                   ].map((row, i, arr) => (
@@ -263,13 +273,16 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
               </div>
 
               {/* Enroll Button */}
-              <button
-                onClick={() => onNavigate?.('contact')}
-                className="w-full relative rounded-[8px] px-8 py-[14px]"
+              <Link
+                href="/contact"
+                className="w-full block text-center relative rounded-[8px] px-8 py-[14px]"
                 style={{ background: 'linear-gradient(90deg, #10162F 0%, #FBBF24 100%)' }}
               >
                 <span className="text-[16px]" style={{ color: '#F4F7F9' }}>Enroll in Course</span>
-              </button>
+              </Link>
+
+              {/* Facility Image */}
+
             </div>
 
             {/* Right Content Area */}
@@ -315,9 +328,9 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                               </svg>
                             ))}
                           </div>
-                          <span className="text-[14px]" style={{ color: '#F9A825' }}>180+ 5 Star Reviews</span>
+                          <span className="text-[14px]" style={{ color: '#F9A825' }}>200+ 5 Star Reviews</span>
                         </div>
-                        <p className="text-[14px] leading-[20px]" style={{ color: 'rgba(244,247,249,0.7)' }}>Interior Plastic Design Expert</p>
+                        <p className="text-[14px] leading-[20px]" style={{ color: 'rgba(244,247,249,0.7)' }}>BIW Fixture Design Expert</p>
                       </div>
                     </div>
 
@@ -325,10 +338,10 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                     <div className="mb-8">
                       <h3 className="text-[24px] tracking-[-0.6px] leading-[32px] mb-4" style={{ color: '#F4F7F9' }}>About the Course</h3>
                       <p className="text-[15px] leading-[26px] mb-4" style={{ color: 'rgba(244,247,249,0.8)' }}>
-                        This comprehensive course covers the complete design cycle of automotive interior plastic components. You'll learn material selection, design for manufacturability, injection molding processes, and industry-standard CAD techniques for trim part development.
+                        This comprehensive BIW Fixture Design course is meticulously crafted to provide you with hands-on experience in automotive body engineering. You'll learn from industry experts with over 15 years of experience in the automotive sector.
                       </p>
                       <p className="text-[15px] leading-[26px]" style={{ color: 'rgba(244,247,249,0.8)' }}>
-                        From dashboard and door panels to pillar trims and consoles, you'll gain hands-on experience designing real automotive interior components used in modern vehicles. The course includes live projects from actual OEM specifications.
+                        The course covers everything from basic concepts to advanced fixture design techniques, ensuring you're job-ready upon completion. With live project work and industry-standard tools, you'll gain practical skills that are directly applicable in professional environments.
                       </p>
                     </div>
 
@@ -337,11 +350,10 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                       <h4 className="text-[20px] tracking-[-0.5px] leading-[28px] mb-5" style={{ color: '#F4F7F9' }}>What you will get</h4>
                       <div className="space-y-3">
                         {[
-                          'Industry-recognized certification upon completion',
-                          'Hands-on experience with real OEM projects',
-                          'Portfolio of automotive trim designs',
-                          'Expert mentorship from industry professionals',
-                          'Placement assistance in leading automotive companies'
+                          'Thorough knowledge on fixture design fundamentals',
+                          'Specialization in fixture design',
+                          'Develops full confidence on fixture design, process design, gun selection, simulation',
+                          'Techno commercial considerable growth of an industry',
                         ].map((benefit, index) => (
                           <div key={index} className="flex items-start gap-3">
                             <div className="relative shrink-0 size-5 mt-[2px]">
@@ -418,13 +430,13 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                     </div>
 
                     <p className="text-lg sm:text-[22px] leading-[32px] tracking-[-0.55px] mb-8" style={{ color: '#F4F7F9' }}>
-                      "This course provides complete knowledge of interior plastic component design from concept to production"
+                      "This course is designed to provide hands-on experience to professionals working in the Domain of Automobile"
                     </p>
 
                     {/* Instructor Profile */}
                     <div className="flex flex-col sm:flex-row items-start gap-5 mb-8 pb-8 border-b border-white/10">
                       <div className="w-20 h-20 rounded-full overflow-hidden shrink-0" style={{ backgroundColor: 'rgba(107,193,227,0.2)' }}>
-                        <img src={'/aboutus_ourlecturers_manojpotdar.png'} alt="Manoj Potdar" className="w-full h-full object-cover" />
+                        <img src={imgInstructor} alt="Manoj Potdar" className="w-full h-full object-cover" />
                       </div>
                       <div className="flex-1">
                         <p className="text-[24px] tracking-[-0.6px] leading-[32px] mb-2" style={{ color: '#F4F7F9' }}>Manoj Potdar</p>
@@ -436,11 +448,11 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                               </svg>
                             ))}
                           </div>
-                          <span className="text-[14px]" style={{ color: '#F9A825' }}>180+ 5 Star Reviews</span>
+                          <span className="text-[14px]" style={{ color: '#F9A825' }}>200+ 5 Star Reviews</span>
                         </div>
-                        <p className="text-[15px] leading-[22px] mb-3" style={{ color: 'rgba(244,247,249,0.7)' }}>Interior Plastic Design Expert • 12+ Years Experience</p>
+                        <p className="text-[15px] leading-[22px] mb-3" style={{ color: 'rgba(244,247,249,0.7)' }}>BIW Fixture Design Expert • 15+ Years Experience</p>
                         <p className="text-[14px] leading-[24px]" style={{ color: 'rgba(244,247,249,0.8)' }}>
-                          Manoj Potdar is an experienced professional with over 12 years in automotive interior design. He has worked with major OEMs and Tier-1 suppliers, specializing in plastic trim component development and injection molding design.
+                          Manoj Potdar is a seasoned professional with over 15 years of experience in the automotive industry, specializing in BIW fixture design and automotive body engineering. He has worked with leading automotive manufacturers and has trained hundreds of professionals in advanced CAD techniques.
                         </p>
                       </div>
                     </div>
@@ -450,14 +462,14 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                       <h4 className="text-[20px] tracking-[-0.5px] leading-[28px] mb-6" style={{ color: '#F4F7F9' }}>What You'll Learn from the Instructor</h4>
                       <div className="space-y-4">
                         {[
-                          'Complete understanding of automotive interior plastic components',
-                          'Material selection and plastic properties for different applications',
-                          'Design for manufacturing (DFM) principles for injection molding',
-                          'Industry-standard workflows for trim component development',
-                          'Surface quality requirements and aesthetic considerations',
-                          'Assembly integration and clip/fastener design',
-                          'Cost optimization techniques for plastic parts',
-                          'Real-world project experience with OEM specifications'
+                          'Complete understanding of BIW components and their manufacturing processes',
+                          'Advanced fixture design techniques used in top automotive companies',
+                          'Industry-standard best practices for automotive body engineering',
+                          'Hands-on experience with real-world automotive projects',
+                          'Design optimization strategies for cost-effective solutions',
+                          'Quality control and validation procedures in BIW manufacturing',
+                          'Integration of fixtures with robotic welding systems',
+                          'Troubleshooting common issues in fixture design and implementation'
                         ].map((item, index) => (
                           <div key={index} className="flex items-start gap-3">
                             <div className="relative shrink-0 size-5 mt-[2px]">
@@ -476,10 +488,10 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                     <div className="rounded-[12px] p-6" style={{ backgroundColor: 'rgba(107,193,227,0.05)' }}>
                       <div className="grid grid-cols-2 gap-5">
                         {[
-                          { num: '12+', label: 'Years of Industry Experience' },
-                          { num: '400+', label: 'Students Trained Successfully' },
-                          { num: '40+', label: 'Industry Projects Completed' },
-                          { num: '98%', label: 'Student Satisfaction Rate' },
+                          { num: '15+', label: 'Years of Industry Experience' },
+                          { num: '500+', label: 'Students Trained Successfully' },
+                          { num: '50+', label: 'Industry Projects Completed' },
+                          { num: '100%', label: 'Student Satisfaction Rate' },
                         ].map((stat, i) => (
                           <div key={i}>
                             <p className="text-[28px] tracking-[-0.7px] leading-[36px] mb-2" style={{ color: '#F9A825' }}>{stat.num}</p>
@@ -541,32 +553,36 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                 <Accordion type="single" collapsible className="space-y-4">
                   {[
                     {
-                      value: 'item-1', title: 'Introduction to Automotive Interiors',
-                      items: ['Overview of automotive interior systems', 'Types of interior trim components', 'Industry standards and regulations', 'Quality requirements and specifications']
+                      value: 'item-1', title: 'Introduction to BIW-Fixture',
+                      items: ['Overview of BIW manufacturing process', 'Understanding fixture components and terminology', 'Types of fixtures in automotive assembly', 'Industry standards and best practices']
                     },
                     {
-                      value: 'item-2', title: 'Plastic Materials & Properties',
-                      items: ['Common automotive plastic materials', 'Material selection criteria', 'Mechanical properties of plastics', 'Weathering and UV resistance']
+                      value: 'item-2', title: 'Data Management',
+                      items: ['CAD data import and preparation', 'File organization and version control', 'Working with product geometry', 'Data validation techniques']
                     },
                     {
-                      value: 'item-3', title: 'Dashboard & Console Design',
-                      items: ['Instrument panel architecture', 'Center console design', 'Air vent integration', 'Storage compartment design']
+                      value: 'item-3', title: 'BIW-Fixture Basics',
+                      items: ['Fixture design principles and concepts', 'Locating and clamping strategies', 'Fixture layout and planning', 'Standard components selection']
                     },
                     {
-                      value: 'item-4', title: 'Door Trim Panel Design',
-                      items: ['Door trim architecture', 'Armrest and handle design', 'Speaker grille integration', 'Window switch panel design']
+                      value: 'item-4', title: '2D-Detailing Basics',
+                      items: ['Engineering drawing fundamentals', 'Dimensioning and tolerancing (GD&T)', 'Creating manufacturing drawings', 'Bill of materials preparation']
                     },
                     {
-                      value: 'item-5', title: 'Pillar Trim Components',
-                      items: ['A/B/C pillar trim design', 'Attachment methods', 'Airbag integration', 'Surface finish requirements']
+                      value: 'item-5', title: 'Pre-Design Processes',
+                      items: ['Product analysis and feasibility study', 'Fixture concept development', 'Design for manufacturing considerations', 'Risk assessment and mitigation']
                     },
                     {
-                      value: 'item-6', title: 'Injection Molding Fundamentals',
-                      items: ['Molding process overview', 'Tooling considerations', 'Gate and runner design', 'Ejection systems']
+                      value: 'item-5a', title: 'Sensors & Nomenclature',
+                      items: ['Type of sensor and nomenclature', 'Use of Sensor in Fixture']
                     },
                     {
-                      value: 'item-7', title: 'DFM for Plastic Parts',
-                      items: ['Draft angles and wall thickness', 'Rib and boss design', 'Weld line considerations', 'Sink marks and warpage prevention']
+                      value: 'item-5b', title: 'Simulation',
+                      items: ['Overview of simulation', 'Video for zone', 'Different types of Guns used', 'Weld Gun selection criterion', 'Different welding types with examples like spot welding/MIG welding/stud welding/riveting/hemming/framing', 'Gun consideration for operator', 'Use of gun guide example', 'Human ergonomics', 'Clearance chart', 'Modifying units']
+                    },
+                    {
+                      value: 'item-5c', title: '3D Finish',
+                      items: ['Concept of 3D finish', '3D finish of Rest and clamp Units', '3D finish of Pin unit', '3D finish of Base Unit', '3D finish of Complex Units', '0,0 concept for mylar', 'Concept of MACRO3', 'Renaming Without Macros', 'Renaming using Macros', 'Tree reordering, hardware add', 'External references remove', 'Parameter and use and filling']
                     },
                   ].map((section) => (
                     <AccordionItem key={section.value} value={section.value} className="border-none">
@@ -602,28 +618,24 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                 <Accordion type="single" collapsible className="space-y-4">
                   {[
                     {
-                      value: 'item-8', title: 'Assembly Integration',
-                      items: ['Clip and fastener design', 'Welding and bonding methods', 'Snap-fit design', 'Tolerance stack-up analysis']
+                      value: 'item-6', title: 'Project-01: Simple Fixture Design',
+                      items: ['Hands-on fixture design project', 'Component modeling and assembly', 'Design validation and verification', 'Documentation and presentation']
                     },
                     {
-                      value: 'item-9', title: 'Surface Quality & Finishing',
-                      items: ['Texture and grain requirements', 'Class A surface definition', 'Painting and coating processes', 'Color matching standards']
+                      value: 'item-7', title: 'Project-02: Complex Fixture Assembly',
+                      items: ['Advanced fixture design techniques', 'Multi-part assembly integration', 'Welding gun clearance analysis', 'Ergonomics and accessibility']
                     },
                     {
-                      value: 'item-10', title: 'Project 01: Dashboard Component',
-                      items: ['Complete dashboard design project', 'Surface modeling techniques', 'Assembly integration', 'Design validation and documentation']
+                      value: 'item-8', title: 'Project 4',
+                      items: ['Pin on Clamp concept', 'Pin on Clamp unit', 'Stopper arrangement for Pin On clamp', 'Completing the remaining units', 'Sensor Units']
                     },
                     {
-                      value: 'item-11', title: 'Project 02: Door Trim Panel',
-                      items: ['Door trim panel development', 'Armrest and handle integration', 'Speaker grille placement', 'Manufacturing drawing creation']
+                      value: 'item-9', title: 'Project 05',
+                      items: ['Pivot point setting concept', 'Pin on Clamp model for single angle with different directions', '3D finish of pin on clamp', 'SMC Hinge Cyl. Calculation', 'Suction cups use', 'Simple rest and clamp using CKG cyl', 'Stoper for CKG, Rough Guide', 'Power copy and its use for 3D finish', 'Contextual Method']
                     },
                     {
-                      value: 'item-12', title: 'Project 03: Pillar Trim Assembly',
-                      items: ['Pillar trim design', 'Attachment method selection', 'Airbag integration considerations', 'Portfolio creation and presentation']
-                    },
-                    {
-                      value: 'item-13', title: 'Project 04: Center Console Assembly',
-                      items: ['Complete center console design', 'Storage compartment integration', 'Assembly and fastening strategy', 'Design review and optimization']
+                      value: 'item-10', title: 'German Standards',
+                      items: ['German standards Design Method', 'German standards simple rest and clamp', 'German standards- PIN UNIT', 'German standards- weldment', 'German standards- L block and other parts', '3d finish of German Standards', '3d finish – simple rest and clamp', '3d finish – Pin unit', 'German standards Renaming', '2D using German standards']
                     },
                   ].map((section) => (
                     <AccordionItem key={section.value} value={section.value} className="border-none">
@@ -653,6 +665,13 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
         </div>
       </section>
 
+      {/* ── Curriculum Details ────────────────────────────────────── */}
+     
+
+
+
+      {/* ── Course Modules ────────────────────────────────────────── */}
+     
       {/* ── Learning Outcomes & Career ────────────────────────────── */}
       <section className="relative shrink-0 w-full py-14 md:py-[80px]" style={{ backgroundColor: '#092B38' }}>
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -705,6 +724,40 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
         </div>
       </section>
 
+      {/* ── CTA Section ───────────────────────────────────────────── */}
+      {/* <section className="relative shrink-0 w-full py-14 md:py-[80px]" style={{ backgroundColor: '#0A1C26' }}>
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="backdrop-blur-md backdrop-filter relative rounded-[16px] p-6 sm:p-8 md:p-[48px] text-center"
+            style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}
+          >
+            <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px]" />
+            <div className="relative">
+              {imgVideo1 && (
+                <div className="mb-8 rounded-[12px] overflow-hidden max-w-[800px] mx-auto">
+                  <img
+                    src={imgVideo1}
+                    alt="BIW Fixture Design Course"
+                    className="w-full h-[200px] sm:h-[300px] md:h-[400px] object-cover"
+                  />
+                </div>
+              )}
+              <h2 className="text-2xl md:text-[36px] tracking-[-0.9px] leading-[44px] mb-4" style={{ color: '#F4F7F9' }}>
+                Ready to Start Your Journey?
+              </h2>
+              <p className="text-[16px] leading-[28px] max-w-[600px] mx-auto mb-8" style={{ color: 'rgba(244,247,249,0.7)' }}>
+                Join our comprehensive BIW Fixture Design course and take the first step towards a successful career in automotive engineering.
+              </p>
+              <button
+                className="relative rounded-[9999px] px-8 py-3"
+                style={{ background: 'linear-gradient(90deg, #10162F 0%, #FBBF24 100%)' }}
+              >
+                <p className="text-[16px] leading-[24px]" style={{ color: '#F4F7F9' }}>Enroll Now</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section> */}
       {/* SEPARATOR - Visual divider between content and footer */}
       <div className="relative w-full">
         <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#F9A825] to-transparent" />

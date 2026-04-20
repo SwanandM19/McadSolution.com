@@ -1,20 +1,16 @@
 'use client'
-
+import Link from 'next/link';
 
 import { CheckCircle2, Clock, Users, Award, BookOpen, Download, ArrowRight, ArrowLeft } from "lucide-react";
-import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-import { AnimatedSection } from '../components/AnimatedSection';
+import { ImageWithFallback } from "../../components/figma/ImageWithFallback";
+// import { AnimatedSection } from '../components/AnimatedSection';
 
 // Images from public folder
 const imgClampUnit = "/blogclampunit.png";
 const imgSlideUnit = "/blogslideunit.jpeg";
 const imgRiser = "/blogsriser.jpeg";
 
-interface UGNXPageProps {
-  onNavigate?: (page: string, blogId?: number) => void;
-}
-
-export function UGNXPage({ onNavigate }: UGNXPageProps) {
+export default function UGNXPage() {
   const courseModules = [
     {
       title: "NX Fundamentals",
@@ -91,14 +87,14 @@ export function UGNXPage({ onNavigate }: UGNXPageProps) {
         }}
       >
         {/* BACK BUTTON */}
-        <button 
-          onClick={() => onNavigate?.('cad-courses')}
+        <Link 
+          href="/cad-courses"
           className="absolute top-[20px] left-[20px] md:top-[30px] md:left-[30px] z-20 backdrop-blur-md backdrop-filter bg-[rgba(0,0,0,0.5)] hover:bg-[rgba(0,0,0,0.7)] rounded-full p-[10px] md:p-[12px] transition-all duration-300 group"
           aria-label="Go back"
         >
           <ArrowLeft className="w-[20px] h-[20px] md:w-[24px] md:h-[24px]" style={{ color: '#F4F7F9' }} />
           <span className="sr-only">Back</span>
-        </button>
+        </Link>
 
         <div className="relative z-10 max-w-[1280px] mx-auto px-[16px] md:px-[32px] py-[60px] md:py-[100px]">
           <div className="flex flex-col lg:flex-row items-center gap-[32px] md:gap-[48px]">
@@ -172,8 +168,8 @@ export function UGNXPage({ onNavigate }: UGNXPageProps) {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-[12px] mt-[16px]">
-                <button 
-                  onClick={() => onNavigate?.('contact')}
+                <Link 
+                  href="/contact"
                   className="bg-black box-border content-stretch flex items-center justify-center overflow-clip px-[32px] py-[18px] relative rounded-[9999px] hover:opacity-90 transition-opacity"
                   style={{
                     background: 'linear-gradient(90deg, #10162F 0%, #FBBF24 100%)'
@@ -182,7 +178,7 @@ export function UGNXPage({ onNavigate }: UGNXPageProps) {
                   <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] text-center text-nowrap text-white">
                     <p className="leading-[24px] whitespace-pre">Enroll Now</p>
                   </div>
-                </button>
+                </Link>
                 
                 <button 
                   className="backdrop-blur backdrop-filter bg-[rgba(255,255,255,0.1)] box-border content-stretch flex items-center gap-[8px] justify-center px-[32px] py-[18px] relative rounded-[9999px] hover:bg-[rgba(107,193,227,0.15)] transition-colors"
@@ -350,8 +346,8 @@ export function UGNXPage({ onNavigate }: UGNXPageProps) {
                       </div>
                     </div>
                     
-                    <button 
-                      onClick={() => onNavigate?.('blog-detail', blog.id)}
+                    <Link 
+                      href={`/blog/${blog.id}`}
                       className="w-full backdrop-blur backdrop-filter bg-[rgba(107,193,227,0.1)] box-border content-stretch flex items-center justify-center px-[16px] py-[10px] relative rounded-[8px] hover:bg-[rgba(107,193,227,0.2)] transition-all duration-300 cursor-pointer"
                     >
                       <div aria-hidden="true" className="absolute border border-[rgba(107,193,227,0.3)] border-solid inset-0 pointer-events-none rounded-[8px]" />
@@ -367,7 +363,7 @@ export function UGNXPage({ onNavigate }: UGNXPageProps) {
                           </svg>
                         </div>
                       </div>
-                    </button>
+                    </Link>
                   </div>
                 </div>
                 <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px] transition-colors" style={{ borderColor: 'rgba(107, 193, 227, 0.2)' }} />
@@ -376,8 +372,8 @@ export function UGNXPage({ onNavigate }: UGNXPageProps) {
           </div>
 
           <div className="text-center mt-[32px]">
-            <button 
-              onClick={() => onNavigate?.('blog')}
+            <Link 
+              href="/blog"
               className="backdrop-blur backdrop-filter bg-[rgba(255,255,255,0.1)] box-border content-stretch flex gap-[8px] items-center justify-center px-[28px] py-[14px] relative rounded-[9999px] hover:bg-[rgba(107,193,227,0.15)] transition-colors mx-auto"
             >
               <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[9999px]" />
@@ -385,7 +381,7 @@ export function UGNXPage({ onNavigate }: UGNXPageProps) {
                 <p className="leading-[20px] whitespace-pre">View All Articles</p>
               </div>
               <ArrowRight className="w-[16px] h-[16px]" style={{ color: '#F4F7F9' }} />
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -408,8 +404,8 @@ export function UGNXPage({ onNavigate }: UGNXPageProps) {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-[12px] mt-[8px]">
-              <button 
-                onClick={() => onNavigate?.('contact')}
+              <Link 
+                href="/contact"
                 className="bg-black box-border content-stretch flex items-center justify-center overflow-clip px-[32px] md:px-[42px] py-[18px] md:py-[22px] relative rounded-[9999px] hover:opacity-90 transition-opacity"
                 style={{
                   background: 'linear-gradient(90deg, #10162F 0%, #FBBF24 100%)'
@@ -418,17 +414,17 @@ export function UGNXPage({ onNavigate }: UGNXPageProps) {
                 <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] md:text-[16px] text-center text-nowrap text-white">
                   <p className="leading-[24px] whitespace-pre">Enroll Now</p>
                 </div>
-              </button>
+              </Link>
               
-              <button 
-                onClick={() => onNavigate?.('cad-courses')}
+              <Link 
+                href="/cad-courses"
                 className="backdrop-blur backdrop-filter bg-[rgba(255,255,255,0.1)] box-border content-stretch flex gap-[8px] items-center justify-center px-[24px] md:px-[32px] py-[18px] md:py-[22px] relative rounded-[9999px] hover:bg-[rgba(107,193,227,0.15)] transition-colors"
               >
                 <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[9999px]" />
                 <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] md:text-[16px] text-center text-nowrap" style={{ color: '#F4F7F9' }}>
                   <p className="leading-[24px] whitespace-pre">View All Courses</p>
                 </div>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -447,5 +443,3 @@ export function UGNXPage({ onNavigate }: UGNXPageProps) {
     </>
   );
 }
-
-export default UGNXPage;

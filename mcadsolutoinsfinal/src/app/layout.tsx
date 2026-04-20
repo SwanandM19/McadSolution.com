@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
+import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
 
 export const metadata: Metadata = {
     title: "MCAD Solution",
@@ -18,7 +20,9 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body>
+                <Header />
                 {children}
+                <Footer />
                 <Script
                     id="hs-script-loader"
                     src="https://js-na2.hs-scripts.com/8763234.js"

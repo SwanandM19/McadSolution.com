@@ -1,3 +1,5 @@
+'use client'
+import Link from 'next/link';
 
 import { useState } from 'react';
 import {
@@ -5,80 +7,76 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../components/ui/accordion";
-import { AnimatedSection } from "../components/AnimatedSection";
+} from "../../components/ui/accordion";
+// import { AnimatedSection } from "../components/AnimatedSection";
 
-interface InteriorPlasticPageProps {
-  onNavigate?: (page: string) => void;
-}
-
-export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
+export default function RoboticsSimulationPage() {
   const [activeTab, setActiveTab] = useState<'overview' | 'instructor'>('overview');
 
   const courseDetails = {
-    title: 'AUTOMOTIVE INTERIOR PLASTIC TRIMS',
-    subtitle: 'Master Plastic Component Design & Engineering',
-    description: 'Master the art of automotive interior plastic trim design with comprehensive training in material selection, injection molding processes, and advanced CAD techniques.',
+    title: 'ROBOTICS SIMULATION',
+    subtitle: 'Master Robotic Automation & Virtual Commissioning',
+    description: 'Master the art of robotics simulation with comprehensive training in industrial automation, offline programming, and virtual commissioning using industry-standard tools.',
     duration: '3 Months',
-    lectures: '90 Lectures',
-    tools: 'CATIA V5, NX CAD',
+    lectures: '95 Lectures',
+    tools: 'RoboDK, ROS2, Python',
   };
 
   const courseModules = [
     {
-      title: 'Introduction to Automotive Interiors',
+      title: 'Introduction to Robotics',
       topics: [
-        'Overview of automotive interior systems',
-        'Types of interior trim components',
-        'Industry standards and regulations',
-        'Quality requirements and specifications'
+        'Robotics fundamentals and applications',
+        'Robot kinematics and dynamics',
+        'Types of industrial robots',
+        'Safety standards and regulations'
       ]
     },
     {
-      title: 'Plastic Materials & Properties',
+      title: 'Robot Programming',
       topics: [
-        'Common automotive plastic materials',
-        'Material selection criteria',
-        'Mechanical properties of plastics',
-        'Weathering and UV resistance'
+        'Offline programming basics',
+        'Path planning and optimization',
+        'Coordinate systems and frames',
+        'Motion planning algorithms'
       ]
     },
     {
-      title: 'Dashboard & Console Design',
+      title: 'Simulation Software',
       topics: [
-        'Instrument panel architecture',
-        'Center console design',
-        'Air vent integration',
-        'Storage compartment design'
+        'RoboDK interface and workflow',
+        'Virtual environment setup',
+        'Robot cell layout design',
+        'Tool and workpiece positioning'
       ]
     },
     {
-      title: 'Door Trim Panel Design',
+      title: 'Industrial Applications',
       topics: [
-        'Door trim architecture',
-        'Armrest and handle design',
-        'Speaker grille integration',
-        'Window switch panel design'
+        'Pick and place operations',
+        'Welding and painting simulation',
+        'Assembly line automation',
+        'Material handling systems'
       ]
     }
   ];
 
   const learningOutcomes = [
-    'Design complex interior plastic components using industry-standard CAD tools',
-    'Understand injection molding processes and DFM principles',
-    'Apply material selection criteria for different applications',
-    'Develop production-ready engineering drawings',
-    'Work with cross-functional teams in automotive projects',
-    'Implement cost optimization techniques for plastic parts'
+    'Design and simulate complete robotic work cells',
+    'Master offline programming techniques for industrial robots',
+    'Perform virtual commissioning and validation',
+    'Optimize cycle times and production efficiency',
+    'Integrate PLCs and external systems',
+    'Implement safety protocols and risk assessment'
   ];
 
   const careerOpportunities = [
-    'Interior Trim Design Engineer',
-    'Plastic Component Designer',
-    'Automotive CAD Engineer',
-    'Product Development Engineer',
-    'Tooling Design Engineer',
-    'Quality Assurance Engineer'
+    'Robotics Simulation Engineer',
+    'Automation Engineer',
+    'Offline Programmer',
+    'Robotic Cell Designer',
+    'Production Engineer',
+    'Industry 4.0 Specialist'
   ];
 
   return (
@@ -104,7 +102,7 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
             </p>
 
             <p className="text-base md:text-[18px] max-w-[768px] mx-auto mb-6 leading-[28px]" style={{ color: '#F4F7F9' }}>
-              AUTOMOTIVE INTERIOR PLASTIC TRIMS is Job-Oriented industrial Domain training on Live / Dummy Projects.
+              ROBOTICS SIMULATION is Job-Oriented industrial Domain training on Live / Dummy Projects.
             </p>
 
             <div className="flex items-center justify-center gap-4 md:gap-[24px] flex-wrap">
@@ -173,7 +171,7 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
               <h2 className="text-2xl md:text-[36px] tracking-[-0.9px] leading-[44px] mb-6" style={{ color: '#F4F7F9' }}>About This Course</h2>
               <p className="text-[16px] leading-[28px] mb-5" style={{ color: 'rgba(244,247,249,0.8)' }}>{courseDetails.description}</p>
               <p className="text-[16px] leading-[28px]" style={{ color: 'rgba(244,247,249,0.8)' }}>
-                By taking this course, you'll gain advanced skills in Automotive Interior Plastic Trim Design, which will significantly enhance your job prospects. Upon successful completion, excellent employment opportunities in the automotive field as well as product design will be assured.
+                By taking this course, you'll gain advanced skills in Robotics Simulation, which will significantly enhance your job prospects. Upon successful completion, excellent employment opportunities in the automation field as well as robotics engineering will be assured.
               </p>
             </div>
           </div>
@@ -188,14 +186,14 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
               <h3 className="text-[22px] tracking-[-0.55px] leading-[30px] mb-6" style={{ color: '#F4F7F9' }}>Course Overview</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
                 {[
-                  'Complete interior trim design workflow',
-                  'Advanced 3D modeling and surface techniques',
-                  'Injection molding design principles',
-                  'DFM and cost optimization strategies',
-                  'Manufacturing drawing creation with GD&T',
-                  'Industry-standard design methodologies',
+                  'Complete robotics simulation workflow',
+                  'Offline programming and path planning',
+                  'Virtual commissioning techniques',
+                  'Multi-robot coordination',
+                  'Digital twin creation and validation',
+                  'Industry-standard simulation software',
                   'Project management and documentation',
-                  'Real-world automotive project experience'
+                  'Real-world automation project experience'
                 ].map((skill, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="relative shrink-0 size-5 mt-[2px]">
@@ -223,7 +221,7 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
               Expert Training
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-[40px] leading-tight md:leading-[52px] tracking-[-1px]" style={{ color: '#F4F7F9' }}>
-              LEARN INTERIOR PLASTIC DESIGN FROM THE{' '}
+              LEARN ROBOTICS SIMULATION FROM THE{' '}
               <span style={{ color: '#F9A825' }}>Industry-Expert</span>
             </h2>
           </div>
@@ -243,7 +241,7 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                 <div className="relative space-y-4">
                   {[
                     { label: 'Duration', value: '3 Months' },
-                    { label: 'Lectures', value: '90 Lectures' },
+                    { label: 'Lectures', value: '95 Lectures' },
                     { label: 'Skill Level', value: 'Beginner' },
                     { label: 'Students/Batch', value: '5 Students' },
                   ].map((row, i, arr) => (
@@ -263,13 +261,13 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
               </div>
 
               {/* Enroll Button */}
-              <button
-                onClick={() => onNavigate?.('contact')}
-                className="w-full relative rounded-[8px] px-8 py-[14px]"
+              <Link
+                href="/contact"
+                className="w-full block text-center relative rounded-[8px] px-8 py-[14px]"
                 style={{ background: 'linear-gradient(90deg, #10162F 0%, #FBBF24 100%)' }}
               >
                 <span className="text-[16px]" style={{ color: '#F4F7F9' }}>Enroll in Course</span>
-              </button>
+              </Link>
             </div>
 
             {/* Right Content Area */}
@@ -315,9 +313,9 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                               </svg>
                             ))}
                           </div>
-                          <span className="text-[14px]" style={{ color: '#F9A825' }}>180+ 5 Star Reviews</span>
+                          <span className="text-[14px]" style={{ color: '#F9A825' }}>220+ 5 Star Reviews</span>
                         </div>
-                        <p className="text-[14px] leading-[20px]" style={{ color: 'rgba(244,247,249,0.7)' }}>Interior Plastic Design Expert</p>
+                        <p className="text-[14px] leading-[20px]" style={{ color: 'rgba(244,247,249,0.7)' }}>Robotics Simulation Expert</p>
                       </div>
                     </div>
 
@@ -325,10 +323,10 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                     <div className="mb-8">
                       <h3 className="text-[24px] tracking-[-0.6px] leading-[32px] mb-4" style={{ color: '#F4F7F9' }}>About the Course</h3>
                       <p className="text-[15px] leading-[26px] mb-4" style={{ color: 'rgba(244,247,249,0.8)' }}>
-                        This comprehensive course covers the complete design cycle of automotive interior plastic components. You'll learn material selection, design for manufacturability, injection molding processes, and industry-standard CAD techniques for trim part development.
+                        This comprehensive course covers the complete robotics simulation workflow from concept to virtual commissioning. You'll learn industry-standard offline programming, path planning, and virtual validation techniques used in modern automated manufacturing.
                       </p>
                       <p className="text-[15px] leading-[26px]" style={{ color: 'rgba(244,247,249,0.8)' }}>
-                        From dashboard and door panels to pillar trims and consoles, you'll gain hands-on experience designing real automotive interior components used in modern vehicles. The course includes live projects from actual OEM specifications.
+                        From simple pick-and-place operations to complex multi-robot cells, you'll gain hands-on experience with industry-leading simulation software and real-world automation projects used in automotive and manufacturing sectors.
                       </p>
                     </div>
 
@@ -337,11 +335,11 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                       <h4 className="text-[20px] tracking-[-0.5px] leading-[28px] mb-5" style={{ color: '#F4F7F9' }}>What you will get</h4>
                       <div className="space-y-3">
                         {[
-                          'Industry-recognized certification upon completion',
-                          'Hands-on experience with real OEM projects',
-                          'Portfolio of automotive trim designs',
-                          'Expert mentorship from industry professionals',
-                          'Placement assistance in leading automotive companies'
+                          'Industry-recognized robotics simulation certification',
+                          'Hands-on experience with real automation projects',
+                          'Portfolio of simulated robotic cells',
+                          'Expert mentorship from automation professionals',
+                          'Placement support in robotics and automation companies'
                         ].map((benefit, index) => (
                           <div key={index} className="flex items-start gap-3">
                             <div className="relative shrink-0 size-5 mt-[2px]">
@@ -418,7 +416,7 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                     </div>
 
                     <p className="text-lg sm:text-[22px] leading-[32px] tracking-[-0.55px] mb-8" style={{ color: '#F4F7F9' }}>
-                      "This course provides complete knowledge of interior plastic component design from concept to production"
+                      "This course bridges the gap between traditional robotics and Industry 4.0 automation through simulation-first approach"
                     </p>
 
                     {/* Instructor Profile */}
@@ -436,11 +434,11 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                               </svg>
                             ))}
                           </div>
-                          <span className="text-[14px]" style={{ color: '#F9A825' }}>180+ 5 Star Reviews</span>
+                          <span className="text-[14px]" style={{ color: '#F9A825' }}>220+ 5 Star Reviews</span>
                         </div>
-                        <p className="text-[15px] leading-[22px] mb-3" style={{ color: 'rgba(244,247,249,0.7)' }}>Interior Plastic Design Expert • 12+ Years Experience</p>
+                        <p className="text-[15px] leading-[22px] mb-3" style={{ color: 'rgba(244,247,249,0.7)' }}>Robotics Simulation Expert • 14+ Years Experience</p>
                         <p className="text-[14px] leading-[24px]" style={{ color: 'rgba(244,247,249,0.8)' }}>
-                          Manoj Potdar is an experienced professional with over 12 years in automotive interior design. He has worked with major OEMs and Tier-1 suppliers, specializing in plastic trim component development and injection molding design.
+                          Manoj Potdar is a robotics automation expert with over 14 years of experience in industrial robotics simulation, offline programming, and virtual commissioning. He has implemented automation solutions for major automotive and manufacturing companies worldwide.
                         </p>
                       </div>
                     </div>
@@ -450,14 +448,14 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                       <h4 className="text-[20px] tracking-[-0.5px] leading-[28px] mb-6" style={{ color: '#F4F7F9' }}>What You'll Learn from the Instructor</h4>
                       <div className="space-y-4">
                         {[
-                          'Complete understanding of automotive interior plastic components',
-                          'Material selection and plastic properties for different applications',
-                          'Design for manufacturing (DFM) principles for injection molding',
-                          'Industry-standard workflows for trim component development',
-                          'Surface quality requirements and aesthetic considerations',
-                          'Assembly integration and clip/fastener design',
-                          'Cost optimization techniques for plastic parts',
-                          'Real-world project experience with OEM specifications'
+                          'Complete understanding of robotic cell design and simulation',
+                          'Robot programming and offline programming (OLP) techniques',
+                          'Path planning, collision detection, and reachability analysis',
+                          'Virtual commissioning and process validation',
+                          'PLC integration and I/O signal configuration',
+                          'Cycle time optimization and productivity analysis',
+                          'Safety assessment and risk mitigation strategies',
+                          'Real-world automation project implementation'
                         ].map((item, index) => (
                           <div key={index} className="flex items-start gap-3">
                             <div className="relative shrink-0 size-5 mt-[2px]">
@@ -476,10 +474,10 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                     <div className="rounded-[12px] p-6" style={{ backgroundColor: 'rgba(107,193,227,0.05)' }}>
                       <div className="grid grid-cols-2 gap-5">
                         {[
-                          { num: '12+', label: 'Years of Industry Experience' },
-                          { num: '400+', label: 'Students Trained Successfully' },
-                          { num: '40+', label: 'Industry Projects Completed' },
-                          { num: '98%', label: 'Student Satisfaction Rate' },
+                          { num: '14+', label: 'Years of Industry Experience' },
+                          { num: '600+', label: 'Students Trained Successfully' },
+                          { num: '60+', label: 'Industry Projects Completed' },
+                          { num: '100%', label: 'Student Satisfaction Rate' },
                         ].map((stat, i) => (
                           <div key={i}>
                             <p className="text-[28px] tracking-[-0.7px] leading-[36px] mb-2" style={{ color: '#F9A825' }}>{stat.num}</p>
@@ -521,7 +519,7 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
               </svg>
               <div>
                 <p className="text-[16px] md:text-[18px] leading-[28px] mb-2" style={{ color: '#F4F7F9' }}>
-                  M CAD Solutions has designed this course based on the current industry requirements and standards, preparing you to meet the demands of the automotive sector.
+                  M CAD Solutions has designed this course based on the current industry requirements and standards, preparing you to meet the demands of the automation sector.
                 </p>
                 <p className="text-[14px] leading-[22px]" style={{ color: 'rgba(244,247,249,0.7)' }}>Industry-Aligned Learning Path</p>
               </div>
@@ -541,32 +539,36 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                 <Accordion type="single" collapsible className="space-y-4">
                   {[
                     {
-                      value: 'item-1', title: 'Introduction to Automotive Interiors',
-                      items: ['Overview of automotive interior systems', 'Types of interior trim components', 'Industry standards and regulations', 'Quality requirements and specifications']
+                      value: 'item-1', title: 'Introduction to Robotics & Automation',
+                      items: ['Robotics fundamentals and applications', 'Robot kinematics and dynamics', 'Types of industrial robots', 'Safety standards and regulations']
                     },
                     {
-                      value: 'item-2', title: 'Plastic Materials & Properties',
-                      items: ['Common automotive plastic materials', 'Material selection criteria', 'Mechanical properties of plastics', 'Weathering and UV resistance']
+                      value: 'item-2', title: 'Robot Programming & Path Planning',
+                      items: ['Offline programming basics', 'Path planning and optimization', 'Coordinate systems and frames', 'Motion planning algorithms']
                     },
                     {
-                      value: 'item-3', title: 'Dashboard & Console Design',
-                      items: ['Instrument panel architecture', 'Center console design', 'Air vent integration', 'Storage compartment design']
+                      value: 'item-3', title: 'Simulation Software & Virtual Environment',
+                      items: ['RoboDK interface and workflow', 'Virtual environment setup', 'Robot cell layout design', 'Tool and workpiece positioning']
                     },
                     {
-                      value: 'item-4', title: 'Door Trim Panel Design',
-                      items: ['Door trim architecture', 'Armrest and handle design', 'Speaker grille integration', 'Window switch panel design']
+                      value: 'item-4', title: 'Industrial Applications & Use Cases',
+                      items: ['Pick and place operations', 'Welding and painting simulation', 'Assembly line automation', 'Material handling systems']
                     },
                     {
-                      value: 'item-5', title: 'Pillar Trim Components',
-                      items: ['A/B/C pillar trim design', 'Attachment methods', 'Airbag integration', 'Surface finish requirements']
+                      value: 'item-5', title: 'Advanced Robotics Concepts',
+                      items: ['Multi-robot coordination', 'Sensor integration', 'Vision system simulation', 'Digital twin creation']
                     },
                     {
-                      value: 'item-6', title: 'Injection Molding Fundamentals',
-                      items: ['Molding process overview', 'Tooling considerations', 'Gate and runner design', 'Ejection systems']
+                      value: 'item-5a', title: 'PLC Integration & Control Systems',
+                      items: ['PLC programming basics', 'I/O signal configuration', 'Communication protocols', 'Real-time data exchange']
                     },
                     {
-                      value: 'item-7', title: 'DFM for Plastic Parts',
-                      items: ['Draft angles and wall thickness', 'Rib and boss design', 'Weld line considerations', 'Sink marks and warpage prevention']
+                      value: 'item-5b', title: 'Virtual Commissioning',
+                      items: ['Process validation techniques', 'Collision detection and avoidance', 'Cycle time optimization', 'Performance analysis']
+                    },
+                    {
+                      value: 'item-5c', title: 'ROS2 & Open Source Robotics',
+                      items: ['ROS2 architecture and concepts', 'Robot control with ROS2', 'Simulation integration', 'Custom robot development']
                     },
                   ].map((section) => (
                     <AccordionItem key={section.value} value={section.value} className="border-none">
@@ -602,28 +604,28 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
                 <Accordion type="single" collapsible className="space-y-4">
                   {[
                     {
-                      value: 'item-8', title: 'Assembly Integration',
-                      items: ['Clip and fastener design', 'Welding and bonding methods', 'Snap-fit design', 'Tolerance stack-up analysis']
+                      value: 'item-6', title: 'Project-01: Pick and Place Cell',
+                      items: ['Design a complete pick and place robotic cell', 'Program robot path and sequences', 'Optimize cycle time', 'Generate simulation reports']
                     },
                     {
-                      value: 'item-9', title: 'Surface Quality & Finishing',
-                      items: ['Texture and grain requirements', 'Class A surface definition', 'Painting and coating processes', 'Color matching standards']
+                      value: 'item-7', title: 'Project-02: Welding Cell Simulation',
+                      items: ['Create a welding cell layout', 'Program welding paths', 'Collision detection and avoidance', 'Process validation']
                     },
                     {
-                      value: 'item-10', title: 'Project 01: Dashboard Component',
-                      items: ['Complete dashboard design project', 'Surface modeling techniques', 'Assembly integration', 'Design validation and documentation']
+                      value: 'item-8', title: 'Project-03: Multi-Robot Collaboration',
+                      items: ['Design multi-robot workcell', 'Coordinate robot movements', 'Handshake and synchronization', 'Throughput optimization']
                     },
                     {
-                      value: 'item-11', title: 'Project 02: Door Trim Panel',
-                      items: ['Door trim panel development', 'Armrest and handle integration', 'Speaker grille placement', 'Manufacturing drawing creation']
+                      value: 'item-9', title: 'Project-04: Digital Twin Integration',
+                      items: ['Create digital twin of production line', 'Connect simulation to hardware', 'Real-time data exchange', 'Performance monitoring']
                     },
                     {
-                      value: 'item-12', title: 'Project 03: Pillar Trim Assembly',
-                      items: ['Pillar trim design', 'Attachment method selection', 'Airbag integration considerations', 'Portfolio creation and presentation']
+                      value: 'item-10', title: 'Project-05: ROS2 Based Automation',
+                      items: ['Setup ROS2 environment', 'Robot control programming', 'Sensor integration', 'Autonomous navigation']
                     },
                     {
-                      value: 'item-13', title: 'Project 04: Center Console Assembly',
-                      items: ['Complete center console design', 'Storage compartment integration', 'Assembly and fastening strategy', 'Design review and optimization']
+                      value: 'item-11', title: 'Final Project: Complete Production Line',
+                      items: ['End-to-end automation system design', 'Full simulation and validation', 'Technical documentation', 'Portfolio presentation']
                     },
                   ].map((section) => (
                     <AccordionItem key={section.value} value={section.value} className="border-none">

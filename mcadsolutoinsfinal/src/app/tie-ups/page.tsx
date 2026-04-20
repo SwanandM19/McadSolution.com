@@ -1,15 +1,10 @@
-
-
-
+'use client'
+import Link from 'next/link';
 import { Building2, Handshake, Users, Globe, Award, Target, TrendingUp, Briefcase, FileText, GraduationCap, BookOpen, Zap } from "lucide-react";
-import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-import { AnimatedSection } from '../components/AnimatedSection';
+import { ImageWithFallback } from "../../components/figma/ImageWithFallback";
+// import { AnimatedSection } from '../components/AnimatedSection';
 
-interface TieUpsPageProps {
-  onNavigate?: (page: string) => void;
-}
-
-export function TieUpsPage({ onNavigate }: TieUpsPageProps) {
+export default function TieUpsPage() {
   const industryPartners = [
     {
       category: "Automation & Robotics",
@@ -41,6 +36,50 @@ export function TieUpsPage({ onNavigate }: TieUpsPageProps) {
     }
   ];
 
+  const mouPartners = [
+    {
+      collegeName: "Pune Institute of Technology",
+      location: "Pune, Maharashtra",
+      mouDate: "January 2024",
+      duration: "3 Years",
+      highlights: ["Curriculum Integration", "Joint Research", "Student Internships"]
+    },
+    {
+      collegeName: "Vellore Institute of Technology",
+      location: "Vellore, Tamil Nadu",
+      mouDate: "March 2024",
+      duration: "5 Years",
+      highlights: ["Center of Excellence", "Faculty Development", "Placement Collaboration"]
+    },
+    {
+      collegeName: "Manipal Institute of Technology",
+      location: "Manipal, Karnataka",
+      mouDate: "November 2023",
+      duration: "3 Years",
+      highlights: ["Lab Setup", "Industry Projects", "Guest Lectures"]
+    },
+    {
+      collegeName: "PSG College of Technology",
+      location: "Coimbatore, Tamil Nadu",
+      mouDate: "February 2024",
+      duration: "4 Years",
+      highlights: ["Research Partnership", "Student Exchange", "Workshop Series"]
+    },
+    {
+      collegeName: "Birla Institute of Technology",
+      location: "Mesra, Jharkhand",
+      mouDate: "September 2023",
+      duration: "3 Years",
+      highlights: ["Training Programs", "Certification Courses", "Placement Drives"]
+    },
+    {
+      collegeName: "SRM Institute of Technology",
+      location: "Chennai, Tamil Nadu",
+      mouDate: "December 2023",
+      duration: "5 Years",
+      highlights: ["Innovation Lab", "Startup Incubation", "Industry Mentorship"]
+    }
+  ];
 
   const mouBenefits = [
     {
@@ -243,8 +282,8 @@ export function TieUpsPage({ onNavigate }: TieUpsPageProps) {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-[12px] mt-[16px]">
-                <button 
-                  onClick={() => onNavigate?.('contact')}
+                <Link
+                  href="/contact"
                   className="bg-black box-border content-stretch flex items-center justify-center overflow-clip px-[32px] py-[18px] relative rounded-[9999px] hover:opacity-90 transition-opacity"
                   style={{
                     background: 'linear-gradient(90deg, #10162F 0%, #FBBF24 100%)'
@@ -253,17 +292,17 @@ export function TieUpsPage({ onNavigate }: TieUpsPageProps) {
                   <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] text-center text-nowrap text-white">
                     <p className="leading-[24px] whitespace-pre">Partner With Us</p>
                   </div>
-                </button>
+                </Link>
                 
-                <button 
-                  onClick={() => onNavigate?.('placements')}
+                <Link
+                  href="/placements"
                   className="backdrop-blur backdrop-filter bg-[rgba(255,255,255,0.1)] box-border content-stretch flex items-center justify-center px-[32px] py-[18px] relative rounded-[9999px] hover:bg-[rgba(107,193,227,0.15)] transition-colors"
                 >
                   <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[9999px]" />
                   <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] text-center text-nowrap" style={{ color: '#F4F7F9' }}>
                     <p className="leading-[24px] whitespace-pre">View Placements</p>
                   </div>
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -343,7 +382,51 @@ export function TieUpsPage({ onNavigate }: TieUpsPageProps) {
           </div>
 
           {/* MOU Partners Grid */}
-          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px] mb-[60px] md:mb-[80px]">
+            {mouPartners.map((partner, index) => (
+              <div 
+                key={index}
+                className="backdrop-blur-md backdrop-filter box-border p-[28px] relative rounded-[16px] hover:border-[rgba(107,193,227,0.3)] transition-all duration-300 group"
+              >
+                <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px]" />
+                
+                <div className="flex flex-col gap-[16px]">
+                  <div className="flex items-start justify-between">
+                    <div className="bg-gradient-to-br from-[#10162F] to-[#1a2456] rounded-[12px] p-[12px] inline-flex items-center justify-center">
+                      <FileText className="w-[24px] h-[24px]" style={{ color: '#F9A825' }} />
+                    </div>
+                    <div className="text-right">
+                      <div className="text-[11px] leading-[16px]" style={{ color: 'rgba(244, 247, 249, 0.5)' }}>Since</div>
+                      <div className="text-[14px] leading-[20px] font-semibold" style={{ color: '#6BC1E3' }}>{partner.mouDate}</div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[20px] tracking-[-0.5px] mb-[4px]" style={{ color: '#F4F7F9' }}>
+                      <p className="leading-[28px]">{partner.collegeName}</p>
+                    </div>
+                    <div className="text-[13px] leading-[18px] mb-[12px]" style={{ color: 'rgba(244, 247, 249, 0.6)' }}>
+                      {partner.location}
+                    </div>
+                    <div className="text-[12px] leading-[16px] mb-[12px]" style={{ color: '#F9A825' }}>
+                      Duration: {partner.duration}
+                    </div>
+                    <div className="flex flex-wrap gap-[8px] mt-[12px]">
+                      {partner.highlights.map((highlight, idx) => (
+                        <span 
+                          key={idx}
+                          className="text-[11px] leading-[16px] px-[10px] py-[4px] rounded-full"
+                          style={{ backgroundColor: 'rgba(107,193,227,0.1)', color: '#6BC1E3' }}
+                        >
+                          {highlight}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
 
           {/* Student Growth Outcomes */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-[16px] md:gap-[24px] mb-[60px] md:mb-[80px]">
@@ -565,8 +648,8 @@ export function TieUpsPage({ onNavigate }: TieUpsPageProps) {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-[12px] mt-[8px]">
-              <button 
-                onClick={() => onNavigate?.('contact')}
+              <Link
+                href="/contact"
                 className="bg-black box-border content-stretch flex items-center justify-center overflow-clip px-[32px] md:px-[42px] py-[18px] md:py-[22px] relative rounded-[9999px] hover:opacity-90 transition-opacity"
                 style={{
                   background: 'linear-gradient(90deg, #10162F 0%, #FBBF24 100%)'
@@ -575,17 +658,17 @@ export function TieUpsPage({ onNavigate }: TieUpsPageProps) {
                 <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] md:text-[16px] text-center text-nowrap text-white">
                   <p className="leading-[24px] whitespace-pre">Contact Us</p>
                 </div>
-              </button>
+              </Link>
               
-              <button 
-                onClick={() => onNavigate?.('about')}
+              <Link
+                href="/about"
                 className="backdrop-blur backdrop-filter bg-[rgba(255,255,255,0.1)] box-border content-stretch flex gap-[8px] items-center justify-center px-[24px] md:px-[32px] py-[18px] md:py-[22px] relative rounded-[9999px] hover:bg-[rgba(107,193,227,0.15)] transition-colors"
               >
                 <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[9999px]" />
                 <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] md:text-[16px] text-center text-nowrap" style={{ color: '#F4F7F9' }}>
                   <p className="leading-[24px] whitespace-pre">Learn More About Us</p>
                 </div>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

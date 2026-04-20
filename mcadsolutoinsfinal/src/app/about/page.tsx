@@ -42,64 +42,84 @@ function AboutPage() {
         }}
       >
         {/* Content Container */}
-        <div className="relative z-10 max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center lg:items-center justify-between gap-8 lg:gap-10 px-4 sm:px-6 md:px-8 lg:px-[32px] py-12 sm:py-16 md:py-[60px]">
-          
-          {/* Left Text Column */}
-          <div className="flex-1 flex flex-col gap-4 text-left text-white">
-            <h5 className="text-[#6BC1E3] uppercase text-sm sm:text-base lg:text-lg tracking-[0.7px] font-['Geist:Regular',sans-serif]">
-              About Us
-            </h5>
+        <div
+  className="relative z-10 max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center lg:items-center justify-between gap-8 lg:gap-10 px-4 sm:px-6 md:px-8 lg:px-[32px] py-12 sm:py-16 md:py-[60px]"
+  style={{
+    background:
+      "linear-gradient(135deg, #000000 0%, #071E28 35%, #092B38 70%, #0C3C4D 100%)",
+  }}
+>
+  {/* Left Text Column */}
+  <div className="flex-1 flex flex-col gap-4 text-left text-white">
+    <h5 className="text-[#6BC1E3] uppercase text-sm sm:text-base lg:text-lg tracking-[0.7px] font-['Geist:Regular',sans-serif]">
+      About Us
+    </h5>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[44px] leading-tight lg:leading-[54px] font-['Geist:Regular',sans-serif] font-normal tracking-[-1.2px]">
-              Leading Mechanical Design & Placement-Focused Training Institute in Pune
-            </h1>
+    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[44px] leading-tight lg:leading-[54px] font-['Geist:Regular',sans-serif] font-normal tracking-[-1.2px]">
+      Leading Mechanical Design & Placement-Focused Training Institute in Pune
+    </h1>
 
-            <p className="text-base sm:text-lg lg:text-[18px] leading-relaxed lg:leading-[28px] text-gray-300 max-w-[520px]">
-              Transforming engineering graduates into industry-ready professionals with domain expertise in BIW Fixture Design, Plastic Product Design, Robotics, and Digital Twin technologies — backed by strong placement support since 2017.
-            </p>
-          </div>
+    <p className="text-base sm:text-lg lg:text-[18px] leading-relaxed lg:leading-[28px] text-gray-300 max-w-[520px]">
+      Transforming engineering graduates into industry-ready professionals with domain expertise in BIW Fixture Design, Plastic Product Design, Robotics, and Digital Twin technologies — backed by strong placement support since 2017.
+    </p>
+  </div>
 
-          {/* Right Image Card */}
-          <div className="flex-1 relative max-w-[480px] w-full">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-[rgba(17,24,39,0.4)] border border-white/10">
-              <img
-                src={'/aboutustop.png'}
-                alt="Young Engineer in Modern Factory"
-                className="w-full h-auto sm:h-[300px] md:h-[350px] lg:h-[380px] object-cover"
-              />
-            </div>
-          </div>
-        </div>
+  {/* Right Image Card */}
+  <div className="flex-1 relative max-w-[480px] w-full">
+    <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-[rgba(17,24,39,0.4)] border border-white/10">
+      <img
+        src={'/aboutustop.png'}
+        alt="Young Engineer in Modern Factory"
+        className="w-full h-auto sm:h-[300px] md:h-[350px] lg:h-[380px] object-cover"
+      />
+    </div>
+  </div>
+</div>
       </section>
 
       {/* Our Story */}
       <AnimatedSection>
-        <section className="relative shrink-0 w-full py-6 md:py-8 lg:py-[24px] md:py-[32px]" style={{ 
-          background: 'linear-gradient(to bottom, transparent 0%, rgba(10, 28, 38, 0.5) 20%, #0A1C26 50%)'
-        }}>
-          <div className="max-w-[800px] mx-auto px-4 sm:px-6 md:px-[24px]">
-            <div className="backdrop-blur-md backdrop-filter box-border content-stretch flex flex-col gap-4 md:gap-[16px] items-start p-6 md:p-8 lg:p-[32px] relative rounded-[12px]">
-              <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
-              
-              <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-xl sm:text-2xl md:text-[22px] lg:text-[24px] tracking-[-0.6px]" style={{ color: '#F4F7F9' }}>
-                <p className="leading-snug md:leading-[32px]">From CAD Training to Automation Leadership</p>
-              </div>
-              
-              {/* Evolution Image */}
-              <div className="w-full rounded-[8px] overflow-hidden">
-                <img 
-                  src={'/aboutus_froMCAD_training_to_automation_leadership.png'} 
-                  alt="The evolution of M CAD Solutions from CAD training to Industry 4.0 leadership" 
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-              
-              <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-6 text-sm md:text-[14px] lg:text-[15px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
-                {/* Empty div kept for structure */}
-              </div>
-            </div>
-          </div>
-        </section>
+        <section
+  className="relative shrink-0 w-full py-6 md:py-8 lg:py-[24px] md:py-[32px]"
+  style={{
+    background:
+      "linear-gradient(135deg, #000000 0%, #071E28 35%, #092B38 70%, #0C3C4D 100%)",
+  }}
+>
+  <div className="max-w-[800px] mx-auto px-4 sm:px-6 md:px-[24px]">
+    <div className="backdrop-blur-md backdrop-filter box-border content-stretch flex flex-col gap-4 md:gap-[16px] items-start p-6 md:p-8 lg:p-[32px] relative rounded-[12px]">
+      <div
+        aria-hidden="true"
+        className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]"
+      />
+
+      <div
+        className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-xl sm:text-2xl md:text-[22px] lg:text-[24px] tracking-[-0.6px]"
+        style={{ color: "#F4F7F9" }}
+      >
+        <p className="leading-snug md:leading-[32px]">
+          From CAD Training to Automation Leadership
+        </p>
+      </div>
+
+      {/* Evolution Image */}
+      <div className="w-full rounded-[8px] overflow-hidden">
+        <img
+          src={"/aboutus_froMCAD_training_to_automation_leadership.png"}
+          alt="The evolution of M CAD Solutions from CAD training to Industry 4.0 leadership"
+          className="w-full h-auto object-cover"
+        />
+      </div>
+
+      <div
+        className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-6 text-sm md:text-[14px] lg:text-[15px]"
+        style={{ color: "rgba(244, 247, 249, 0.7)" }}
+      >
+        {/* Empty div kept for structure */}
+      </div>
+    </div>
+  </div>
+</section>
       </AnimatedSection>
 
       {/* Vision & Mission */}

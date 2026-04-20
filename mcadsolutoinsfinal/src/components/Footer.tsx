@@ -1,11 +1,9 @@
+'use client';
+import Link from 'next/link';
 import svgPaths from "../imports/svg-9op1xbyva3";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
-interface FooterProps {
-  onNavigate: (page: string) => void;
-}
-
-export function Footer({ onNavigate }: FooterProps) {
+export function Footer() {
   return (
     <footer className="relative shrink-0 w-full" style={{ backgroundColor: '#092B38' }}>
       <div aria-hidden="true" className="absolute border-[1px_0px_0px] border-solid inset-0 pointer-events-none" style={{ borderColor: 'rgba(107, 193, 227, 0.2)' }} />
@@ -18,31 +16,31 @@ export function Footer({ onNavigate }: FooterProps) {
               <p className="leading-[24px]">Menu</p>
             </div>
             <div className="flex flex-col gap-[8px]">
-              <button onClick={() => onNavigate('home')} className="text-left hover:text-[#6BC1E3] transition-all cursor-pointer">
+              <Link href="/" className="text-left hover:text-[#6BC1E3] transition-all cursor-pointer">
                 <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[14px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
                   <p className="leading-[20px]">Home</p>
                 </div>
-              </button>
-              <button onClick={() => onNavigate('about')} className="text-left hover:text-[#6BC1E3] transition-all cursor-pointer">
+              </Link>
+              <Link href="/about" className="text-left hover:text-[#6BC1E3] transition-all cursor-pointer">
                 <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[14px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
                   <p className="leading-[20px]">About Us</p>
                 </div>
-              </button>
-              <button onClick={() => onNavigate('cad-courses')} className="text-left hover:text-[#6BC1E3] transition-all cursor-pointer">
+              </Link>
+              <Link href="/cad-courses" className="text-left hover:text-[#6BC1E3] transition-all cursor-pointer">
                 <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[14px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
                   <p className="leading-[20px]">Job Oriented Courses</p>
                 </div>
-              </button>
-              <button onClick={() => onNavigate('placements')} className="text-left hover:text-[#6BC1E3] transition-all cursor-pointer">
+              </Link>
+              <Link href="/placements" className="text-left hover:text-[#6BC1E3] transition-all cursor-pointer">
                 <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[14px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
                   <p className="leading-[20px]">Placement</p>
                 </div>
-              </button>
-              <button onClick={() => onNavigate('contact')} className="text-left hover:text-[#6BC1E3] transition-all cursor-pointer">
+              </Link>
+              <Link href="/contact" className="text-left hover:text-[#6BC1E3] transition-all cursor-pointer">
                 <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[14px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
                   <p className="leading-[20px]">Contact</p>
                 </div>
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -52,21 +50,21 @@ export function Footer({ onNavigate }: FooterProps) {
               <p className="leading-[24px]">Programs</p>
             </div>
             <div className="flex flex-col gap-[8px]">
-              <button onClick={() => onNavigate('biw-fixture-design')} className="text-left hover:text-[#6BC1E3] transition-all cursor-pointer">
+              <Link href="/biw-fixture-design" className="text-left hover:text-[#6BC1E3] transition-all cursor-pointer">
                 <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[14px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
                   <p className="leading-[20px]">BIW Fixture Design</p>
                 </div>
-              </button>
-              <button onClick={() => onNavigate('domain-courses')} className="text-left hover:text-[#6BC1E3] transition-all cursor-pointer">
+              </Link>
+              <Link href="/interior-plastic" className="text-left hover:text-[#6BC1E3] transition-all cursor-pointer">
                 <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[14px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
                   <p className="leading-[20px]">Automotive Plastic Trims</p>
                 </div>
-              </button>
-              <button onClick={() => onNavigate('cad-courses')} className="text-left hover:text-[#6BC1E3] transition-all cursor-pointer">
+              </Link>
+              <Link href="/catia-v5" className="text-left hover:text-[#6BC1E3] transition-all cursor-pointer">
                 <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[14px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
                   <p className="leading-[20px]">CATIA V5</p>
                 </div>
-              </button>
+              </Link>
               <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[14px] mt-[8px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
                 <p className="leading-[20px]">Admission</p>
               </div>
@@ -127,8 +125,8 @@ export function Footer({ onNavigate }: FooterProps) {
               <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[20px] text-[14px] mt-[8px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
                 <p>Our Support team is available 24/7 to answer your queries</p>
               </div>
-              <button 
-                onClick={() => onNavigate('contact')}
+              <Link 
+                href="/contact"
                 className="mt-[12px] box-border flex items-center justify-center px-[20px] py-[10px] relative rounded-[9999px] hover:opacity-90 transition-all cursor-pointer"
                 style={{
                   background: 'linear-gradient(90deg, #10162F 0%, #FBBF24 100%)'
@@ -137,7 +135,7 @@ export function Footer({ onNavigate }: FooterProps) {
                 <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[14px]" style={{ color: '#F4F7F9' }}>
                   <p className="leading-[20px]">Enquire Now</p>
                 </div>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

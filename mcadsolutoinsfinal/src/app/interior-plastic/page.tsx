@@ -1,18 +1,15 @@
-
+'use client'
+import Link from 'next/link';
 import { useState } from 'react';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../components/ui/accordion";
-import { AnimatedSection } from "../components/AnimatedSection";
+} from "../../components/ui/accordion";
+// import { AnimatedSection } from "../components/AnimatedSection";
 
-interface InteriorPlasticPageProps {
-  onNavigate?: (page: string) => void;
-}
-
-export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
+export default function InteriorPlasticPage() {
   const [activeTab, setActiveTab] = useState<'overview' | 'instructor'>('overview');
 
   const courseDetails = {
@@ -263,13 +260,13 @@ export function InteriorPlasticPage({ onNavigate }: InteriorPlasticPageProps) {
               </div>
 
               {/* Enroll Button */}
-              <button
-                onClick={() => onNavigate?.('contact')}
-                className="w-full relative rounded-[8px] px-8 py-[14px]"
+              <Link
+                href="/contact"
+                className="w-full block text-center relative rounded-[8px] px-8 py-[14px]"
                 style={{ background: 'linear-gradient(90deg, #10162F 0%, #FBBF24 100%)' }}
               >
                 <span className="text-[16px]" style={{ color: '#F4F7F9' }}>Enroll in Course</span>
-              </button>
+              </Link>
             </div>
 
             {/* Right Content Area */}

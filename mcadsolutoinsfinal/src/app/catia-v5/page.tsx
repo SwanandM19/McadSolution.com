@@ -1,54 +1,47 @@
 'use client'
-
-
-import { CheckCircle2, Clock, Users, Award, BookOpen, Download, ArrowRight, ArrowLeft } from "lucide-react";
-import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-import { AnimatedSection } from '../components/AnimatedSection';
-
-// Images from public folder
+import Link from 'next/link';
+import { CheckCircle2, Clock, Users, Award, BookOpen, Download, ArrowRight,ArrowLeft } from "lucide-react";
+import { ImageWithFallback } from "../../components/figma/ImageWithFallback";
+// import { AnimatedSection } from '../components/AnimatedSection';
 const imgClampUnit = "/blogclampunit.png";
 const imgSlideUnit = "/blogslideunit.jpeg";
 const imgRiser = "/blogsriser.jpeg";
 
-interface UGNXPageProps {
-  onNavigate?: (page: string, blogId?: number) => void;
-}
-
-export function UGNXPage({ onNavigate }: UGNXPageProps) {
+export default function CatiaV5Page() {
   const courseModules = [
     {
-      title: "NX Fundamentals",
-      topics: ["NX Interface & Navigation", "File Management", "Part Navigator", "Sketch Basics", "Feature-Based Modeling"]
+      title: "Foundation & Interface",
+      topics: ["CATIA V5 Interface Overview", "Workbench Navigation", "File Management", "Sketcher Basics", "Constraint Management"]
     },
     {
-      title: "Advanced Part Modeling",
-      topics: ["Synchronous Modeling", "Parametric Modeling", "Swept & Blended Features", "Advanced Hole Features", "Feature Patterns"]
+      title: "Part Design",
+      topics: ["Solid Modeling Techniques", "Pad, Pocket, Shaft Operations", "Boolean Operations", "Draft & Fillet Features", "Pattern & Mirror"]
     },
     {
       title: "Assembly Design",
-      topics: ["Assembly Structures", "Component Positioning", "Assembly Constraints", "Exploded Views", "Assemblies with Motion"]
+      topics: ["Assembly Structure", "Constraints & Relations", "Product Structure", "Assembly Analysis", "Clash Detection"]
     },
     {
-      title: "Drafting & PMI",
-      topics: ["Drawing Creation", "View Management", "Product Manufacturing Information", "GD&T Standards", "Annotations"]
+      title: "Surface Design",
+      topics: ["Wireframe & Surface", "Advanced Surface Modeling", "Sweep & Loft Operations", "Multi-Section Surface", "Surface Analysis"]
     },
     {
-      title: "Surface Modeling",
-      topics: ["Through Curves & Mesh", "Sweep & Studio Surfaces", "N-Sided Surfaces", "Surface Analysis", "Trim & Extend"]
+      title: "Drafting & Documentation",
+      topics: ["Drawing Creation", "Views & Projections", "Dimensioning Standards", "GD&T Annotations", "Bill of Materials"]
     },
     {
-      title: "CAM & Manufacturing",
-      topics: ["Manufacturing Basics", "2.5D Milling Operations", "Cavity Milling", "Tool Path Generation", "Post Processing"]
+      title: "Advanced Techniques",
+      topics: ["Hybrid Modeling", "Knowledge Pattern", "Power Copy", "User Defined Features", "Design Automation"]
     }
   ];
 
   const courseHighlights = [
-    "Comprehensive NX CAD/CAM training",
-    "Advanced synchronous modeling techniques",
-    "Industry projects from automotive & aerospace",
-    "Expert trainers with 15+ years experience",
-    "Integration with Digital Twin workflows",
-    "Industry-recognized NX certification"
+    "Industry-standard CATIA V5 curriculum",
+    "Hands-on projects from automotive sector",
+    "Expert instructors with 10+ years experience",
+    "Digital Twin integration techniques",
+    "Placement assistance with partner companies",
+    "Industry-recognized certification"
   ];
 
   const relatedBlogs = [
@@ -84,131 +77,132 @@ export function UGNXPage({ onNavigate }: UGNXPageProps) {
   return (
     <>
       {/* Hero Section */}
-      <section 
-        className="relative w-full min-h-[600px] md:min-h-[700px] overflow-hidden"
-        style={{
-          background: 'linear-gradient(135deg, #000000 0%, #071E28 35%, #092B38 70%, #0C3C4D 100%)'
-        }}
-      >
-        {/* BACK BUTTON */}
-        <button 
-          onClick={() => onNavigate?.('cad-courses')}
-          className="absolute top-[20px] left-[20px] md:top-[30px] md:left-[30px] z-20 backdrop-blur-md backdrop-filter bg-[rgba(0,0,0,0.5)] hover:bg-[rgba(0,0,0,0.7)] rounded-full p-[10px] md:p-[12px] transition-all duration-300 group"
-          aria-label="Go back"
-        >
-          <ArrowLeft className="w-[20px] h-[20px] md:w-[24px] md:h-[24px]" style={{ color: '#F4F7F9' }} />
-          <span className="sr-only">Back</span>
-        </button>
+     {/* Hero Section */}
+<section 
+  className="relative w-full min-h-[600px] md:min-h-[700px] overflow-hidden"
+  style={{
+    background: 'linear-gradient(135deg, #000000 0%, #071E28 35%, #092B38 70%, #0C3C4D 100%)'
+  }}
+>
+  {/* BACK BUTTON */}
+  <Link 
+    href="/cad-courses"
+    className="absolute top-[20px] left-[20px] md:top-[30px] md:left-[30px] z-20 backdrop-blur-md backdrop-filter bg-[rgba(0,0,0,0.5)] hover:bg-[rgba(0,0,0,0.7)] rounded-full p-[10px] md:p-[12px] transition-all duration-300 group"
+    aria-label="Go back"
+  >
+    <ArrowLeft className="w-[20px] h-[20px] md:w-[24px] md:h-[24px]" style={{ color: '#F4F7F9' }} />
+    <span className="sr-only">Back</span>
+  </Link>
 
-        <div className="relative z-10 max-w-[1280px] mx-auto px-[16px] md:px-[32px] py-[60px] md:py-[100px]">
-          <div className="flex flex-col lg:flex-row items-center gap-[32px] md:gap-[48px]">
-            {/* Left Content */}
-            <div className="flex-1 flex flex-col gap-[20px] md:gap-[24px] text-white">
-              <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[14px] tracking-[0.7px] uppercase" style={{ color: '#6BC1E3' }}>
-                <p className="leading-[20px]">CAD Training Course</p>
+  <div className="relative z-10 max-w-[1280px] mx-auto px-[16px] md:px-[32px] py-[60px] md:py-[100px]">
+    <div className="flex flex-col lg:flex-row items-center gap-[32px] md:gap-[48px]">
+      {/* Left Content */}
+      <div className="flex-1 flex flex-col gap-[20px] md:gap-[24px] text-white">
+        <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] text-[14px] tracking-[0.7px] uppercase" style={{ color: '#6BC1E3' }}>
+          <p className="leading-[20px]">CAD Training Course</p>
+        </div>
+        
+        <h1 className="text-[36px] md:text-[48px] lg:text-[56px] leading-[44px] md:leading-[56px] lg:leading-[64px] tracking-[-1.2px] md:tracking-[-1.5px]" style={{ color: '#F4F7F9' }}>
+          CATIA V5 Professional Training
+        </h1>
+        
+        <p className="text-[16px] md:text-[18px] leading-[24px] md:leading-[28px]" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
+          Master the industry-leading CAD software used by top automotive, aerospace, and manufacturing companies worldwide. Learn from experts and work on real industry projects.
+        </p>
+
+        {/* Course Stats */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-[16px] mt-[16px]">
+          <div className="backdrop-blur-md backdrop-filter box-border p-[16px] md:p-[20px] relative rounded-[12px]">
+            <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
+            <div className="flex flex-col gap-[4px]">
+              <Clock className="w-[20px] h-[20px] mb-[4px]" style={{ color: '#F9A825' }} />
+              <div className="text-[13px] leading-[18px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
+                Duration
               </div>
-              
-              <h1 className="text-[36px] md:text-[48px] lg:text-[56px] leading-[44px] md:leading-[56px] lg:leading-[64px] tracking-[-1.2px] md:tracking-[-1.5px]" style={{ color: '#F4F7F9' }}>
-                UG NX Professional Training
-              </h1>
-              
-              <p className="text-[16px] md:text-[18px] leading-[24px] md:leading-[28px]" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
-                Master Siemens NX, the complete CAD/CAM/CAE solution trusted by aerospace, automotive, and industrial machinery leaders worldwide. Learn both parametric and synchronous modeling techniques.
-              </p>
-
-              {/* Course Stats */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-[16px] mt-[16px]">
-                <div className="backdrop-blur-md backdrop-filter box-border p-[16px] md:p-[20px] relative rounded-[12px]">
-                  <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
-                  <div className="flex flex-col gap-[4px]">
-                    <Clock className="w-[20px] h-[20px] mb-[4px]" style={{ color: '#F9A825' }} />
-                    <div className="text-[13px] leading-[18px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
-                      Duration
-                    </div>
-                    <div className="text-[18px] leading-[1.2] tracking-[-0.5px]" style={{ color: '#F4F7F9' }}>
-                      4-6 Months
-                    </div>
-                  </div>
-                </div>
-
-                <div className="backdrop-blur-md backdrop-filter box-border p-[16px] md:p-[20px] relative rounded-[12px]">
-                  <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
-                  <div className="flex flex-col gap-[4px]">
-                    <Users className="w-[20px] h-[20px] mb-[4px]" style={{ color: '#F9A825' }} />
-                    <div className="text-[13px] leading-[18px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
-                      Batch Size
-                    </div>
-                    <div className="text-[18px] leading-[1.2] tracking-[-0.5px]" style={{ color: '#F4F7F9' }}>
-                      8-12
-                    </div>
-                  </div>
-                </div>
-
-                <div className="backdrop-blur-md backdrop-filter box-border p-[16px] md:p-[20px] relative rounded-[12px]">
-                  <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
-                  <div className="flex flex-col gap-[4px]">
-                    <BookOpen className="w-[20px] h-[20px] mb-[4px]" style={{ color: '#F9A825' }} />
-                    <div className="text-[13px] leading-[18px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
-                      Level
-                    </div>
-                    <div className="text-[18px] leading-[1.2] tracking-[-0.5px]" style={{ color: '#F4F7F9' }}>
-                      All Levels
-                    </div>
-                  </div>
-                </div>
-
-                <div className="backdrop-blur-md backdrop-filter box-border p-[16px] md:p-[20px] relative rounded-[12px]">
-                  <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
-                  <div className="flex flex-col gap-[4px]">
-                    <Award className="w-[20px] h-[20px] mb-[4px]" style={{ color: '#F9A825' }} />
-                    <div className="text-[13px] leading-[18px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
-                      Certification
-                    </div>
-                    <div className="text-[18px] leading-[1.2] tracking-[-0.5px]" style={{ color: '#F4F7F9' }}>
-                      Yes
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-[12px] mt-[16px]">
-                <button 
-                  onClick={() => onNavigate?.('contact')}
-                  className="bg-black box-border content-stretch flex items-center justify-center overflow-clip px-[32px] py-[18px] relative rounded-[9999px] hover:opacity-90 transition-opacity"
-                  style={{
-                    background: 'linear-gradient(90deg, #10162F 0%, #FBBF24 100%)'
-                  }}
-                >
-                  <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] text-center text-nowrap text-white">
-                    <p className="leading-[24px] whitespace-pre">Enroll Now</p>
-                  </div>
-                </button>
-                
-                <button 
-                  className="backdrop-blur backdrop-filter bg-[rgba(255,255,255,0.1)] box-border content-stretch flex items-center gap-[8px] justify-center px-[32px] py-[18px] relative rounded-[9999px] hover:bg-[rgba(107,193,227,0.15)] transition-colors"
-                >
-                  <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[9999px]" />
-                  <Download className="w-[16px] h-[16px]" style={{ color: '#F4F7F9' }} />
-                  <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] text-center text-nowrap" style={{ color: '#F4F7F9' }}>
-                    <p className="leading-[24px] whitespace-pre">Download Brochure</p>
-                  </div>
-                </button>
+              <div className="text-[18px] leading-[1.2] tracking-[-0.5px]" style={{ color: '#F4F7F9' }}>
+                3-6 Months
               </div>
             </div>
+          </div>
 
-            {/* Right Image */}
-            <div className="flex-1 relative max-w-[540px] w-full">
-              <div className="relative rounded-[16px] md:rounded-[24px] overflow-hidden shadow-2xl bg-[rgba(17,24,39,0.4)] border border-white/10">
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMGRlc2lnbiUyMHdvcmtzdGF0aW9ufGVufDB8fHx8MTc0MDc1MjgwMHww&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="UG NX Training"
-                  className="w-full h-[300px] md:h-[400px] lg:h-[480px] object-cover"
-                />
+          <div className="backdrop-blur-md backdrop-filter box-border p-[16px] md:p-[20px] relative rounded-[12px]">
+            <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
+            <div className="flex flex-col gap-[4px]">
+              <Users className="w-[20px] h-[20px] mb-[4px]" style={{ color: '#F9A825' }} />
+              <div className="text-[13px] leading-[18px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
+                Batch Size
+              </div>
+              <div className="text-[18px] leading-[1.2] tracking-[-0.5px]" style={{ color: '#F4F7F9' }}>
+                10-15
+              </div>
+            </div>
+          </div>
+
+          <div className="backdrop-blur-md backdrop-filter box-border p-[16px] md:p-[20px] relative rounded-[12px]">
+            <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
+            <div className="flex flex-col gap-[4px]">
+              <BookOpen className="w-[20px] h-[20px] mb-[4px]" style={{ color: '#F9A825' }} />
+              <div className="text-[13px] leading-[18px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
+                Level
+              </div>
+              <div className="text-[18px] leading-[1.2] tracking-[-0.5px]" style={{ color: '#F4F7F9' }}>
+                All Levels
+              </div>
+            </div>
+          </div>
+
+          <div className="backdrop-blur-md backdrop-filter box-border p-[16px] md:p-[20px] relative rounded-[12px]">
+            <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
+            <div className="flex flex-col gap-[4px]">
+              <Award className="w-[20px] h-[20px] mb-[4px]" style={{ color: '#F9A825' }} />
+              <div className="text-[13px] leading-[18px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
+                Certification
+              </div>
+              <div className="text-[18px] leading-[1.2] tracking-[-0.5px]" style={{ color: '#F4F7F9' }}>
+                Yes
               </div>
             </div>
           </div>
         </div>
-      </section>
+
+        <div className="flex flex-col sm:flex-row gap-[12px] mt-[16px]">
+          <Link 
+            href="/contact"
+            className="bg-black box-border content-stretch flex items-center justify-center overflow-clip px-[32px] py-[18px] relative rounded-[9999px] hover:opacity-90 transition-opacity"
+            style={{
+              background: 'linear-gradient(90deg, #10162F 0%, #FBBF24 100%)'
+            }}
+          >
+            <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] text-center text-nowrap text-white">
+              <p className="leading-[24px] whitespace-pre">Enroll Now</p>
+            </div>
+          </Link>
+          
+          <button 
+            className="backdrop-blur backdrop-filter bg-[rgba(255,255,255,0.1)] box-border content-stretch flex items-center gap-[8px] justify-center px-[32px] py-[18px] relative rounded-[9999px] hover:bg-[rgba(107,193,227,0.15)] transition-colors"
+          >
+            <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[9999px]" />
+            <Download className="w-[16px] h-[16px]" style={{ color: '#F4F7F9' }} />
+            <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] text-center text-nowrap" style={{ color: '#F4F7F9' }}>
+              <p className="leading-[24px] whitespace-pre">Download Brochure</p>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      {/* Right Image */}
+      <div className="flex-1 relative max-w-[540px] w-full">
+        <div className="relative rounded-[16px] md:rounded-[24px] overflow-hidden shadow-2xl bg-[rgba(17,24,39,0.4)] border border-white/10">
+          <ImageWithFallback
+            src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYWQlMjBzb2Z0d2FyZSUyMGRlc2lnbnxlbnwwfHx8fDE3NDA3NTI0MDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+            alt="CATIA V5 Training"
+            className="w-full h-[300px] md:h-[400px] lg:h-[480px] object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Course Highlights */}
       <section className="relative shrink-0 w-full py-[60px] md:py-[80px]" style={{ backgroundColor: '#0A1C26' }}>
@@ -350,8 +344,8 @@ export function UGNXPage({ onNavigate }: UGNXPageProps) {
                       </div>
                     </div>
                     
-                    <button 
-                      onClick={() => onNavigate?.('blog-detail', blog.id)}
+                    <Link 
+                      href={`/blog/${blog.id}`}
                       className="w-full backdrop-blur backdrop-filter bg-[rgba(107,193,227,0.1)] box-border content-stretch flex items-center justify-center px-[16px] py-[10px] relative rounded-[8px] hover:bg-[rgba(107,193,227,0.2)] transition-all duration-300 cursor-pointer"
                     >
                       <div aria-hidden="true" className="absolute border border-[rgba(107,193,227,0.3)] border-solid inset-0 pointer-events-none rounded-[8px]" />
@@ -367,7 +361,7 @@ export function UGNXPage({ onNavigate }: UGNXPageProps) {
                           </svg>
                         </div>
                       </div>
-                    </button>
+                    </Link>
                   </div>
                 </div>
                 <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px] transition-colors" style={{ borderColor: 'rgba(107, 193, 227, 0.2)' }} />
@@ -376,8 +370,8 @@ export function UGNXPage({ onNavigate }: UGNXPageProps) {
           </div>
 
           <div className="text-center mt-[32px]">
-            <button 
-              onClick={() => onNavigate?.('blog')}
+            <Link 
+              href="/blog"
               className="backdrop-blur backdrop-filter bg-[rgba(255,255,255,0.1)] box-border content-stretch flex gap-[8px] items-center justify-center px-[28px] py-[14px] relative rounded-[9999px] hover:bg-[rgba(107,193,227,0.15)] transition-colors mx-auto"
             >
               <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[9999px]" />
@@ -385,7 +379,7 @@ export function UGNXPage({ onNavigate }: UGNXPageProps) {
                 <p className="leading-[20px] whitespace-pre">View All Articles</p>
               </div>
               <ArrowRight className="w-[16px] h-[16px]" style={{ color: '#F4F7F9' }} />
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -400,16 +394,16 @@ export function UGNXPage({ onNavigate }: UGNXPageProps) {
             
             <div>
               <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center text-[28px] md:text-[36px] lg:text-[40px] tracking-[-0.9px] md:tracking-[-1px] mb-[16px]" style={{ color: '#F4F7F9' }}>
-                <p className="leading-[36px] md:leading-[44px] lg:leading-[48px]\">Ready to Excel with UG NX?</p>
+                <p className="leading-[36px] md:leading-[44px] lg:leading-[48px]\">Ready to Start Your CATIA V5 Journey?</p>
               </div>
               <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[24px] md:leading-[28px] text-[15px] md:text-[16px] max-w-[640px] mx-auto" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
-                <p>Launch your career in advanced CAD/CAM with comprehensive NX training. Industry experts, real projects, and guaranteed placement support.</p>
+                <p>Join India's leading Industry 4.0 training institute and learn from the best. Limited seats available for the next batch.</p>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-[12px] mt-[8px]">
-              <button 
-                onClick={() => onNavigate?.('contact')}
+              <Link 
+                href="/contact"
                 className="bg-black box-border content-stretch flex items-center justify-center overflow-clip px-[32px] md:px-[42px] py-[18px] md:py-[22px] relative rounded-[9999px] hover:opacity-90 transition-opacity"
                 style={{
                   background: 'linear-gradient(90deg, #10162F 0%, #FBBF24 100%)'
@@ -418,23 +412,22 @@ export function UGNXPage({ onNavigate }: UGNXPageProps) {
                 <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] md:text-[16px] text-center text-nowrap text-white">
                   <p className="leading-[24px] whitespace-pre">Enroll Now</p>
                 </div>
-              </button>
+              </Link>
               
-              <button 
-                onClick={() => onNavigate?.('cad-courses')}
+              <Link 
+                href="/cad-courses"
                 className="backdrop-blur backdrop-filter bg-[rgba(255,255,255,0.1)] box-border content-stretch flex gap-[8px] items-center justify-center px-[24px] md:px-[32px] py-[18px] md:py-[22px] relative rounded-[9999px] hover:bg-[rgba(107,193,227,0.15)] transition-colors"
               >
                 <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[9999px]" />
                 <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] md:text-[16px] text-center text-nowrap" style={{ color: '#F4F7F9' }}>
                   <p className="leading-[24px] whitespace-pre">View All Courses</p>
                 </div>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
-
-      {/* SEPARATOR - Visual divider between content and footer */}
+       {/* SEPARATOR - Visual divider between content and footer - ADD THIS HERE */}
       <div className="relative w-full">
         <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#F9A825] to-transparent" />
         <div className="absolute left-1/2 transform -translate-x-1/2 -top-[20px]">
@@ -447,5 +440,3 @@ export function UGNXPage({ onNavigate }: UGNXPageProps) {
     </>
   );
 }
-
-export default UGNXPage;

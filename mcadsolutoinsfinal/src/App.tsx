@@ -74,11 +74,11 @@ export default function App() {
 
   return (
     <div className="content-stretch flex flex-col items-center relative w-full min-h-screen scroll-smooth" style={{ backgroundColor: '#0A1C26' }}>
-      <Header currentPage={currentPage} onNavigate={handleNavigate} />
+      <Header />
       <main className="w-full">
         {renderPage()}
       </main>
-      <Footer onNavigate={handleNavigate} />
+      <Footer />
       
       <style>{`
         html {

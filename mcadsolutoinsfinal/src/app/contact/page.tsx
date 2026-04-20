@@ -1,11 +1,10 @@
 
-
 'use client';
-
+import Link from 'next/link';
 import { useState } from 'react';
-import { AnimatedSection } from '../components/AnimatedSection';
+// import { AnimatedSection } from '../components/AnimatedSection';
 import { ArrowLeft } from 'lucide-react';
-import svgPaths from '../imports/svg-9op1xbyva3';
+import svgPaths from '../../imports/svg-9op1xbyva3';
 
 const image_eb8365b9c5ecfe2fca21e4f849236ebb7d107b90 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
 const image_19450e4933b9541de2bc421a5d14bc8bcd13b146 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
@@ -13,11 +12,7 @@ const imgSection1 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Soluti
 const image_50df78cf249e7e1fe6c20c29a0164d1e171ce1ec = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
 const imgMap = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
 
-interface ContactPageProps {
-  onNavigate?: (page: string) => void;
-}
-
-export function ContactPage({ onNavigate }: ContactPageProps) {
+export default function ContactPage() {
   // Form state from TrainingLeadPage
   const [formData, setFormData] = useState({
     name: '',
@@ -92,14 +87,14 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
         }}
       >
         {/* BACK BUTTON */}
-        <button 
-          onClick={() => onNavigate?.('home')}
+        <Link 
+          href="/"
           className="absolute top-[20px] left-[20px] md:top-[30px] md:left-[30px] z-20 backdrop-blur-md backdrop-filter bg-[rgba(0,0,0,0.5)] hover:bg-[rgba(0,0,0,0.7)] rounded-full p-[10px] md:p-[12px] transition-all duration-300 group"
           aria-label="Go back"
         >
           <ArrowLeft className="w-[20px] h-[20px] md:w-[24px] md:h-[24px]" style={{ color: '#F4F7F9' }} />
           <span className="sr-only">Back</span>
-        </button>
+        </Link>
 
         <div className="relative z-10 max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center lg:items-center justify-between gap-10 px-[32px] py-[60px]">
           {/* Left Text Column */}
