@@ -19,7 +19,7 @@ const img2017Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+
 const img2018Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
 const img2019Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
 const img2020Milestone = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
-import svgPaths from "../imports/svg-9op1xbyva3";
+import svgPaths from "../../imports/svg-9op1xbyva3";
 const imgSection = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
 const imgTechnicalHero = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
 const imgGradient = "";
@@ -28,13 +28,9 @@ const imgGalleryCollage = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD
 const imgEvolution = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
 const imgIndustry5Vision = "https://placehold.co/800x600/0A1C26/00D4FF?text=M CAD+Solution";
 import { Monitor, Users, Award, BookOpen, Linkedin, Twitter, Instagram, Target, Zap } from "lucide-react";
-import { AnimatedSection } from '../components/AnimatedSection';
+import { AnimatedSection } from '../../components/AnimatedSection';
 
-interface AboutPageProps {
-  onNavigate?: (page: string) => void;
-}
-
-export function AboutPage({ onNavigate }: AboutPageProps) {
+function AboutPage() {
   return (
     <>
       {/* About Us Hero Section */}

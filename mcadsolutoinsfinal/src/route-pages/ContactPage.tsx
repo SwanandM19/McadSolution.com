@@ -1,9 +1,9 @@
 
-
 // 'use client';
 
 // import { useState } from 'react';
 // import { AnimatedSection } from '../components/AnimatedSection';
+// import { ArrowLeft } from 'lucide-react';
 // import svgPaths from '../imports/svg-9op1xbyva3';
 
 // const image_eb8365b9c5ecfe2fca21e4f849236ebb7d107b90 = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
@@ -12,7 +12,11 @@
 // const image_50df78cf249e7e1fe6c20c29a0164d1e171ce1ec = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
 // const imgMap = "https://placehold.co/800x600/0A1C26/00D4FF?text=MCAD+Solution";
 
-// export function ContactPage() {
+// interface ContactPageProps {
+//   onNavigate?: (page: string) => void;
+// }
+
+// export function ContactPage({ onNavigate }: ContactPageProps) {
 //   // Form state from TrainingLeadPage
 //   const [formData, setFormData] = useState({
 //     name: '',
@@ -60,6 +64,14 @@
 //     }
 //   };
 
+//   // Google Maps URL for the location
+//   const locationAddress = "1st floor, FMCIII BUILDING, Marathwada Mitra Mandal College of Engineering Rd, above Kuka robotics lab, Hingane Home Colony, Karvenagar, Pune, Maharashtra 411052";
+//   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(locationAddress)}`;
+
+//   const handleOpenMap = () => {
+//     window.open(googleMapsUrl, '_blank');
+//   };
+
 //   return (
 //     <>
 //       {/* Hero Section */}
@@ -70,6 +82,16 @@
 //             "linear-gradient(135deg, #000000 0%, #071E28 35%, #092B38 70%, #0C3C4D 100%)",
 //         }}
 //       >
+//         {/* BACK BUTTON */}
+//         <button 
+//           onClick={() => onNavigate?.('home')}
+//           className="absolute top-[20px] left-[20px] md:top-[30px] md:left-[30px] z-20 backdrop-blur-md backdrop-filter bg-[rgba(0,0,0,0.5)] hover:bg-[rgba(0,0,0,0.7)] rounded-full p-[10px] md:p-[12px] transition-all duration-300 group"
+//           aria-label="Go back"
+//         >
+//           <ArrowLeft className="w-[20px] h-[20px] md:w-[24px] md:h-[24px]" style={{ color: '#F4F7F9' }} />
+//           <span className="sr-only">Back</span>
+//         </button>
+
 //         <div className="relative z-10 max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center lg:items-center justify-between gap-10 px-[32px] py-[60px]">
 //           {/* Left Text Column */}
 //           <div className="flex-1 flex flex-col gap-4 text-left text-white">
@@ -362,7 +384,7 @@
 //               </div>
 //             </div>
 
-//             <div className="backdrop-blur-md backdrop-filter box-border content-stretch flex flex-col gap-[16px] items-center p-[32px] relative rounded-[16px] text-center">
+//             <div className="backdrop-blur-md backdrop-filter box-border content-stretch flex flex-col gap-[16px] items-center p-[32px] relative rounded-[16px] text-center cursor-pointer hover:bg-[rgba(107,193,227,0.05)] transition-all duration-300" onClick={handleOpenMap}>
 //               <div
 //                 aria-hidden="true"
 //                 className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px]"
@@ -400,8 +422,12 @@
 //                   className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[20px] text-[14px] w-full"
 //                   style={{ color: "rgba(244, 247, 249, 0.7)" }}
 //                 >
-//                   <p>Pune, Maharashtra</p>
-//                   <p>India - 411001</p>
+//                   <p>1st floor, FMCIII BUILDING,</p>
+//                   <p>Marathwada Mitra Mandal College Rd</p>
+//                   <p>Karvenagar, Pune, Maharashtra 411052</p>
+//                 </div>
+//                 <div className="mt-3 text-[12px]" style={{ color: '#6BC1E3' }}>
+//                   Click to open Google Maps →
 //                 </div>
 //               </div>
 //             </div>
@@ -409,7 +435,7 @@
 //         </div>
 //       </section>
 
-//       {/* Map Section */}
+//       {/* Map Section - Clickable Google Maps */}
 //       <section
 //         className="relative shrink-0 w-full py-[60px]"
 //         style={{ backgroundColor: "#0A1C26" }}
@@ -429,19 +455,53 @@
 //               <p className="leading-[36px] md:leading-[44px]">Visit Our Institute</p>
 //             </div>
 //           </div>
-//           <div className="backdrop-blur-md backdrop-filter box-border relative rounded-[16px] overflow-hidden">
+          
+//           {/* Clickable Map Container */}
+//           <button 
+//             onClick={handleOpenMap}
+//             className="w-full backdrop-blur-md backdrop-filter box-border relative rounded-[16px] overflow-hidden cursor-pointer group transition-all duration-300 hover:shadow-xl hover:shadow-[rgba(107,193,227,0.1)]"
+//           >
 //             <div
 //               aria-hidden="true"
 //               className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px] z-10"
 //             />
 //             <img
 //               src={'/contectus_location.png'}
-//               alt="M CAD Solutions Location - 1st floor, FMCIII BUILDING, Marathwada Mitra Mandal College of Engineering Rd, Pune"
-//               className="w-full h-auto object-cover"
+//               alt="M CAD Solutions Location - 1st floor, FMCIII BUILDING, Marathwada Mitra Mandal College of Engineering Rd, above Kuka robotics lab, Hingane Home Colony, Karvenagar, Pune, Maharashtra 411052"
+//               className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
 //             />
+            
+//             {/* Overlay with click indicator */}
+//             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+//               <div className="bg-[rgba(0,0,0,0.8)] backdrop-blur-md rounded-full px-6 py-3 flex items-center gap-3">
+//                 <svg className="w-5 h-5" fill="#F9A825" viewBox="0 0 24 24">
+//                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+//                 </svg>
+//                 <span className="text-white text-[16px] font-medium">Open in Google Maps</span>
+//               </div>
+//             </div>
+//           </button>
+
+//           {/* Address text below map */}
+//           <div className="text-center mt-4">
+//             <p className="text-[14px] leading-[20px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
+//               1st floor, FMCIII BUILDING, Marathwada Mitra Mandal College of Engineering Rd,<br />
+//               above Kuka robotics lab, Hingane Home Colony, Karvenagar, Pune, Maharashtra 411052
+//             </p>
 //           </div>
 //         </div>
 //       </section>
+
+//       {/* SEPARATOR - Visual divider between content and footer */}
+//       <div className="relative w-full">
+//         <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#F9A825] to-transparent" />
+//         <div className="absolute left-1/2 transform -translate-x-1/2 -top-[20px]">
+//           <div className="bg-[#092B38] p-[8px] rounded-full">
+//             <div className="w-[8px] h-[8px] rounded-full bg-[#F9A825]" />
+//           </div>
+//         </div>
+//       </div>
+//       <div className="h-[2px] bg-[rgba(249,168,37,0.2)] w-full" />
 //     </>
 //   );
 // }
@@ -512,9 +572,17 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
     }
   };
 
-  // Google Maps URL for the location
-  const locationAddress = "1st floor, FMCIII BUILDING, Marathwada Mitra Mandal College of Engineering Rd, above Kuka robotics lab, Hingane Home Colony, Karvenagar, Pune, Maharashtra 411052";
-  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(locationAddress)}`;
+  // Exact Google Maps URL for M CAD Solutions
+  const googleMapsUrl = "https://www.google.com/maps/place/M+CAD+Solutions/@18.49031,73.8091136,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bf4bc88c149f:0x721af976b1c10c4a!8m2!3d18.49031!4d73.8091136!16s%2Fg%2F11gvxlbp30?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D";
+  
+  // Complete address details
+  const fullAddress = "1st floor, FMCIII BUILDING, Marathwada Mitra Mandal College of Engineering Rd, above Kuka robotics lab, Hingane Home Colony, Karvenagar, Pune, Maharashtra 411052";
+  
+  // Address lines for display
+  const addressLine1 = "1st floor, FMCIII BUILDING";
+  const addressLine2 = "Marathwada Mitra Mandal College of Engineering Rd";
+  const addressLine3 = "above Kuka robotics lab, Hingane Home Colony";
+  const addressLine4 = "Karvenagar, Pune, Maharashtra 411052";
 
   const handleOpenMap = () => {
     window.open(googleMapsUrl, '_blank');
@@ -567,7 +635,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
         </div>
       </section>
 
-      {/* Contact Form Section (Replaced with TrainingLeadPage form fields) */}
+      {/* Contact Form Section */}
       <section
         className="relative shrink-0 w-full py-[80px]"
         style={{ backgroundColor: "#0A1C26" }}
@@ -734,7 +802,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                 </div>
               )}
 
-              {/* Submit Button (using existing gradient style) */}
+              {/* Submit Button */}
               <button
                 type="submit"
                 disabled={isSubmitting}
@@ -758,6 +826,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
       >
         <div className="max-w-[1280px] mx-auto px-[16px] md:px-[32px]">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+            {/* Email Card */}
             <div className="backdrop-blur-md backdrop-filter box-border content-stretch flex flex-col gap-[16px] items-center p-[32px] relative rounded-[16px] text-center">
               <div
                 aria-hidden="true"
@@ -795,6 +864,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
               </div>
             </div>
 
+            {/* Call Card */}
             <div className="backdrop-blur-md backdrop-filter box-border content-stretch flex flex-col gap-[16px] items-center p-[32px] relative rounded-[16px] text-center">
               <div
                 aria-hidden="true"
@@ -827,12 +897,16 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                   style={{ color: "rgba(244, 247, 249, 0.7)" }}
                 >
                   <p>+91 98765 43210</p>
-                  <p>Mon-Sat: 9:00 AM - 7:00 PM</p>
+                  <p>Mon-Sat: 9:00 AM - 9:00 PM</p>
                 </div>
               </div>
             </div>
 
-            <div className="backdrop-blur-md backdrop-filter box-border content-stretch flex flex-col gap-[16px] items-center p-[32px] relative rounded-[16px] text-center cursor-pointer hover:bg-[rgba(107,193,227,0.05)] transition-all duration-300" onClick={handleOpenMap}>
+            {/* Visit Us Card - Clickable with exact Google Maps URL */}
+            <div 
+              className="backdrop-blur-md backdrop-filter box-border content-stretch flex flex-col gap-[16px] items-center p-[32px] relative rounded-[16px] text-center cursor-pointer hover:bg-[rgba(107,193,227,0.05)] transition-all duration-300" 
+              onClick={handleOpenMap}
+            >
               <div
                 aria-hidden="true"
                 className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px]"
@@ -870,9 +944,10 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                   className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[20px] text-[14px] w-full"
                   style={{ color: "rgba(244, 247, 249, 0.7)" }}
                 >
-                  <p>1st floor, FMCIII BUILDING,</p>
-                  <p>Marathwada Mitra Mandal College Rd</p>
-                  <p>Karvenagar, Pune, Maharashtra 411052</p>
+                  <p>{addressLine1}</p>
+                  <p>{addressLine2}</p>
+                  <p>{addressLine3}</p>
+                  <p>{addressLine4}</p>
                 </div>
                 <div className="mt-3 text-[12px]" style={{ color: '#6BC1E3' }}>
                   Click to open Google Maps →
@@ -883,7 +958,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
         </div>
       </section>
 
-      {/* Map Section - Clickable Google Maps */}
+      {/* Map Section - Clickable with exact Google Maps URL */}
       <section
         className="relative shrink-0 w-full py-[60px]"
         style={{ backgroundColor: "#0A1C26" }}
@@ -904,7 +979,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
             </div>
           </div>
           
-          {/* Clickable Map Container */}
+          {/* Clickable Map Container - Opens exact Google Maps URL */}
           <button 
             onClick={handleOpenMap}
             className="w-full backdrop-blur-md backdrop-filter box-border relative rounded-[16px] overflow-hidden cursor-pointer group transition-all duration-300 hover:shadow-xl hover:shadow-[rgba(107,193,227,0.1)]"
@@ -930,12 +1005,20 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
             </div>
           </button>
 
-          {/* Address text below map */}
+          {/* Address text below map - Clickable */}
           <div className="text-center mt-4">
-            <p className="text-[14px] leading-[20px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
-              1st floor, FMCIII BUILDING, Marathwada Mitra Mandal College of Engineering Rd,<br />
-              above Kuka robotics lab, Hingane Home Colony, Karvenagar, Pune, Maharashtra 411052
-            </p>
+            <button 
+              onClick={handleOpenMap}
+              className="group cursor-pointer hover:opacity-80 transition-opacity"
+            >
+              <p className="text-[14px] leading-[20px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
+                {addressLine1}, {addressLine2},<br />
+                {addressLine3}, {addressLine4}
+              </p>
+              <p className="text-[12px] leading-[18px] mt-2 group-hover:underline" style={{ color: '#6BC1E3' }}>
+                📍 Click to open in Google Maps
+              </p>
+            </button>
           </div>
         </div>
       </section>

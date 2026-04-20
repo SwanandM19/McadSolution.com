@@ -30,7 +30,7 @@ export function CADCoursesPage({ onNavigate }: CADCoursesPageProps) {
     title: 'SOLIDWORKS',
     description:
       "Personality development refers to the continuous process of enhancing & refining one's individual characteristics, behaviors, attitudes & emotional intelligence to become a more well-rounded & socially adept individual. Remember that personality development is a gradual process & it's okay to take one step at a time. Be patient with yourself & focus on continuous improvement.",
-    features: ['20 Practical Sessions', 'Expert-Led Instruction'],
+    features: ['60 Lectures', 'Expert-Led Instruction'],
     duration: '1 Month',
     level: 'All Levels',
   },
@@ -39,7 +39,7 @@ export function CADCoursesPage({ onNavigate }: CADCoursesPageProps) {
     title: 'UGNX',
     description:
       'Soft skills are a set of non-technical, interpersonal & personal attributes that enable individuals to work well with others, communicate effectively & navigate various social situations. These skills are essential in both professional & personal settings, as they complement hard or technical skills & contribute to overall success and well-being. They can be developed and refined through self-awareness, practice, and continuous learning.',
-    features: ['10 Lessons', 'Practical training'],
+    features: ['60 Lectures', 'Practical training'],
     duration: '1 Month',
     level: 'All Levels',
   },

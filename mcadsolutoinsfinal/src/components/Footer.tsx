@@ -120,7 +120,7 @@ export function Footer({ onNavigate }: FooterProps) {
               <div className="flex gap-[8px] items-start">
                 <Clock className="w-[16px] h-[16px] mt-[2px] shrink-0" style={{ color: '#6BC1E3' }} />
                 <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[20px] text-[14px]" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
-                  <p>Monday - Saturday: 09.00 AM - 09.00 PM.</p>
+                  <p>Monday-Saturday:09.00 AM - 09.00PM.</p>
                   <p className="mt-[4px]">Sunday : Closed</p>
                 </div>
               </div>

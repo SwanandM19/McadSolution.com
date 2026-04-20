@@ -17,39 +17,39 @@ export function PlacementsPage({ onNavigate }: PlacementsPageProps) {
   ];
 
   const successStories = [
-    {
-      name: "Rahul Sharma",
-      role: "BIW Design Engineer",
-      company: "Tata Motors",
-      batch: "2024",
-      image: "https://images.unsplash.com/photo-1638452033979-14fba9e17fbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMHByb2Zlc3Npb25hbCUyMGVuZ2luZWVyfGVufDF8fHx8MTc2MTYwMzE2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      quote: "M CAD Solutions transformed my career. The hands-on training in CATIA V5 and real industry projects gave me the confidence to excel in my role."
-    },
-    {
-      name: "Priya Deshmukh",
-      role: "CAD Engineer",
-      company: "Mahindra & Mahindra",
-      batch: "2024",
-      image: "https://images.unsplash.com/photo-1638452033979-14fba9e17fbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMHByb2Zlc3Npb25hbCUyMGVuZ2luZWVyfGVufDF8fHx8MTc2MTYwMzE2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      quote: "The placement support team was incredible. They helped me prepare for interviews and connected me with leading automotive companies."
-    },
-    {
-      name: "Amit Patil",
-      role: "Fixture Design Engineer",
-      company: "Volkswagen India",
-      batch: "2023",
-      image: "https://images.unsplash.com/photo-1638452033979-14fba9e17fbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMHByb2Zlc3Npb25hbCUyMGVuZ2luZWVyfGVufDF8fHx8MTc2MTYwMzE2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      quote: "From zero CAD knowledge to landing my dream job in just 6 months. M CAD Solutions delivers on their promise."
-    },
-    {
-      name: "Sneha Kulkarni",
-      role: "Product Design Engineer",
-      company: "Bosch India",
-      batch: "2023",
-      image: "https://images.unsplash.com/photo-1638452033979-14fba9e17fbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMHByb2Zlc3Npb25hbCUyMGVuZ2luZWVyfGVufDF8fHx8MTc2MTYwMzE2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      quote: "The faculty's industry experience and personalized mentorship made all the difference. Highly recommend M CAD Solutions!"
-    }
-  ];
+  {
+    name: "Rahul Sharma",
+    role: "BIW Design Engineer",
+    company: "Tata Motors",
+    batch: "2024",
+    image: "https://ui-avatars.com/api/?name=Rahul+Sharma&background=0D8ABC&color=fff&size=256",
+    quote: "M CAD Solutions transformed my career. The hands-on training in CATIA V5 and real industry projects gave me the confidence to excel in my role."
+  },
+  {
+    name: "Priya Deshmukh",
+    role: "CAD Engineer",
+    company: "Mahindra & Mahindra",
+    batch: "2024",
+    image: "https://ui-avatars.com/api/?name=Priya+Deshmukh&background=6C5CE7&color=fff&size=256",
+    quote: "The placement support team was incredible. They helped me prepare for interviews and connected me with leading automotive companies."
+  },
+  {
+    name: "Amit Patil",
+    role: "Fixture Design Engineer",
+    company: "Volkswagen India",
+    batch: "2023",
+    image: "https://ui-avatars.com/api/?name=Amit+Patil&background=00B894&color=fff&size=256",
+    quote: "From zero CAD knowledge to landing my dream job in just 6 months. M CAD Solutions delivers on their promise."
+  },
+  {
+    name: "Sneha Kulkarni",
+    role: "Product Design Engineer",
+    company: "Bosch India",
+    batch: "2023",
+    image: "https://ui-avatars.com/api/?name=Sneha+Kulkarni&background=E17055&color=fff&size=256",
+    quote: "The faculty's industry experience and personalized mentorship made all the difference. Highly recommend M CAD Solutions!"
+  }
+];
 
   const placementProcess = [
     {
@@ -112,7 +112,7 @@ export function PlacementsPage({ onNavigate }: PlacementsPageProps) {
               </h1>
               
               <p className="text-[16px] md:text-[18px] leading-[24px] md:leading-[28px]" style={{ color: 'rgba(244, 247, 249, 0.8)' }}>
-                Join 5000+ successful students who launched their careers in automotive design and manufacturing with our comprehensive placement support.
+                Join 300+ successful students who launched their careers in automotive design and manufacturing with our comprehensive placement support.
               </p>
 
               {/* Stats */}
@@ -177,7 +177,7 @@ export function PlacementsPage({ onNavigate }: PlacementsPageProps) {
               <p className="leading-[20px]">Our Network</p>
             </div>
             <div className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center text-[28px] md:text-[36px] lg:text-[40px] tracking-[-0.9px] md:tracking-[-1px]" style={{ color: '#F4F7F9' }}>
-              <p className="leading-[36px] md:leading-[44px] lg:leading-[48px]">Our Partner Companies</p>
+              <p className="leading-[36px] md:leading-[44px] lg:leading-[48px]">Our Student Placed In</p>
             </div>
             <p className="mt-[16px] text-[15px] md:text-[16px] leading-[24px] md:leading-[28px] max-w-[720px] mx-auto" style={{ color: 'rgba(244, 247, 249, 0.7)' }}>
               We partner with 150+ leading companies in automotive, manufacturing, and product design sectors

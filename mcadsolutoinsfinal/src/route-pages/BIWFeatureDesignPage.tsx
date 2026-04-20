@@ -130,7 +130,7 @@ export function BIWFeatureDesignPage({ onNavigate }: biwFixtureDesignPageProps) 
                       <path d="M2 17l10 5 10-5M2 12l10 5 10-5" strokeWidth="2" />
                     </svg>
                   ),
-                  label: 'LEVEL BEGINNER'
+                  label: 'LEVEL BEGINNER,INTERMEDIATE,ADVANCED'
                 },
                 {
                   icon: (
@@ -159,9 +159,7 @@ export function BIWFeatureDesignPage({ onNavigate }: biwFixtureDesignPageProps) 
 
           {/* Header row */}
           <div className="flex flex-wrap items-center justify-between gap-4 mb-8 md:mb-[32px]">
-            <h2 className="text-2xl md:text-[36px] tracking-[-0.9px] leading-[44px]" style={{ color: '#F4F7F9' }}>
-              Syllabus
-            </h2>
+          
             <button
               className="relative rounded-[8px] px-5 py-3 flex items-center gap-2"
               style={{ background: 'linear-gradient(90deg, #10162F 0%, #FBBF24 100%)' }}
@@ -174,30 +172,36 @@ export function BIWFeatureDesignPage({ onNavigate }: biwFixtureDesignPageProps) 
               <span className="text-[16px]" style={{ color: '#F4F7F9' }}>Download Syllabus</span>
             </button>
           </div>
-
+          <div className="backdrop-blur-md backdrop-filter relative rounded-[16px] p-6 sm:p-8 md:p-[48px]" style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
+            <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px]" />
+            <div className="relative">
+              <h2 className="text-2xl md:text-[36px] tracking-[-0.9px] leading-[44px] mb-6" style={{ color: '#F4F7F9' }}>About This Course</h2>
+              <p className="text-[16px] leading-[28px] mb-5" style={{ color: 'rgba(244,247,249,0.8)' }}>{courseDetails.description}</p>
+              <p className="text-[16px] leading-[28px]" style={{ color: 'rgba(244,247,249,0.8)' }}>
+                By taking this course, you'll gain advanced skills in BIW Fixture Design, which will significantly enhance your job prospects. Upon successful completion, excellent employment opportunities in the automotive field as well as mechanical design will be assured.
+              </p>
+            </div>
+          </div>
+          <br />
           {/* Course Overview Card */}
-          <div
-            className="backdrop-blur-md backdrop-filter relative rounded-[16px] p-6 sm:p-8 md:p-[48px]"
+            <div
+            className="backdrop-blur-md backdrop-filter relative rounded-[16px] p-6 md:p-8"
             style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}
           >
             <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px]" />
             <div className="relative">
-              <h3 className="text-xl md:text-[28px] tracking-[-0.7px] leading-[36px] mb-8" style={{ color: '#F4F7F9' }}>
-                Course Overview
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 md:gap-x-[48px] gap-y-5">
+              <h3 className="text-[22px] tracking-[-0.55px] leading-[30px] mb-6" style={{ color: '#F4F7F9' }}>Course Overview</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
                 {[
-                  'Introduction To Automobile Industry',
-                  'Introduction To BIW FIXTURE',
-                  'Introduction to BIW',
-                  'Understanding Of Automobile Underbody',
-                  'Exhaust System & Its Types',
-                  'FUEL TANK',
-                  'BIW Mounting Bracket Design',
-                  'Fuel Line Routing',
-                  'BIW Clips & Clamps',
-                  'Miscellaneous Brackets'
-                ].map((item, index) => (
+                  'Complete BIW fixture design workflow',
+                  'Advanced 3D modeling and assembly techniques',
+                  'Simulation and validation processes',
+                  'Welding gun integration and clearance analysis',
+                  'Manufacturing drawing creation with GD&T',
+                  'Industry-standard design methodologies',
+                  'Project management and documentation',
+                  'Real-world automotive project experience'
+                ].map((skill, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="relative shrink-0 size-5 mt-[2px]">
                       <svg className="block size-full" fill="none" viewBox="0 0 20 20">
@@ -205,7 +209,7 @@ export function BIWFeatureDesignPage({ onNavigate }: biwFixtureDesignPageProps) 
                         <path d="M6 10 L9 13 L14 7" stroke="#6BC1E3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </div>
-                    <p className="text-[15px] leading-[24px]" style={{ color: 'rgba(244,247,249,0.8)' }}>{item}</p>
+                    <p className="text-[15px] leading-[22px]" style={{ color: 'rgba(244,247,249,0.8)' }}>{skill}</p>
                   </div>
                 ))}
               </div>
@@ -666,125 +670,12 @@ export function BIWFeatureDesignPage({ onNavigate }: biwFixtureDesignPageProps) 
       </section>
 
       {/* ── Curriculum Details ────────────────────────────────────── */}
-      <section className="relative shrink-0 w-full py-14 md:py-[80px]" style={{ backgroundColor: '#092B38' }}>
-        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10 md:mb-[48px]">
-            <p className="text-[13px] md:text-[14px] tracking-[0.7px] uppercase mb-3" style={{ color: '#6BC1E3' }}>Detailed Learning Path</p>
-            <h2 className="text-3xl md:text-[40px] leading-tight md:leading-[52px]" style={{ color: '#F4F7F9' }}>CURRICULUM</h2>
-          </div>
+     
 
-          {/* Skills Section */}
-          <div
-            className="backdrop-blur-md backdrop-filter relative rounded-[16px] p-6 md:p-8"
-            style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}
-          >
-            <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px]" />
-            <div className="relative">
-              <h3 className="text-[22px] tracking-[-0.55px] leading-[30px] mb-6" style={{ color: '#F4F7F9' }}>Skills You Will Get In M CAD Solutions?</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
-                {[
-                  'Complete BIW fixture design workflow',
-                  'Advanced 3D modeling and assembly techniques',
-                  'Simulation and validation processes',
-                  'Welding gun integration and clearance analysis',
-                  'Manufacturing drawing creation with GD&T',
-                  'Industry-standard design methodologies',
-                  'Project management and documentation',
-                  'Real-world automotive project experience'
-                ].map((skill, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <div className="relative shrink-0 size-5 mt-[2px]">
-                      <svg className="block size-full" fill="none" viewBox="0 0 20 20">
-                        <circle cx="10" cy="10" r="8" stroke="#6BC1E3" strokeWidth="1.5" fill="rgba(107,193,227,0.1)" />
-                        <path d="M6 10 L9 13 L14 7" stroke="#6BC1E3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </div>
-                    <p className="text-[15px] leading-[22px]" style={{ color: 'rgba(244,247,249,0.8)' }}>{skill}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* ── Course Overview Stats ─────────────────────────────────── */}
-      <section className="relative shrink-0 w-full py-14 md:py-[80px]" style={{ backgroundColor: '#092B38' }}>
-        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
-
-          {/* Stats Row */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10 md:mb-[48px]">
-            {[
-              { label: 'Duration', value: courseDetails.duration, large: true },
-              { label: 'Lectures', value: courseDetails.lectures, large: true },
-              { label: 'Tools', value: courseDetails.tools, large: false },
-            ].map((stat, i) => (
-              <div key={i} className="backdrop-blur-md backdrop-filter relative rounded-[12px] p-8" style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
-                <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
-                <div className="relative">
-                  <p className="text-[14px] uppercase mb-2" style={{ color: '#6BC1E3' }}>{stat.label}</p>
-                  <p className={`${stat.large ? 'text-[32px] tracking-[-0.8px] leading-[40px]' : 'text-[20px] tracking-[-0.5px] leading-[28px]'}`} style={{ color: '#F4F7F9' }}>
-                    {stat.value}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* About This Course */}
-          <div className="backdrop-blur-md backdrop-filter relative rounded-[16px] p-6 sm:p-8 md:p-[48px]" style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
-            <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[16px]" />
-            <div className="relative">
-              <h2 className="text-2xl md:text-[36px] tracking-[-0.9px] leading-[44px] mb-6" style={{ color: '#F4F7F9' }}>About This Course</h2>
-              <p className="text-[16px] leading-[28px] mb-5" style={{ color: 'rgba(244,247,249,0.8)' }}>{courseDetails.description}</p>
-              <p className="text-[16px] leading-[28px]" style={{ color: 'rgba(244,247,249,0.8)' }}>
-                By taking this course, you'll gain advanced skills in BIW Fixture Design, which will significantly enhance your job prospects. Upon successful completion, excellent employment opportunities in the automotive field as well as mechanical design will be assured.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ── Course Modules ────────────────────────────────────────── */}
-      <section className="relative shrink-0 w-full py-14 md:py-[80px]" style={{ backgroundColor: '#0A1C26' }}>
-        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10 md:mb-[48px]">
-            <p className="text-[13px] md:text-[14px] tracking-[0.7px] uppercase mb-3" style={{ color: '#6BC1E3' }}>Curriculum</p>
-            <h2 className="text-2xl md:text-[36px] tracking-[-0.9px] leading-[44px]" style={{ color: '#F4F7F9' }}>Course Modules</h2>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {courseModules.map((module, index) => (
-              <div key={index} className="backdrop-blur-sm backdrop-filter bg-[rgba(0,0,0,0.4)] relative rounded-[12px]">
-                <div className="overflow-clip relative rounded-[inherit] p-6 md:p-8">
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="flex items-center justify-center rounded-[8px] size-12 shrink-0" style={{ backgroundColor: 'rgba(107,193,227,0.15)' }}>
-                      <span className="text-[20px] leading-[28px]" style={{ color: '#6BC1E3' }}>
-                        {String(index + 1).padStart(2, '0')}
-                      </span>
-                    </div>
-                    <p className="text-[20px] tracking-[-0.5px] leading-[28px] flex-1" style={{ color: '#F4F7F9' }}>{module.title}</p>
-                  </div>
-                  <div className="space-y-3">
-                    {module.topics.map((topic, topicIndex) => (
-                      <div key={topicIndex} className="flex gap-2 items-start">
-                        <div className="relative shrink-0 size-4 mt-[2px]">
-                          <svg className="block size-full" fill="none" viewBox="0 0 16 16">
-                            <path d={svgPaths.p39be50} stroke="var(--stroke-0, #5EEAD4)" strokeLinecap="round" strokeLinejoin="round" />
-                          </svg>
-                        </div>
-                        <p className="text-[14px] leading-[24px]" style={{ color: 'rgba(244,247,249,0.7)' }}>{topic}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div aria-hidden="true" className="absolute border border-[rgba(255,255,255,0.1)] border-solid inset-0 pointer-events-none rounded-[12px]" />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+     
       {/* ── Learning Outcomes & Career ────────────────────────────── */}
       <section className="relative shrink-0 w-full py-14 md:py-[80px]" style={{ backgroundColor: '#092B38' }}>
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
