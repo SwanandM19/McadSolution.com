@@ -463,7 +463,7 @@ export function Header() {
         <div className="basis-0 content-stretch flex grow items-center justify-between min-h-px min-w-px relative shrink-0 w-full">
           <Link 
             href="/"
-            className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-nowrap cursor-pointer hover:opacity-80 transition-opacity mr-[48px]"
+            className="flex flex-col font-['Geist:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-nowrap cursor-pointer hover:opacity-80 transition-opacity mr-[48px] mb-[9px]"
             style={{ color: '#F4F7F9' }}
           >
             <img 
